@@ -1,0 +1,30 @@
+<ul>
+    <li class="product-item-box" ng-repeat="item in list">
+        <h4 class="product-item-title">
+            <span ng-bind="item.corporationShortName+'100%本息保障'"></span>
+            <span>可投{{item.balance | separator}}元</span>
+        </h4>
+        <div class="section-box">
+            <section>
+                <label ng-bind="item.percentDisplayRate"></label><unit>%<unit ng-if="item.extraRate" ng-bind="'+'+item.extraRate+''"></unit></unit>
+
+                <span>约定年化收益率</span>
+            </section>
+            <section>
+                <label ng-if="item.duration.year!==0" ng-bind="item.duration.year+'年'"></label>
+                <label ng-if="item.duration.month!==0" ng-bind="item.duration.month+'个月'"></label>
+                <label ng-if="item.duration.day!==0" ng-bind="item.duration.day+'天'"></label>
+                <br>
+                <span>持有期限</span>
+            </section>
+            <section>
+                <label ng-bind="item.minAmount+'元起投'"></label><br>
+                <span>起投金额</span>
+            </section>
+        </div>
+        <p>立即购买</p>
+    </li>
+</ul>
+<style>
+    @import 'css/regular.css';
+</style>

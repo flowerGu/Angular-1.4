@@ -1,0 +1,29 @@
+.clearfix{
+  zoom:1;
+  &:after{
+    clear:both;
+    content:',';
+    height:0;
+    display:block;
+    visibility: hidden;
+  }
+}
+body{
+  max-width:640px;
+  margin:0 auto;
+  background-color:#efeff4;
+}
+ol, ul,p{margin:0;}
+label{font-weight: normal}
+li{ list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+a{
+  text-decoration: none;
+}
+.flex{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-around;
+}
+@base-color: #ff6825;

@@ -1,0 +1,331 @@
+[
+    {
+        "id": "7AEB6C62-0294-4C34-9939-1C67708483BE",
+        "title": "凤溢盈-WHXY-武汉金交-0380",
+        "type": "FENG_YY",
+        "rate": 7.8,
+        "percentDisplayRate": 7.8,
+        "repayMethod": "BulletRepayment",
+        "amount": 2000000,
+        "balance": 60000,
+        "corporationShortName": "武汉信用",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 20000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 12,
+            "day": 0
+        }
+    },
+    {
+        "id": "CF2C7531-33EF-4008-9875-E4672513D04C",
+        "title": "凤溢盈-HDJT-201610-0406",
+        "type": "FENG_YY",
+        "rate": 7.8,
+        "percentDisplayRate": 7.8,
+        "repayMethod": "BulletRepayment",
+        "amount": 2000000,
+        "balance": 980000,
+        "corporationShortName": "恒大集团",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 20000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 12,
+            "day": 0
+        }
+    },
+    {
+        "id": "6EEA2CA5-3633-4117-B34B-3B8C42958BF1",
+        "title": "凤溢盈-YDDB-20161206-011",
+        "type": "FENG_YY",
+        "rate": 7.7,
+        "percentDisplayRate": 7.7,
+        "repayMethod": "MonthlyInterest",
+        "amount": 5000000,
+        "balance": 3600000,
+        "corporationShortName": "银达担保",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 20000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 12,
+            "day": 0
+        }
+    },
+    {
+        "id": "56C1164F-2097-4E3C-9B42-BB348CB3D51F",
+        "title": "凤溢盈-ZXBL-201612-0062",
+        "type": "FENG_YY",
+        "rate": 7.4,
+        "percentDisplayRate": 7.4,
+        "repayMethod": "BulletRepayment",
+        "amount": 1000000,
+        "balance": 440000,
+        "corporationShortName": "中信保理",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 5000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 12,
+            "day": 0
+        }
+    },
+    {
+        "id": "FD6A6379-3931-4693-9ED0-7AB39D62B0B2",
+        "title": "凤溢盈-BXZL-201612-0015",
+        "type": "FENG_YY",
+        "rate": 7.3,
+        "percentDisplayRate": 7.3,
+        "repayMethod": "MonthlyInterest",
+        "amount": 1000000,
+        "balance": 974000,
+        "corporationShortName": "宝信租赁",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 5000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 12,
+            "day": 0
+        }
+    },
+    {
+        "id": "18ADDA67-1700-42B6-A571-EC493A28B937",
+        "title": "凤溢盈-YGCJT-201611-0139",
+        "type": "FENG_YY",
+        "rate": 6.5,
+        "percentDisplayRate": 6.5,
+        "repayMethod": "BulletRepayment",
+        "amount": 1000000,
+        "balance": 268000,
+        "corporationShortName": "阳光城",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 5000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 6,
+            "day": 0
+        }
+    },
+    {
+        "id": "804CEBED-DD91-4BC8-B759-F3F01CFB9CD3",
+        "title": "凤保宝-YGXB-201612-4014",
+        "type": "FENG_BB",
+        "rate": 6.3,
+        "percentDisplayRate": 6.3,
+        "repayMethod": "EqualInstallment",
+        "amount": 500000,
+        "balance": 462600,
+        "corporationShortName": "阳光信保",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 100,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 7,
+            "day": 0
+        }
+    },
+    {
+        "id": "653844E5-0DCE-4BFC-B8DE-4F922DAE6B04",
+        "title": "凤保宝-YGXB-201612-4013",
+        "type": "FENG_BB",
+        "rate": 6.3,
+        "percentDisplayRate": 6.3,
+        "repayMethod": "EqualInstallment",
+        "amount": 500000,
+        "balance": 132400,
+        "corporationShortName": "阳光信保",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 100,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 7,
+            "day": 0
+        }
+    },
+    {
+        "id": "4438E199-4A2B-40BE-B36F-61D1634ABAEB",
+        "title": "凤溢盈-JKZL-201612-0011",
+        "type": "FENG_YY",
+        "rate": 6.2,
+        "percentDisplayRate": 6.2,
+        "repayMethod": "MonthlyInterest",
+        "amount": 1000000,
+        "balance": 539000,
+        "corporationShortName": "金控租赁",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 1000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 6,
+            "day": 0
+        }
+    },
+    {
+        "id": "85328929-222C-4418-AB4F-7614357E4C04",
+        "title": "凤溢盈-AJSH-201612-0139",
+        "type": "FENG_YY",
+        "rate": 5.2,
+        "percentDisplayRate": 5.2,
+        "extraRate": "0.5%",
+        "privilegeType": "RETURNRATE",
+        "privilegeLable": "返现",
+        "repayMethod": "MonthlyInterest",
+        "amount": 1000000,
+        "balance": 379000,
+        "corporationShortName": "安家世行",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 1000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 0,
+            "day": 181
+        }
+    },
+    {
+        "id": "E755066F-8FE1-427D-B346-2C15EC00184B",
+        "title": "凤保宝-TACX-天安金交-6006",
+        "type": "FENG_BB",
+        "rate": 5.3,
+        "percentDisplayRate": 5.3,
+        "repayMethod": "DayBulletRepayment",
+        "amount": 1000000,
+        "balance": 946000,
+        "corporationShortName": "天安财险",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 5000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 0,
+            "day": 181
+        }
+    },
+    {
+        "id": "26444C91-876B-46A3-BEE3-94A8876D3316",
+        "title": "凤溢盈-HRTZ-201611-0141",
+        "type": "FENG_YY",
+        "rate": 5.2,
+        "percentDisplayRate": 5.2,
+        "repayMethod": "MonthlyInterest",
+        "amount": 1000000,
+        "balance": 203000,
+        "corporationShortName": "华融天泽",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 1000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 3,
+            "day": 0
+        }
+    },
+    {
+        "id": "124D2AE3-5165-469D-8C0E-04BACB4C6516",
+        "title": "凤溢盈-ZJT-201611-0071",
+        "type": "FENG_YY",
+        "rate": 5.2,
+        "percentDisplayRate": 5.2,
+        "repayMethod": "MonthlyInterest",
+        "amount": 2000000,
+        "balance": 2000000,
+        "corporationShortName": "中金投",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 1000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 3,
+            "day": 0
+        }
+    },
+    {
+        "id": "E2179EE1-E4FD-4AB5-81FB-10F268E52375",
+        "title": "凤保宝-TACX-天安金交-3008",
+        "type": "FENG_BB",
+        "rate": 4.5,
+        "percentDisplayRate": 4.5,
+        "extraRate": "0.5%",
+        "privilegeType": "RETURNRATE",
+        "privilegeLable": "返现",
+        "repayMethod": "DayBulletRepayment",
+        "amount": 1000000,
+        "balance": 851000,
+        "corporationShortName": "天安财险",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 5000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 0,
+            "day": 90
+        }
+    },
+    {
+        "id": "505B36D2-F2EF-4729-8180-7BF3C4831052",
+        "title": "凤溢盈-瀚华宝-201612-007",
+        "type": "FENG_YY",
+        "rate": 4.5,
+        "percentDisplayRate": 4.5,
+        "repayMethod": "BulletRepayment",
+        "amount": 5000000,
+        "balance": 3597000,
+        "corporationShortName": "瀚华担保",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 1000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 2,
+            "day": 0
+        }
+    },
+    {
+        "id": "107EBB7D-885C-4610-8F44-CB67640AC0C2",
+        "title": "凤溢盈-瀚华宝-201612-008",
+        "type": "FENG_YY",
+        "rate": 4.5,
+        "percentDisplayRate": 4.5,
+        "repayMethod": "BulletRepayment",
+        "amount": 5000000,
+        "balance": 4269000,
+        "corporationShortName": "瀚华担保",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 1000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 2,
+            "day": 0
+        }
+    },
+    {
+        "id": "A0659B8B-FF0A-4AF3-87A7-8484320F848B",
+        "title": "凤溢盈-ZXFT-201612-0048",
+        "type": "FENG_YY",
+        "rate": 4,
+        "percentDisplayRate": 4,
+        "repayMethod": "BulletRepayment",
+        "amount": 1000000,
+        "balance": 75000,
+        "corporationShortName": "中信富通",
+        "corporationDescription": "100%本息保障",
+        "minAmount": 1000,
+        "status": "OPENED",
+        "duration": {
+            "year": 0,
+            "month": 1,
+            "day": 0
+        }
+    }
+]
