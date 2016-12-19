@@ -32,6 +32,18 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap"])
                  }]
             }
         })
+        .state('loanOneDetail',{
+            // params:{'title':null},
+            url:'/loanOneDetail/title',
+            templateUrl:'loanOneDetail.html',
+            controller:'loanOne',
+            resolve:{
+                deps:["$ocLazyLoad",function($ocLazyLoad){
+                    return $ocLazyLoad.load("js/app/loanOneDetail.js");
+                }]
+            }
+        })
+
     }])
     .controller('tabchange', function ($scope,CalcService) {//标签切换
         this.tab=1;
