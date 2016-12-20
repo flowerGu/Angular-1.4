@@ -15,7 +15,7 @@
     </style>
 </head>
 <body ng-controller = "CalcController">
- <ul class="nav-list-page">
+ <ul class="nav-list-page" style="display:none">
    <li><a href="#/regular">定期理财</a></li>
    <li><a href="#/safeFinacial">保险理财</a></li>
    <li><a href="#/abc">基金</a></li>
@@ -51,15 +51,15 @@
     <script src="../node_modules/angular-ui-grid/ui-grid.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/filter.js"></script>
-    <script>
-        var arr=[1,[2,[3,[4,5,6,[7,8,9]]],10],11];
-        for(var i=0;i<arr.length;i++){
-            if(arr[i].constructor==Array){
-                arr=arr.reduce(function(a,b){return a.concat(b)},[])
-            }
-        }
-        console.log(arr)
-</script>
+    <!--<script>-->
+        <!--var arr=[1,[2,[3,[4,5,6,[7,8,9]]],10],11];-->
+        <!--for(var i=0;i<arr.length;i++){-->
+            <!--if(arr[i].constructor==Array){-->
+                <!--arr=arr.reduce(function(a,b){return a.concat(b)},[])-->
+            <!--}-->
+        <!--}-->
+        <!--console.log(arr)-->
+    <!--</script>-->
 
 </body>
 </html>

@@ -1,0 +1,105 @@
+{
+    "success": true,
+    "data": {
+        "loan": {
+            "name": "凤溢盈-HDJT-201610-0447",
+            "id": "B494F354-61FB-48A0-9D15-AF929BB011B0",
+            "type": "1",
+            "loanRequestId": "50ED8146-8DA3-436A-AC5C-B02E81D281B1",
+            "rate": 7.8,
+            "extraRate": null,
+            "rateString": "7.8%",
+            "status": "OPENED",
+            "durationNumber": 12,
+            "durationType": "M",
+            "tag": null,
+            "privileges": [],
+            "remains": 710000,
+            "beginAt": 1482129605222
+        },
+        "isCanBuyInfo": {
+            "isCanBuy": true,
+            "vipInfo": "",
+            "memberSysH5Url": ""
+        },
+        "productDetail": {
+            "title": "产品详情",
+            "subTitle": "更多",
+            "url": "https://m.fengjr.com/h5/loan/moreDetail/B494F354-61FB-48A0-9D15-AF929BB011B0",
+            "appUrl": "",
+            "productInfo": [
+                {
+                    "title": "认购规模",
+                    "key": null,
+                    "content": "2,000,000.00元"
+                },
+                {
+                    "title": "剩余可投",
+                    "key": null,
+                    "content": "710,000.00元"
+                },
+                {
+                    "title": "起投金额",
+                    "key": null,
+                    "content": "20,000.00元"
+                },
+                {
+                    "title": "递增金额",
+                    "key": null,
+                    "content": "10,000.00元"
+                },
+                {
+                    "title": "收益方式",
+                    "key": "到期后一次性还本金和利息",
+                    "content": "一次性还本付息"
+                },
+                {
+                    "title": "转让规则",
+                    "key": null,
+                    "content": "起息后一个月可转让"
+                }
+            ]
+        },
+        "safetyProtection": {
+            "title": "安全保障",
+            "subTitle": "更多",
+            "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+        },
+        "corporation": {
+            "title": "恒大集团提供100%本金收益保障",
+            "subTitle": "更多",
+            "url": "http://www.fengjr.com/mobile/dbjg/hdjt",
+            "appUrl": null,
+            "companyLogo": "http://img.fengjr.com/upload/image/2016/10/14/FENGJR-B397E7C9BAF345628D5C9E9574F0AA76.jpg",
+            "introduction": [
+                "2015福布斯全球企业500强",
+                "中国房地产企业前三强",
+                "主体信用等级为AAA"
+            ]
+        },
+        "supplementDesc": {
+            "title": null,
+            "content": null
+        },
+        "bottomList": [
+            {
+                "title": "购买记录",
+                "type": "",
+                "url": "",
+                "appUrl": "https://m.fengjr.com/financing/investors/B494F354-61FB-48A0-9D15-AF929BB011B0"
+            },
+            {
+                "title": "常见问题",
+                "type": "",
+                "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                "appUrl": ""
+            },
+            {
+                "title": "产品合同",
+                "type": "pdf",
+                "url": "",
+                "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/50ED8146-8DA3-436A-AC5C-B02E81D281B1/contract/template"
+            }
+        ]
+    }
+}

@@ -27,25 +27,30 @@ gulp.task('browserSync', function () {
         port:1320,
         injectChanges: true,
         logFileChanges: true,
-        // logLevel: 'info',
-        // logPrefix: 'gulp',
+        logLevel: 'info',
+        logPrefix: 'gulp',
         notify: true,
         reloadDelay: 0, // 1000,
-        // online: false,
+        online: false,
         ghostMode: {
             clicks: false,
             location: false,
             forms: false,
             scroll: false
-        },
+        }
     };
   function serveApp() {
     gulp.watch([paths+'css/*.less'],['styles']);
     options.server = {
-      baseDir:[paths,paths+'dev',paths+'ui-grid-master/misc']
+      baseDir:[
+          paths,
+          paths+'dev',
+          paths+'ui-grid-master/misc'
+      ]
     };
     options.files = [
-      './**/*'
+      './**/*',
+      '!' + paths + 'css/*.less'
     ];
     browserSync(options);
   }
