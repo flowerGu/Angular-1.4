@@ -13,10 +13,13 @@ body{
   margin:0 auto;
   background-color:#efeff4;
 }
-ol, ul,p{margin:0;}
+
+*,ol, ul,p{margin:0;}
+dt{font-weight: normal}
+dl{margin:0;}
 label{font-weight: normal}
 li{ list-style:none;}
-h1,h2,h3,h4,h5,h6{font-weight: normal;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;margin:0;padding:0;}
 a{
   text-decoration: none;
 }
@@ -28,16 +31,8 @@ a{
 }
 .u_back_tag{
   zoom:1;
-  display:inline-block;
-  width:12px;
-  height:12px;
-  &:after{
-    content:'';
-    border-left:1px solid #000;
-    border-bottom:1px solid #000;
-  }
 
 }
 @base-color: #ff6825;
-
+@import 'base/setArrow.less';
 

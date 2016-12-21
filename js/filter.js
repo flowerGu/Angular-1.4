@@ -4,7 +4,9 @@
 var app=angular.module('apps');
 app.filter('separator',function(){
     return function(input){
-        input = input.toString().replace(/[^0-9]+/g,'').split('').reverse().join('').replace(/(\d{3})/g,"$1,").replace(/\,$/,'').split('').reverse().join('')
-        return input
+        if(input){
+            input = input.toString().replace(/[^0-9]+/g,'').split('').reverse().join('').replace(/(\d{3})/g,"$1,").replace(/\,$/,'').split('').reverse().join('')
+            return input
+        }
     }
 })

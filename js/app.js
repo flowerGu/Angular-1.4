@@ -2,28 +2,29 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap"])
     .config(["$stateProvider","$urlRouterProvider",routeConfig])
     .run(['$rootScope',function($rootScope) {
         $rootScope.$on("$stateChangeSuccess",function(ev, to, toParams, from, fromParams){//UI-route路由器发生变化1.$stateChangeError;2.$stateChangeStart;3.$stateChangeSuccess;4.$stateNotFound
-           //  var showNavTag=["home","safeFinacial","tab"];
-           // if(showNavTag.indexOf(to.name)>-1){//加载时，判断顶部nav显示
-           //     document.getElementsByClassName('nav-list-page')[0].style.display='';
-           // }else{
-           //     document.getElementsByClassName('nav-list-page')[0].style.display='none';
-           // }
+            var showNavTag=["home","safeFinacial","tab"];
+           if(showNavTag.indexOf(to.name)>-1){//加载时，判断顶部nav显示
+               document.getElementsByClassName('nav-list-page')[0].style.display='';
+           }else{
+               document.getElementsByClassName('nav-list-page')[0].style.display='none';
+           }
            document.title = to.title;//设置标题
         });
     }])
     .controller('tabchange', function ($scope,CalcService,$location) {//标签切换
         this.tab=1;
     })
-    .controller('CalcController',function($scope,CalcService,$location,$state){
+    .controller('CalcController',function($scope,CalcService,$location,$state,$rootScope){
         // CalcService.square(17)
-        $scope.$on("$viewContentLoaded",function(){
-            var showNavTag=["home","safeFinacial","tab"]
-            if(showNavTag.indexOf($state.current.name)>-1){//加载时，判断顶部nav显示
-                document.getElementsByClassName('nav-list-page')[0].style.display='';
-            }else{
-                document.getElementsByClassName('nav-list-page')[0].style.display='none';
-            }
-        });
+        $rootScope.dataNum=3;
+        // $scope.$on("$viewContentLoaded",function(){
+        //     var showNavTag=["home","safeFinacial","tab"]
+        //     if(showNavTag.indexOf($state.current.name)>-1){//加载时，判断顶部nav显示
+        //         document.getElementsByClassName('nav-list-page')[0].style.display='';
+        //     }else{
+        //         document.getElementsByClassName('nav-list-page')[0].style.display='none';
+        //     }
+        // });
     })
     .factory('MathService', function() {
         var factory = {};
