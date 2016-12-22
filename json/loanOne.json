@@ -2,1486 +2,1449 @@
     "success": true,
     "data": [
         {
-
-                "loan": {
-                    "name": "凤溢盈-YDDB-20161208-012",
-                    "id": "26673B0E-B205-4C6F-913B-0715CB2F777E",
-                    "type": "1",
-                    "loanRequestId": "3B965A1C-BF8C-42DB-9690-F01BBE3FCF0D",
-                    "rate": 7.7,
-                    "extraRate": null,
-                    "rateString": "7.7%",
-                    "status": "OPENED",
-                    "durationNumber": 12,
-                    "durationType": "M",
-                    "tag": null,
-                    "privileges": [],
-                    "remains": 4250000,
-                    "beginAt": 1482285600000
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": "",
-                    "memberSysH5Url": ""
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/26673B0E-B205-4C6F-913B-0715CB2F777E",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "5,000,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "4,250,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "20,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "10,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
-                            "content": "按月付息到期还本"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "起息后一个月可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
-                },
-                "corporation": {
-                    "title": "银达担保提供100%本金收益保障",
-                    "subTitle": "更多",
-                    "url": "http://www.fengjr.com/mobile/dbjg/gdyd",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2015/6/1/FENGJR-4C0F3439207B40E3BE35FE1D23268C83.jpg",
-                    "introduction": [
-                        "注册资本10.4亿，累计担保金额600亿",
-                        "全国十大最具影响力中小企业信用担保机构",
-                        "全国中小企业信用担保机构三十强"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": null,
-                    "content": null
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤溢盈-YDDB-20161208-012",
+                "id": "26673B0E-B205-4C6F-913B-0715CB2F777E",
+                "type": "1",
+                "loanRequestId": "3B965A1C-BF8C-42DB-9690-F01BBE3FCF0D",
+                "rate": 7.7,
+                "extraRate": null,
+                "rateString": "7.7%",
+                "status": "CLOSED",
+                "durationNumber": 12,
+                "durationType": "M",
+                "tag": null,
+                "privileges": [],
+                "remains": 0,
+                "beginAt": 1482285600000
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/26673B0E-B205-4C6F-913B-0715CB2F777E",
+                "appUrl": "",
+                "productInfo": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/26673B0E-B205-4C6F-913B-0715CB2F777E"
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "5,000,000.00元"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "4,250,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/3B965A1C-BF8C-42DB-9690-F01BBE3FCF0D/contract/template"
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "20,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "10,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
+                        "content": "按月付息到期还本"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "起息后一个月可转让"
                     }
                 ]
-
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+            },
+            "corporation": {
+                "title": "银达担保提供100%本金收益保障",
+                "subTitle": "更多",
+                "url": "http://www.fengjr.com/mobile/dbjg/gdyd",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2015/6/1/FENGJR-4C0F3439207B40E3BE35FE1D23268C83.jpg",
+                "introduction": [
+                    "注册资本10.4亿，累计担保金额600亿",
+                    "全国十大最具影响力中小企业信用担保机构",
+                    "全国中小企业信用担保机构三十强"
+                ]
+            },
+            "supplementDesc": {
+                "title": null,
+                "content": null
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/26673B0E-B205-4C6F-913B-0715CB2F777E"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/3B965A1C-BF8C-42DB-9690-F01BBE3FCF0D/contract/template"
+                }
+            ]
         },
         {
-
-
-                "loan": {
-                    "name": "凤溢盈-ZXBL-201612-0086",
-                    "id": "6A8CF5C5-77F3-4D33-AC4F-5AC155256175",
-                    "type": "1",
-                    "loanRequestId": "270A6AA0-6AD9-404B-AE41-87FD322A2EAB",
-                    "rate": 7.4,
-                    "extraRate": null,
-                    "rateString": "7.4%",
-                    "status": "OPENED",
-                    "durationNumber": 12,
-                    "durationType": "M",
-                    "tag": null,
-                    "privileges": [],
-                    "remains": 137000,
-                    "beginAt": 1482283034911
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": "",
-                    "memberSysH5Url": ""
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/6A8CF5C5-77F3-4D33-AC4F-5AC155256175",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "1,000,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "137,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "5,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "到期后一次性还本金和利息",
-                            "content": "一次性还本付息"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "起息后一个月可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
-                },
-                "corporation": {
-                    "title": "中信保理承诺按约定年化利率到期溢价回购",
-                    "subTitle": "更多",
-                    "url": "http://www.fengjr.com/mobile/dbjg/zxbl",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2015/7/31/FENGJR-06AAA78B3C6646898CFAE758EDCCE7DC.jpg",
-                    "introduction": [
-                        "中信集团下属国有大型商业保理公司",
-                        "中信资产管理有限公司控股子公司",
-                        "全国业务规模最大的商业保理公司之一"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": null,
-                    "content": null
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤溢盈-ZXBL-201612-0086",
+                "id": "6A8CF5C5-77F3-4D33-AC4F-5AC155256175",
+                "type": "1",
+                "loanRequestId": "270A6AA0-6AD9-404B-AE41-87FD322A2EAB",
+                "rate": 7.4,
+                "extraRate": null,
+                "rateString": "7.4%",
+                "status": "OPENED",
+                "durationNumber": 12,
+                "durationType": "M",
+                "tag": null,
+                "privileges": [],
+                "remains": 137000,
+                "beginAt": 1482283034911
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/6A8CF5C5-77F3-4D33-AC4F-5AC155256175",
+                "appUrl": "",
+                "productInfo": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/6A8CF5C5-77F3-4D33-AC4F-5AC155256175"
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "1,000,000.00元"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "137,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/270A6AA0-6AD9-404B-AE41-87FD322A2EAB/contract/template"
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "5,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "到期后一次性还本金和利息",
+                        "content": "一次性还本付息"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "起息后一个月可转让"
                     }
                 ]
-
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+            },
+            "corporation": {
+                "title": "中信保理承诺按约定年化利率到期溢价回购",
+                "subTitle": "更多",
+                "url": "http://www.fengjr.com/mobile/dbjg/zxbl",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2015/7/31/FENGJR-06AAA78B3C6646898CFAE758EDCCE7DC.jpg",
+                "introduction": [
+                    "中信集团下属国有大型商业保理公司",
+                    "中信资产管理有限公司控股子公司",
+                    "全国业务规模最大的商业保理公司之一"
+                ]
+            },
+            "supplementDesc": {
+                "title": null,
+                "content": null
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/6A8CF5C5-77F3-4D33-AC4F-5AC155256175"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/270A6AA0-6AD9-404B-AE41-87FD322A2EAB/contract/template"
+                }
+            ]
         },
         {
-
-
-                "loan": {
-                    "name": "凤溢盈-GXZX-深圳联交所-0044",
-                    "id": "88838B43-09EE-48AE-9334-09511AD5C3DD",
-                    "type": "1",
-                    "loanRequestId": "4798CC64-4118-44F9-B7CE-EACE9E200299",
-                    "rate": 7.3,
-                    "rateString": "7.3+0.7%",
-                    "status": "OPENED",
-                    "durationNumber": 12,
-                    "durationType": "M",
-                    "tag": "白金专享",
-                    "privileges": [
-                        {
-                            "des": "“白金专享”是仅供会员等级为白金及以上用户投资的定期理财产品，指定会员享受爆款抢先购或限量加息等专属特权。",
-                            "name": "白金专享",
-                            "type": "VIP_PLATINUM"
-                        },
-                        {
-                            "des": "本产品收益构成为年化7.3%+0.7%，其中0.7%收益为额外加息奖励，在产品募集期内募集成功，且起息后的7个工作日内直接充入您的账户。",
-                            "name": "返现",
-                            "value": "0.7%",
-                            "type": "RETURNRATE"
-                        }
-                    ],
-                    "remains": 30000,
-                    "beginAt": 1482286951558
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": "",
-                    "memberSysH5Url": "https://m.fengjr.com/re/special/cms/201610-h5-VIP"
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/88838B43-09EE-48AE-9334-09511AD5C3DD",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "1,000,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "30,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "20,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "10,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
-                            "content": "按月付息到期还本"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "起息后一个月可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
-                },
-                "corporation": {
-                    "title": "广西担保提供100%本金收益保障",
-                    "subTitle": "更多",
-                    "url": "http://www.fengjr.com/mobile/dbjg/gxdb",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2015/12/22/FENGJR-D9BC368890D344788C5B35DABB981F97.png",
-                    "introduction": [
-                        "广西自治区人民政府出资成立的国有担保机构",
-                        "注册资本人民币43亿元",
-                        "中国融资担保业协会副会长单位"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": "补充说明",
-                    "content": "“白金专享”是仅供会员等级为白金及以上用户投资的定期理财产品，指定会员享受爆款抢先购或限量加息等专属特权。本产品收益构成为年化7.3%+0.7%，其中0.7%收益为额外加息奖励，在产品募集期内募集成功，且起息后的7个工作日内直接充入您的账户。"
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤溢盈-GXZX-深圳联交所-0044",
+                "id": "88838B43-09EE-48AE-9334-09511AD5C3DD",
+                "type": "1",
+                "loanRequestId": "4798CC64-4118-44F9-B7CE-EACE9E200299",
+                "rate": 7.3,
+                "rateString": "7.3+0.7%",
+                "status": "OPENED",
+                "durationNumber": 12,
+                "durationType": "M",
+                "tag": "白金专享",
+                "privileges": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/88838B43-09EE-48AE-9334-09511AD5C3DD"
+                        "des": "“白金专享”是仅供会员等级为白金及以上用户投资的定期理财产品，指定会员享受爆款抢先购或限量加息等专属特权。",
+                        "name": "白金专享",
+                        "type": "VIP_PLATINUM"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "des": "本产品收益构成为年化7.3%+0.7%，其中0.7%收益为额外加息奖励，在产品募集期内募集成功，且起息后的7个工作日内直接充入您的账户。",
+                        "name": "返现",
+                        "value": "0.7%",
+                        "type": "RETURNRATE"
+                    }
+                ],
+                "remains": 30000,
+                "beginAt": 1482286951558
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": "https://m.fengjr.com/re/special/cms/201610-h5-VIP"
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/88838B43-09EE-48AE-9334-09511AD5C3DD",
+                "appUrl": "",
+                "productInfo": [
+                    {
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "1,000,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/4798CC64-4118-44F9-B7CE-EACE9E200299/contract/template"
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "30,000.00元"
+                    },
+                    {
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "20,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "10,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
+                        "content": "按月付息到期还本"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "起息后一个月可转让"
                     }
                 ]
-
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+            },
+            "corporation": {
+                "title": "广西担保提供100%本金收益保障",
+                "subTitle": "更多",
+                "url": "http://www.fengjr.com/mobile/dbjg/gxdb",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2015/12/22/FENGJR-D9BC368890D344788C5B35DABB981F97.png",
+                "introduction": [
+                    "广西自治区人民政府出资成立的国有担保机构",
+                    "注册资本人民币43亿元",
+                    "中国融资担保业协会副会长单位"
+                ]
+            },
+            "supplementDesc": {
+                "title": "补充说明",
+                "content": "“白金专享”是仅供会员等级为白金及以上用户投资的定期理财产品，指定会员享受爆款抢先购或限量加息等专属特权。本产品收益构成为年化7.3%+0.7%，其中0.7%收益为额外加息奖励，在产品募集期内募集成功，且起息后的7个工作日内直接充入您的账户。"
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/88838B43-09EE-48AE-9334-09511AD5C3DD"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/4798CC64-4118-44F9-B7CE-EACE9E200299/contract/template"
+                }
+            ]
         },
         {
-
-                "loan": {
-                    "name": "凤溢盈-HXBL-201612-0036",
-                    "id": "566CC86E-1336-489D-9D4D-2483D1C07090",
-                    "type": "1",
-                    "loanRequestId": "4064462D-F998-4CF0-8B99-5271A2C56794",
-                    "rate": 7.3,
-                    "extraRate": null,
-                    "rateString": "7.3%",
-                    "status": "OPENED",
-                    "durationNumber": 12,
-                    "durationType": "M",
-                    "tag": null,
-                    "privileges": [],
-                    "remains": 2000,
-                    "beginAt": 1482252976196
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": "",
-                    "memberSysH5Url": ""
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/566CC86E-1336-489D-9D4D-2483D1C07090",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "1,000,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "2,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "5,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
-                            "content": "按月付息到期还本"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "起息后一个月可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
-                },
-                "corporation": {
-                    "title": "华信保理承诺按约定年化利率到期溢价回购",
-                    "subTitle": "更多",
-                    "url": "http://www.fengjr.com/mobile/dbjg/hxbl",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2016/2/17/FENGJR-E4C3C81DD3284001AABB216E75704D6D.png",
-                    "introduction": [
-                        "《财富》世界500强-中国华信成员企业",
-                        "上海市保理同业公会发起人之一",
-                        "专注于为能源石化产业链提供服务的保理公司"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": null,
-                    "content": null
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤溢盈-HXBL-201612-0036",
+                "id": "566CC86E-1336-489D-9D4D-2483D1C07090",
+                "type": "1",
+                "loanRequestId": "4064462D-F998-4CF0-8B99-5271A2C56794",
+                "rate": 7.3,
+                "extraRate": null,
+                "rateString": "7.3%",
+                "status": "OPENED",
+                "durationNumber": 12,
+                "durationType": "M",
+                "tag": null,
+                "privileges": [],
+                "remains": 2000,
+                "beginAt": 1482252976196
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/566CC86E-1336-489D-9D4D-2483D1C07090",
+                "appUrl": "",
+                "productInfo": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/566CC86E-1336-489D-9D4D-2483D1C07090"
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "1,000,000.00元"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "2,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/4064462D-F998-4CF0-8B99-5271A2C56794/contract/template"
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "5,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
+                        "content": "按月付息到期还本"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "起息后一个月可转让"
                     }
                 ]
-
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+            },
+            "corporation": {
+                "title": "华信保理承诺按约定年化利率到期溢价回购",
+                "subTitle": "更多",
+                "url": "http://www.fengjr.com/mobile/dbjg/hxbl",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2016/2/17/FENGJR-E4C3C81DD3284001AABB216E75704D6D.png",
+                "introduction": [
+                    "《财富》世界500强-中国华信成员企业",
+                    "上海市保理同业公会发起人之一",
+                    "专注于为能源石化产业链提供服务的保理公司"
+                ]
+            },
+            "supplementDesc": {
+                "title": null,
+                "content": null
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/566CC86E-1336-489D-9D4D-2483D1C07090"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/4064462D-F998-4CF0-8B99-5271A2C56794/contract/template"
+                }
+            ]
         },
         {
-
-                "loan": {
-                    "name": "凤溢盈-YGCJT-201611-0149",
-                    "id": "9A5CB899-1ADA-4C22-9738-6CDADFEFB35B",
-                    "type": "1",
-                    "loanRequestId": "567F6FFD-DA4F-4887-B008-A2FF6B669B99",
-                    "rate": 6.5,
-                    "extraRate": null,
-                    "rateString": "6.5%",
-                    "status": "OPENED",
-                    "durationNumber": 6,
-                    "durationType": "M",
-                    "tag": null,
-                    "privileges": [],
-                    "remains": 132000,
-                    "beginAt": 1482223752442
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": "",
-                    "memberSysH5Url": ""
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/9A5CB899-1ADA-4C22-9738-6CDADFEFB35B",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "1,000,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "132,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "5,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "到期后一次性还本金和利息",
-                            "content": "一次性还本付息"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "起息后一个月可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
-                },
-                "corporation": {
-                    "title": "阳光城提供100%本金收益保障",
-                    "subTitle": "更多",
-                    "url": "http://www.fengjr.com/mobile/dbjg/ygjt",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2016/7/22/FENGJR-AC83F8F9C9524B02B1CB636EAA721C25.jpg",
-                    "introduction": [
-                        "中国房地产上市公司A股十强",
-                        "中国房地产500强企业第19名",
-                        "创立著名地产开发品牌“阳光城”"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": null,
-                    "content": null
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤溢盈-YGCJT-201611-0149",
+                "id": "9A5CB899-1ADA-4C22-9738-6CDADFEFB35B",
+                "type": "1",
+                "loanRequestId": "567F6FFD-DA4F-4887-B008-A2FF6B669B99",
+                "rate": 6.5,
+                "extraRate": null,
+                "rateString": "6.5%",
+                "status": "OPENED",
+                "durationNumber": 6,
+                "durationType": "M",
+                "tag": null,
+                "privileges": [],
+                "remains": 132000,
+                "beginAt": 1482223752442
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/9A5CB899-1ADA-4C22-9738-6CDADFEFB35B",
+                "appUrl": "",
+                "productInfo": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/9A5CB899-1ADA-4C22-9738-6CDADFEFB35B"
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "1,000,000.00元"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "132,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/567F6FFD-DA4F-4887-B008-A2FF6B669B99/contract/template"
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "5,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "到期后一次性还本金和利息",
+                        "content": "一次性还本付息"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "起息后一个月可转让"
                     }
                 ]
-
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+            },
+            "corporation": {
+                "title": "阳光城提供100%本金收益保障",
+                "subTitle": "更多",
+                "url": "http://www.fengjr.com/mobile/dbjg/ygjt",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2016/7/22/FENGJR-AC83F8F9C9524B02B1CB636EAA721C25.jpg",
+                "introduction": [
+                    "中国房地产上市公司A股十强",
+                    "中国房地产500强企业第19名",
+                    "创立著名地产开发品牌“阳光城”"
+                ]
+            },
+            "supplementDesc": {
+                "title": null,
+                "content": null
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/9A5CB899-1ADA-4C22-9738-6CDADFEFB35B"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/567F6FFD-DA4F-4887-B008-A2FF6B669B99/contract/template"
+                }
+            ]
         },
         {
-
-
-                "loan": {
-                    "name": "凤溢盈-PHZL-201612-0025",
-                    "id": "FDFEA634-84BF-42EC-93E8-C47EA330FCDD",
-                    "type": "1",
-                    "loanRequestId": "3F7D8932-7A77-4CC4-AE0A-B4E7ACD5C96B",
-                    "rate": 6.5,
-                    "extraRate": null,
-                    "rateString": "6.5%",
-                    "status": "OPENED",
-                    "durationNumber": 6,
-                    "durationType": "M",
-                    "tag": null,
-                    "privileges": [],
-                    "remains": 579000,
-                    "beginAt": 1482285444891
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": "",
-                    "memberSysH5Url": ""
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/FDFEA634-84BF-42EC-93E8-C47EA330FCDD",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "1,000,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "579,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "5,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "到期后一次性还本金和利息",
-                            "content": "一次性还本付息"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "起息后一个月可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
-                },
-                "corporation": {
-                    "title": "浦航租赁提供100%本金收益保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/re/special/cms/201612-h5-phzl",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2016/12/16/FENGJR-AD01733FCE7642F78F95734B718CFBB3.jpg",
-                    "introduction": [
-                        "海航资本集团控股子公司",
-                        "上海自贸区最具规模的船舶融资租赁企业",
-                        "专业从事船舶租赁与航运类基础设施租赁业务"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": null,
-                    "content": null
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤溢盈-PHZL-201612-0025",
+                "id": "FDFEA634-84BF-42EC-93E8-C47EA330FCDD",
+                "type": "1",
+                "loanRequestId": "3F7D8932-7A77-4CC4-AE0A-B4E7ACD5C96B",
+                "rate": 6.5,
+                "extraRate": null,
+                "rateString": "6.5%",
+                "status": "OPENED",
+                "durationNumber": 6,
+                "durationType": "M",
+                "tag": null,
+                "privileges": [],
+                "remains": 579000,
+                "beginAt": 1482285444891
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/FDFEA634-84BF-42EC-93E8-C47EA330FCDD",
+                "appUrl": "",
+                "productInfo": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/FDFEA634-84BF-42EC-93E8-C47EA330FCDD"
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "1,000,000.00元"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "579,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/3F7D8932-7A77-4CC4-AE0A-B4E7ACD5C96B/contract/template"
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "5,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "到期后一次性还本金和利息",
+                        "content": "一次性还本付息"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "起息后一个月可转让"
                     }
                 ]
-
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+            },
+            "corporation": {
+                "title": "浦航租赁提供100%本金收益保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/re/special/cms/201612-h5-phzl",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2016/12/16/FENGJR-AD01733FCE7642F78F95734B718CFBB3.jpg",
+                "introduction": [
+                    "海航资本集团控股子公司",
+                    "上海自贸区最具规模的船舶融资租赁企业",
+                    "专业从事船舶租赁与航运类基础设施租赁业务"
+                ]
+            },
+            "supplementDesc": {
+                "title": null,
+                "content": null
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/FDFEA634-84BF-42EC-93E8-C47EA330FCDD"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/3F7D8932-7A77-4CC4-AE0A-B4E7ACD5C96B/contract/template"
+                }
+            ]
         },
         {
-
-                "loan": {
-                    "name": "凤溢盈-JKZL-201612-0019",
-                    "id": "78A436B0-3948-4802-B4C4-9D65133208C2",
-                    "type": "1",
-                    "loanRequestId": "8BA8F5F4-E156-4E80-AFE8-1CC37B697FF9",
-                    "rate": 6.2,
-                    "extraRate": null,
-                    "rateString": "6.2%",
-                    "status": "OPENED",
-                    "durationNumber": 6,
-                    "durationType": "M",
-                    "tag": null,
-                    "privileges": [],
-                    "remains": 923000,
-                    "beginAt": 1482283817864
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": "",
-                    "memberSysH5Url": ""
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/78A436B0-3948-4802-B4C4-9D65133208C2",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "1,000,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "923,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
-                            "content": "按月付息到期还本"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "起息后一个月可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
-                },
-                "corporation": {
-                    "title": "金控租赁承诺按约定年化利率到期溢价回购",
-                    "subTitle": "更多",
-                    "url": "http://www.fengjr.com/mobile/dbjg/cdjk",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2015/12/22/FENGJR-E4331D6EC31C4787B1A25E24D05FEF26.png",
-                    "introduction": [
-                        "成都市市属大型国有企业控股子公司",
-                        "控股股东为成都银行第一大股东",
-                        "四川服务业企业百强"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": null,
-                    "content": null
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤溢盈-JKZL-201612-0019",
+                "id": "78A436B0-3948-4802-B4C4-9D65133208C2",
+                "type": "1",
+                "loanRequestId": "8BA8F5F4-E156-4E80-AFE8-1CC37B697FF9",
+                "rate": 6.2,
+                "extraRate": null,
+                "rateString": "6.2%",
+                "status": "OPENED",
+                "durationNumber": 6,
+                "durationType": "M",
+                "tag": null,
+                "privileges": [],
+                "remains": 923000,
+                "beginAt": 1482283817864
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/78A436B0-3948-4802-B4C4-9D65133208C2",
+                "appUrl": "",
+                "productInfo": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/78A436B0-3948-4802-B4C4-9D65133208C2"
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "1,000,000.00元"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "923,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/8BA8F5F4-E156-4E80-AFE8-1CC37B697FF9/contract/template"
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
+                        "content": "按月付息到期还本"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "起息后一个月可转让"
                     }
                 ]
-
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+            },
+            "corporation": {
+                "title": "金控租赁承诺按约定年化利率到期溢价回购",
+                "subTitle": "更多",
+                "url": "http://www.fengjr.com/mobile/dbjg/cdjk",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2015/12/22/FENGJR-E4331D6EC31C4787B1A25E24D05FEF26.png",
+                "introduction": [
+                    "成都市市属大型国有企业控股子公司",
+                    "控股股东为成都银行第一大股东",
+                    "四川服务业企业百强"
+                ]
+            },
+            "supplementDesc": {
+                "title": null,
+                "content": null
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/78A436B0-3948-4802-B4C4-9D65133208C2"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/8BA8F5F4-E156-4E80-AFE8-1CC37B697FF9/contract/template"
+                }
+            ]
         },
         {
-
-
-                "loan": {
-                    "name": "凤保宝-TACX-天安金交-6010",
-                    "id": "61F16789-7CDC-4565-A5EB-2432E0931DBB",
-                    "type": "1",
-                    "loanRequestId": "010B3112-8689-46F3-B0D5-40DEB72BFD21",
-                    "rate": 5.3,
-                    "extraRate": null,
-                    "rateString": "5.3%",
-                    "status": "OPENED",
-                    "durationNumber": 182,
-                    "durationType": "D",
-                    "tag": null,
-                    "privileges": [],
-                    "remains": 888000,
-                    "beginAt": 1482220800000
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": "",
-                    "memberSysH5Url": ""
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/61F16789-7CDC-4565-A5EB-2432E0931DBB",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "1,000,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "888,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "5,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "到期后一次性还本金和利息",
-                            "content": "一次性还本付息"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "不可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengbb"
-                },
-                "corporation": {
-                    "title": "天安财险提供100%本息保证保险",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/re/special/cms/201612-h5-tacx",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2016/12/6/FENGJR-718506ED7C994EB4B3145478D636E727.jpg",
-                    "introduction": [
-                        "中国企业500强",
-                        "中国财产保险公司前五强",
-                        "中国最受信赖10大财险公司"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": null,
-                    "content": null
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤保宝-TACX-天安金交-6010",
+                "id": "61F16789-7CDC-4565-A5EB-2432E0931DBB",
+                "type": "1",
+                "loanRequestId": "010B3112-8689-46F3-B0D5-40DEB72BFD21",
+                "rate": 5.3,
+                "extraRate": null,
+                "rateString": "5.3%",
+                "status": "OPENED",
+                "durationNumber": 182,
+                "durationType": "D",
+                "tag": null,
+                "privileges": [],
+                "remains": 888000,
+                "beginAt": 1482220800000
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/61F16789-7CDC-4565-A5EB-2432E0931DBB",
+                "appUrl": "",
+                "productInfo": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/61F16789-7CDC-4565-A5EB-2432E0931DBB"
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "1,000,000.00元"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "888,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/010B3112-8689-46F3-B0D5-40DEB72BFD21/contract/template"
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "5,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "到期后一次性还本金和利息",
+                        "content": "一次性还本付息"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "不可转让"
                     }
                 ]
-
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengbb"
+            },
+            "corporation": {
+                "title": "天安财险提供100%本息保证保险",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/re/special/cms/201612-h5-tacx",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2016/12/6/FENGJR-718506ED7C994EB4B3145478D636E727.jpg",
+                "introduction": [
+                    "中国企业500强",
+                    "中国财产保险公司前五强",
+                    "中国最受信赖10大财险公司"
+                ]
+            },
+            "supplementDesc": {
+                "title": null,
+                "content": null
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/61F16789-7CDC-4565-A5EB-2432E0931DBB"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/010B3112-8689-46F3-B0D5-40DEB72BFD21/contract/template"
+                }
+            ]
         },
         {
-
-
-                "loan": {
-                    "name": "凤溢盈-HRTZ-201611-0165",
-                    "id": "4D286E5B-A0EB-4BD9-ABAF-1A692AC8D70B",
-                    "type": "1",
-                    "loanRequestId": "CE54B4C9-6903-4B33-9173-E6233EF212D9",
-                    "rate": 5.2,
-                    "extraRate": null,
-                    "rateString": "5.2%",
-                    "status": "OPENED",
-                    "durationNumber": 3,
-                    "durationType": "M",
-                    "tag": null,
-                    "privileges": [],
-                    "remains": 7000,
-                    "beginAt": 1482221584037
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": "",
-                    "memberSysH5Url": ""
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/4D286E5B-A0EB-4BD9-ABAF-1A692AC8D70B",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "1,000,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "7,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
-                            "content": "按月付息到期还本"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "起息后一个月可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
-                },
-                "corporation": {
-                    "title": "华融天泽承诺按约定年化利率到期溢价回购",
-                    "subTitle": "更多",
-                    "url": "http://www.fengjr.com/mobile/dbjg/hrtz",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2015/12/6/FENGJR-20ED6EE3690340B9B38723D8A42BD90F.png",
-                    "introduction": [
-                        "港交所上市企业中国华融之控股子公司",
-                        "母公司控股股东为四大国有资产管理公司之一",
-                        "专业从事直接投资业务的券商直投公司"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": null,
-                    "content": null
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤溢盈-HRTZ-201611-0165",
+                "id": "4D286E5B-A0EB-4BD9-ABAF-1A692AC8D70B",
+                "type": "1",
+                "loanRequestId": "CE54B4C9-6903-4B33-9173-E6233EF212D9",
+                "rate": 5.2,
+                "extraRate": null,
+                "rateString": "5.2%",
+                "status": "OPENED",
+                "durationNumber": 3,
+                "durationType": "M",
+                "tag": null,
+                "privileges": [],
+                "remains": 7000,
+                "beginAt": 1482221584037
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/4D286E5B-A0EB-4BD9-ABAF-1A692AC8D70B",
+                "appUrl": "",
+                "productInfo": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/4D286E5B-A0EB-4BD9-ABAF-1A692AC8D70B"
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "1,000,000.00元"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "7,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/CE54B4C9-6903-4B33-9173-E6233EF212D9/contract/template"
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
+                        "content": "按月付息到期还本"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "起息后一个月可转让"
                     }
                 ]
-
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+            },
+            "corporation": {
+                "title": "华融天泽承诺按约定年化利率到期溢价回购",
+                "subTitle": "更多",
+                "url": "http://www.fengjr.com/mobile/dbjg/hrtz",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2015/12/6/FENGJR-20ED6EE3690340B9B38723D8A42BD90F.png",
+                "introduction": [
+                    "港交所上市企业中国华融之控股子公司",
+                    "母公司控股股东为四大国有资产管理公司之一",
+                    "专业从事直接投资业务的券商直投公司"
+                ]
+            },
+            "supplementDesc": {
+                "title": null,
+                "content": null
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/4D286E5B-A0EB-4BD9-ABAF-1A692AC8D70B"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/CE54B4C9-6903-4B33-9173-E6233EF212D9/contract/template"
+                }
+            ]
         },
         {
-
-
-                "loan": {
-                    "name": "凤溢盈-AJSH-201612-189",
-                    "id": "083A4790-AE87-422C-9A21-7323B00754BA",
-                    "type": "1",
-                    "loanRequestId": "39961721-709D-4726-B2DF-B0685506CFCE",
-                    "rate": 5.2,
-                    "extraRate": null,
-                    "rateString": "5.2%",
-                    "status": "OPENED",
-                    "durationNumber": 3,
-                    "durationType": "M",
-                    "tag": null,
-                    "privileges": [],
-                    "remains": 678000,
-                    "beginAt": 1482285143417
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": "",
-                    "memberSysH5Url": ""
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/083A4790-AE87-422C-9A21-7323B00754BA",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "1,000,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "678,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
-                            "content": "按月付息到期还本"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "起息后一个月可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
-                },
-                "corporation": {
-                    "title": "安家世行提供100%本金收益保障",
-                    "subTitle": "更多",
-                    "url": "http://www.fengjr.com/mobile/dbjg/ajsh",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2015/6/1/FENGJR-81F08D3222FC4D65AE171C9E8A5F99F0.jpg",
-                    "introduction": [
-                        "由著名基金软银Soft Bank投资",
-                        "个人消费信贷服务集团尚诺集团旗下核心成员",
-                        "在互联网融资担保业务具有领先优势"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": null,
-                    "content": null
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤溢盈-AJSH-201612-189",
+                "id": "083A4790-AE87-422C-9A21-7323B00754BA",
+                "type": "1",
+                "loanRequestId": "39961721-709D-4726-B2DF-B0685506CFCE",
+                "rate": 5.2,
+                "extraRate": null,
+                "rateString": "5.2%",
+                "status": "OPENED",
+                "durationNumber": 3,
+                "durationType": "M",
+                "tag": null,
+                "privileges": [],
+                "remains": 678000,
+                "beginAt": 1482285143417
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/083A4790-AE87-422C-9A21-7323B00754BA",
+                "appUrl": "",
+                "productInfo": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/083A4790-AE87-422C-9A21-7323B00754BA"
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "1,000,000.00元"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "678,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/39961721-709D-4726-B2DF-B0685506CFCE/contract/template"
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
+                        "content": "按月付息到期还本"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "起息后一个月可转让"
                     }
                 ]
-
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+            },
+            "corporation": {
+                "title": "安家世行提供100%本金收益保障",
+                "subTitle": "更多",
+                "url": "http://www.fengjr.com/mobile/dbjg/ajsh",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2015/6/1/FENGJR-81F08D3222FC4D65AE171C9E8A5F99F0.jpg",
+                "introduction": [
+                    "由著名基金软银Soft Bank投资",
+                    "个人消费信贷服务集团尚诺集团旗下核心成员",
+                    "在互联网融资担保业务具有领先优势"
+                ]
+            },
+            "supplementDesc": {
+                "title": null,
+                "content": null
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/083A4790-AE87-422C-9A21-7323B00754BA"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/39961721-709D-4726-B2DF-B0685506CFCE/contract/template"
+                }
+            ]
         },
         {
-
-
-                "loan": {
-                    "name": "凤溢盈-ZJT-201611-0085",
-                    "id": "D2CF649D-E120-4EBF-ACB1-75683BB3F60C",
-                    "type": "1",
-                    "loanRequestId": "22E96E5E-45C4-41F2-AAB8-05E1F4492FE3",
-                    "rate": 5.2,
-                    "extraRate": null,
-                    "rateString": "5.2%",
-                    "status": "OPENED",
-                    "durationNumber": 3,
-                    "durationType": "M",
-                    "tag": null,
-                    "privileges": [],
-                    "remains": 1830000,
-                    "beginAt": 1482259361402
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": "",
-                    "memberSysH5Url": ""
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/D2CF649D-E120-4EBF-ACB1-75683BB3F60C",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "2,020,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "1,830,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
-                            "content": "按月付息到期还本"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "起息后一个月可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
-                },
-                "corporation": {
-                    "title": "中金投承诺按约定年化利率到期溢价回购",
-                    "subTitle": "更多",
-                    "url": "http://www.fengjr.com/mobile/dbjg/zjt",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2015/6/1/FENGJR-F406A179A861488791404805B4BACF09.jpg",
-                    "introduction": [
-                        "香港主板上市，中小企业专业金融服务商",
-                        "2014《福布斯》中国潜力企业100强第16名",
-                        "集团资产总额30亿，全年放款金额近百亿"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": null,
-                    "content": null
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤溢盈-ZJT-201611-0085",
+                "id": "D2CF649D-E120-4EBF-ACB1-75683BB3F60C",
+                "type": "1",
+                "loanRequestId": "22E96E5E-45C4-41F2-AAB8-05E1F4492FE3",
+                "rate": 5.2,
+                "extraRate": null,
+                "rateString": "5.2%",
+                "status": "OPENED",
+                "durationNumber": 3,
+                "durationType": "M",
+                "tag": null,
+                "privileges": [],
+                "remains": 1830000,
+                "beginAt": 1482259361402
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/D2CF649D-E120-4EBF-ACB1-75683BB3F60C",
+                "appUrl": "",
+                "productInfo": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/D2CF649D-E120-4EBF-ACB1-75683BB3F60C"
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "2,020,000.00元"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "1,830,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/22E96E5E-45C4-41F2-AAB8-05E1F4492FE3/contract/template"
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
+                        "content": "按月付息到期还本"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "起息后一个月可转让"
                     }
                 ]
-
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+            },
+            "corporation": {
+                "title": "中金投承诺按约定年化利率到期溢价回购",
+                "subTitle": "更多",
+                "url": "http://www.fengjr.com/mobile/dbjg/zjt",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2015/6/1/FENGJR-F406A179A861488791404805B4BACF09.jpg",
+                "introduction": [
+                    "香港主板上市，中小企业专业金融服务商",
+                    "2014《福布斯》中国潜力企业100强第16名",
+                    "集团资产总额30亿，全年放款金额近百亿"
+                ]
+            },
+            "supplementDesc": {
+                "title": null,
+                "content": null
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/D2CF649D-E120-4EBF-ACB1-75683BB3F60C"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/22E96E5E-45C4-41F2-AAB8-05E1F4492FE3/contract/template"
+                }
+            ]
         },
         {
-
-
-                "loan": {
-                    "name": "凤保宝-TACX-天安金交-3015",
-                    "id": "F8CD9FA7-9DE8-4C25-89E8-151947EE47C1",
-                    "type": "1",
-                    "loanRequestId": "886CF2AA-CB0A-439D-92C9-8F8288C7B027",
-                    "rate": 4.5,
-                    "extraRate": "0.5%",
-                    "rateString": "4.5+0.5%",
-                    "status": "OPENED",
-                    "durationNumber": 91,
-                    "durationType": "D",
-                    "tag": "返现",
-                    "privileges": [
-                        {
-                            "des": "本产品收益构成为年化4.5%+0.5%，其中0.5%收益为额外加息奖励，在产品募集期内募集成功，且起息后的7个工作日内直接充入您的账户。",
-                            "name": "返现",
-                            "value": "0.5%",
-                            "type": "RETURNRATE"
-                        }
-                    ],
-                    "remains": 708000,
-                    "beginAt": 1482220800000
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": ""
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/F8CD9FA7-9DE8-4C25-89E8-151947EE47C1",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "1,000,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "708,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "5,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "到期后一次性还本金和利息",
-                            "content": "一次性还本付息"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "不可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengbb"
-                },
-                "corporation": {
-                    "title": "天安财险提供100%本息保证保险",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/re/special/cms/201612-h5-tacx",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2016/12/6/FENGJR-718506ED7C994EB4B3145478D636E727.jpg",
-                    "introduction": [
-                        "中国企业500强",
-                        "中国财产保险公司前五强",
-                        "中国最受信赖10大财险公司"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": "补充说明",
-                    "content": "本产品收益构成为年化4.5%+0.5%，其中0.5%收益为额外加息奖励，在产品募集期内募集成功，且起息后的7个工作日内直接充入您的账户。"
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤保宝-TACX-天安金交-3015",
+                "id": "F8CD9FA7-9DE8-4C25-89E8-151947EE47C1",
+                "type": "1",
+                "loanRequestId": "886CF2AA-CB0A-439D-92C9-8F8288C7B027",
+                "rate": 4.5,
+                "extraRate": "0.5%",
+                "rateString": "4.5+0.5%",
+                "status": "OPENED",
+                "durationNumber": 91,
+                "durationType": "D",
+                "tag": "返现",
+                "privileges": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/F8CD9FA7-9DE8-4C25-89E8-151947EE47C1"
+                        "des": "本产品收益构成为年化4.5%+0.5%，其中0.5%收益为额外加息奖励，在产品募集期内募集成功，且起息后的7个工作日内直接充入您的账户。",
+                        "name": "返现",
+                        "value": "0.5%",
+                        "type": "RETURNRATE"
+                    }
+                ],
+                "remains": 708000,
+                "beginAt": 1482220800000
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/F8CD9FA7-9DE8-4C25-89E8-151947EE47C1",
+                "appUrl": "",
+                "productInfo": [
+                    {
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "1,000,000.00元"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "708,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/886CF2AA-CB0A-439D-92C9-8F8288C7B027/contract/template"
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "5,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "到期后一次性还本金和利息",
+                        "content": "一次性还本付息"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "不可转让"
                     }
                 ]
-
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengbb"
+            },
+            "corporation": {
+                "title": "天安财险提供100%本息保证保险",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/re/special/cms/201612-h5-tacx",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2016/12/6/FENGJR-718506ED7C994EB4B3145478D636E727.jpg",
+                "introduction": [
+                    "中国企业500强",
+                    "中国财产保险公司前五强",
+                    "中国最受信赖10大财险公司"
+                ]
+            },
+            "supplementDesc": {
+                "title": "补充说明",
+                "content": "本产品收益构成为年化4.5%+0.5%，其中0.5%收益为额外加息奖励，在产品募集期内募集成功，且起息后的7个工作日内直接充入您的账户。"
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/F8CD9FA7-9DE8-4C25-89E8-151947EE47C1"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/886CF2AA-CB0A-439D-92C9-8F8288C7B027/contract/template"
+                }
+            ]
         },
         {
-
-
-                "loan": {
-                    "name": "凤溢盈-瀚华宝-201612-010",
-                    "id": "D1A5EBE3-349F-435E-B611-962668DCAEC2",
-                    "type": "1",
-                    "loanRequestId": "488CB172-753F-4944-8BB5-E11A01F78827",
-                    "rate": 4.5,
-                    "extraRate": null,
-                    "rateString": "4.5%",
-                    "status": "OPENED",
-                    "durationNumber": 2,
-                    "durationType": "M",
-                    "tag": null,
-                    "privileges": [],
-                    "remains": 891000,
-                    "beginAt": 1481970495838
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": "",
-                    "memberSysH5Url": ""
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/D1A5EBE3-349F-435E-B611-962668DCAEC2",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "5,000,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "891,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "到期后一次性还本金和利息",
-                            "content": "一次性还本付息"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "起息后一个月可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
-                },
-                "corporation": {
-                    "title": "瀚华担保承诺按约定年化利率到期溢价回购",
-                    "subTitle": "更多",
-                    "url": "http://www.fengjr.com/mobile/dbjg/hhdb",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2015/6/1/FENGJR-F3374F07CC7849DD85D85A170BF606F4.jpg",
-                    "introduction": [
-                        "港交所上市公司控股",
-                        "中国融资担保业协会副会长单位",
-                        "中国万亿担保规模上榜机构30强"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": null,
-                    "content": null
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤溢盈-瀚华宝-201612-010",
+                "id": "D1A5EBE3-349F-435E-B611-962668DCAEC2",
+                "type": "1",
+                "loanRequestId": "488CB172-753F-4944-8BB5-E11A01F78827",
+                "rate": 4.5,
+                "extraRate": null,
+                "rateString": "4.5%",
+                "status": "OPENED",
+                "durationNumber": 2,
+                "durationType": "M",
+                "tag": null,
+                "privileges": [],
+                "remains": 891000,
+                "beginAt": 1481970495838
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/D1A5EBE3-349F-435E-B611-962668DCAEC2",
+                "appUrl": "",
+                "productInfo": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/D1A5EBE3-349F-435E-B611-962668DCAEC2"
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "5,000,000.00元"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "891,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/488CB172-753F-4944-8BB5-E11A01F78827/contract/template"
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "到期后一次性还本金和利息",
+                        "content": "一次性还本付息"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "起息后一个月可转让"
                     }
                 ]
-
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+            },
+            "corporation": {
+                "title": "瀚华担保承诺按约定年化利率到期溢价回购",
+                "subTitle": "更多",
+                "url": "http://www.fengjr.com/mobile/dbjg/hhdb",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2015/6/1/FENGJR-F3374F07CC7849DD85D85A170BF606F4.jpg",
+                "introduction": [
+                    "港交所上市公司控股",
+                    "中国融资担保业协会副会长单位",
+                    "中国万亿担保规模上榜机构30强"
+                ]
+            },
+            "supplementDesc": {
+                "title": null,
+                "content": null
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/D1A5EBE3-349F-435E-B611-962668DCAEC2"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/488CB172-753F-4944-8BB5-E11A01F78827/contract/template"
+                }
+            ]
         },
         {
-
-
-                "loan": {
-                    "name": "凤溢盈-瀚华宝-201612-012",
-                    "id": "989B6884-1BC1-4FF6-8A78-32B2F0A88334",
-                    "type": "1",
-                    "loanRequestId": "12B7D5C7-C459-44C2-B732-6F0A2A4D9B54",
-                    "rate": 4.5,
-                    "extraRate": null,
-                    "rateString": "4.5%",
-                    "status": "OPENED",
-                    "durationNumber": 2,
-                    "durationType": "M",
-                    "tag": null,
-                    "privileges": [],
-                    "remains": 3101000,
-                    "beginAt": 1482139070484
-                },
-                "isCanBuyInfo": {
-                    "isCanBuy": true,
-                    "vipInfo": "",
-                    "memberSysH5Url": ""
-                },
-                "productDetail": {
-                    "title": "产品详情",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/loan/moreDetail/989B6884-1BC1-4FF6-8A78-32B2F0A88334",
-                    "appUrl": "",
-                    "productInfo": [
-                        {
-                            "title": "认购规模",
-                            "key": null,
-                            "content": "5,000,000.00元"
-                        },
-                        {
-                            "title": "剩余可投",
-                            "key": null,
-                            "content": "3,101,000.00元"
-                        },
-                        {
-                            "title": "起投金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "递增金额",
-                            "key": null,
-                            "content": "1,000.00元"
-                        },
-                        {
-                            "title": "收益方式",
-                            "key": "到期后一次性还本金和利息",
-                            "content": "一次性还本付息"
-                        },
-                        {
-                            "title": "转让规则",
-                            "key": null,
-                            "content": "起息后一个月可转让"
-                        }
-                    ]
-                },
-                "safetyProtection": {
-                    "title": "安全保障",
-                    "subTitle": "更多",
-                    "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
-                },
-                "corporation": {
-                    "title": "瀚华担保承诺按约定年化利率到期溢价回购",
-                    "subTitle": "更多",
-                    "url": "http://www.fengjr.com/mobile/dbjg/hhdb",
-                    "appUrl": null,
-                    "companyLogo": "http://img.fengjr.com/upload/image/2015/6/1/FENGJR-F3374F07CC7849DD85D85A170BF606F4.jpg",
-                    "introduction": [
-                        "港交所上市公司控股",
-                        "中国融资担保业协会副会长单位",
-                        "中国万亿担保规模上榜机构30强"
-                    ]
-                },
-                "supplementDesc": {
-                    "title": null,
-                    "content": null
-                },
-                "bottomList": [
+            "loan": {
+                "name": "凤溢盈-瀚华宝-201612-012",
+                "id": "989B6884-1BC1-4FF6-8A78-32B2F0A88334",
+                "type": "1",
+                "loanRequestId": "12B7D5C7-C459-44C2-B732-6F0A2A4D9B54",
+                "rate": 4.5,
+                "extraRate": null,
+                "rateString": "4.5%",
+                "status": "OPENED",
+                "durationNumber": 2,
+                "durationType": "M",
+                "tag": null,
+                "privileges": [],
+                "remains": 3101000,
+                "beginAt": 1482139070484
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/989B6884-1BC1-4FF6-8A78-32B2F0A88334",
+                "appUrl": "",
+                "productInfo": [
                     {
-                        "title": "购买记录",
-                        "type": "",
-                        "url": "",
-                        "appUrl": "https://m.fengjr.com/financing/investors/989B6884-1BC1-4FF6-8A78-32B2F0A88334"
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "5,000,000.00元"
                     },
                     {
-                        "title": "常见问题",
-                        "type": "",
-                        "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
-                        "appUrl": ""
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "3,101,000.00元"
                     },
                     {
-                        "title": "产品合同",
-                        "type": "pdf",
-                        "url": "",
-                        "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/12B7D5C7-C459-44C2-B732-6F0A2A4D9B54/contract/template"
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "到期后一次性还本金和利息",
+                        "content": "一次性还本付息"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "起息后一个月可转让"
                     }
                 ]
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+            },
+            "corporation": {
+                "title": "瀚华担保承诺按约定年化利率到期溢价回购",
+                "subTitle": "更多",
+                "url": "http://www.fengjr.com/mobile/dbjg/hhdb",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2015/6/1/FENGJR-F3374F07CC7849DD85D85A170BF606F4.jpg",
+                "introduction": [
+                    "港交所上市公司控股",
+                    "中国融资担保业协会副会长单位",
+                    "中国万亿担保规模上榜机构30强"
+                ]
+            },
+            "supplementDesc": {
+                "title": null,
+                "content": null
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/989B6884-1BC1-4FF6-8A78-32B2F0A88334"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/12B7D5C7-C459-44C2-B732-6F0A2A4D9B54/contract/template"
+                }
+            ]
         }
     ]
 }

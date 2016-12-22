@@ -8093,7 +8093,8 @@
                 throw new TypeError("Invalid attempt to destructure non-iterable instance")
             }
         }(), s = n("./_index.js"), a = window._, r = "https://appi.fengjr.com";
-        "m.fengjr.com" !== location.host && "m-preflight.fengjr.com" !== location.host && (r = location.origin + "/api/proxy/jsonp/http://testpush.fengjr.inc"), s.service("LoanService", ["$q", "BaseService", "UserService", function (n, e, t) {
+        "m.fengjr.com" !== location.host && "m-preflight.fengjr.com" !== location.host && (r = location.origin + "/api/proxy/jsonp/http://testpush.fengjr.inc"),
+            s.service("LoanService", ["$q", "BaseService", "UserService", function (n, e, t) {
             var s = {};
             return s.getCorporation = function (n) {
                 return e.get("/loan/getCorporation?id=" + n)

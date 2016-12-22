@@ -58,7 +58,11 @@ h3{
   padding:10px 4%;
   font-size:14px;
   background-color:#fff;
-  border-bottom:1px solid #ddd
+  border-bottom:1px solid #ddd;
+  &:last-of-type{
+    margin-bottom:50px;
+
+  }
 }
 .loan-props{
   width:100%;
@@ -89,5 +93,21 @@ h3{
   }
   >img.comLogo{
     width:120px;
+  }
+}
+.loan-btn{
+  position:fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:40px;
+  line-height:40px;
+  color:#fff;
+  text-align:center;
+  &.btn-default{
+    background-color:@base-color;
+  }
+  &.btn-diabled{
+    background-color:#ddd;
   }
 }

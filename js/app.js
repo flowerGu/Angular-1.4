@@ -16,7 +16,6 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap"])
     })
     .controller('CalcController',function($scope,CalcService,$location,$state,$rootScope){
         // CalcService.square(17)
-        $rootScope.dataNum=3;
         // $scope.$on("$viewContentLoaded",function(){
         //     var showNavTag=["home","safeFinacial","tab"]
         //     if(showNavTag.indexOf($state.current.name)>-1){//加载时，判断顶部nav显示
@@ -38,6 +37,12 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap"])
             return MathService.multiply(a, a);
         }
     })
+    .service('analyticsInfo',function(){
+        this.locationNext = function(opts){
+            console.log(1,opts)
+        }
+    })
+
 function routeConfig($stateProvider,$urlRouterProvider){//路由配置
     $urlRouterProvider.otherwise("/home");//$urlRouterProvider负责监听 $location。
     $stateProvider.state('home',{

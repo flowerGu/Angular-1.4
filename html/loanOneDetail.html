@@ -60,11 +60,15 @@
 </h3>
 <ul class="loan-props">
     <img ng-if="value.corporation.src>-1" ng-src="./images/comLogo/FENGJR-{{value.corporation.src}}.jpg" class="comLogo"/>
-    <li ng-repeat="item in value.corporation.introduction">{{$index+1}}.{{item}}</li>
+    <li ng-repeat="item in value.corporation.introduction">{{$index+1+'.'+item}}</li>
 </ul>
-<ul class="loan-props">
-
-</ul>
+<!--<select ng-options="i.ID as i.Title for i in items" ng-model="someModel"></select>-->
+<h3 ng-repeat="x in value.bottomList" ng-click="analyticsInfo.locationNext({id:x.title})">
+    <span ng-bind="x.title"></span>
+    <a class="next-a"></a>
+</h3>
+<button ng-if="value.loan.status.toUpperCase()=='OPENED'"class="loan-btn btn-default">立即购买</button>
+<button ng-if="value.loan.status.toUpperCase()=='CLOSED'"class="loan-btn btn-disabled">收益中</button>
 <style>
     @import './css/loanOne.css'
 </style>
