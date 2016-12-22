@@ -1,0 +1,41 @@
+@import 'common.less';
+ul {
+  >li{
+    width:100%;
+    position:relative;
+    background-color:#fff;
+    padding:1rem 4%;
+    text-align:center;
+    border-bottom:1px solid #dedede;
+    >div{
+      text-align:left;
+      .clearfix;
+      >span{
+        float:left;
+        >i{
+          font-style:normal;
+        }
+        &:nth-of-type(2){
+          margin-left:1rem;
+        }
+      }
+    }
+    label{
+      position:absolute;
+      right:4%;
+      top:50%;
+      webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+}
+.selected{
+  display:inline-block;
+  width:20px;
+  height:20px;
+  line-height:20px;
+  color:#fff;
+  text-align:center;
+  border-radius:50%;
+  background-color:@base-color;
+}

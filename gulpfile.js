@@ -18,8 +18,8 @@ function swallowError(error) {
 //main
 gulp.task('default', function () {
     runSequence(
-	   'browserSync',
-        'styles'
+        'styles',
+        'browserSync'
     );
 });
 gulp.task('browserSync', function () {
@@ -50,14 +50,14 @@ gulp.task('browserSync', function () {
     };
     options.files = [
       './**/*',
-      '!' + paths + 'css/*.less'
+      paths + 'css/*.less'
     ];
     browserSync(options);
   }
   serveApp();
 });
 gulp.task('styles',function(){
-    return gulp.src([paths+'css/*.less'],{base:paths + '/less/'})
+    return gulp.src([paths+'css/*.less'])
         .pipe($.plumber({ errorHandler: swallowError }))
         .pipe($.less())
         .pipe($.autoprefixer())

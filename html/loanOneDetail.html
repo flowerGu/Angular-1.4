@@ -1,4 +1,4 @@
-<div class="loanOne-title">
+<div class="common-title">
     <a ui-sref="home" class="back "></a>
     理财详情
 </div>
@@ -63,7 +63,7 @@
     <li ng-repeat="item in value.corporation.introduction">{{$index+1+'.'+item}}</li>
 </ul>
 <!--<select ng-options="i.ID as i.Title for i in items" ng-model="someModel"></select>-->
-<h3 ng-repeat="x in value.bottomList" ng-click="analyticsInfo.locationNext({id:x.title})">
+<h3 ng-repeat="x in value.bottomList" ng-click="analyticsInfo.locationNext({url:'loanRecord'})">
     <span ng-bind="x.title"></span>
     <a class="next-a"></a>
 </h3>

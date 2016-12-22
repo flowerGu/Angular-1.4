@@ -1,0 +1,19 @@
+<div class="common-title">
+    <a class="back "></a>
+    购买记录
+</div>
+<ul>
+    <li ng-repeat="item in data">
+        <div>
+            <span ng-class={'selected':$index<3} ng-if="$index<3"ng-bind="$index+1"></span>
+            <span>
+                <i ng-bind="item.username"></i><br/>
+                <i>{{item.investTime | formatDate:'-'}}</i>
+            </span>
+        </div>
+        <label>￥{{item.investAmount | separator }}</label>
+    </li>
+</ul>
+<style>
+    @import 'css/loanDetailRecords.css'
+</style>

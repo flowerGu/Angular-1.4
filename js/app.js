@@ -37,11 +37,7 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap"])
             return MathService.multiply(a, a);
         }
     })
-    .service('analyticsInfo',function(){
-        this.locationNext = function(opts){
-            console.log(1,opts)
-        }
-    })
+
 
 function routeConfig($stateProvider,$urlRouterProvider){//路由配置
     $urlRouterProvider.otherwise("/home");//$urlRouterProvider负责监听 $location。
@@ -88,6 +84,17 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
             resolve:{
                 deps:["$ocLazyLoad",function($ocLazyLoad){
                     return $ocLazyLoad.load("js/app/loanOneDetail.js");
+                }]
+            }
+        })
+        .state('loanRecord',{
+            url:'/loanRecord',
+            templateUrl:'html/loanDetailRecords.html',
+            controller:'loanRecords',
+            title:'购买记录',
+            resolve:{
+                deps:["$ocLazyLoad",function($ocLazyLoad){
+                    return $ocLazyLoad.load('js/app/loanDetailRecords.js');
                 }]
             }
         })
