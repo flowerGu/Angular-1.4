@@ -1,0 +1,18 @@
+基金
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" ng-repeat="x in imageList">
+            <img ng-src="{{x.image}}"/>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<style>
+    .swiper-container,
+    .swiper-wrapper,
+    img{
+        width:100%;
+        height:100px;
+    }
+
+</style>
