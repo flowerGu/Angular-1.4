@@ -9,4 +9,5 @@ app.controller('loanRecords',function($scope,$http){
                 $scope.data=response.data;
             }
         })
+
 })

@@ -15,11 +15,11 @@
     </style>
 </head>
 <body ng-controller = "CalcController">
- <ul class="nav-list-page" style="display:none">
-   <li><a href="#/regular">定期理财</a></li>
-   <li><a href="#/safeFinacial">保险理财</a></li>
-   <li><a href="#/abc">基金</a></li>
-   <li><a href="#/tab">保险</a></li>
+ <ul class="nav-list-page" style="display:none" >
+   <li ng-class="{active:active == 0}"><a href="#/home">定期理财</a></li>
+   <li ng-class="{active:active == 1}"><a href="#/safeFinacial">保险理财</a></li>
+   <li ng-class="{active:active == 2}"><a href="#/abc">基金</a></li>
+   <li ng-class="{active:active == 3}"><a href="#/tab">保险</a></li>
  </ul>
  <div ui-view class="injectDiv">
      <div class="spinner">

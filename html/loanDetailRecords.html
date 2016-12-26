@@ -5,7 +5,7 @@
 <ul>
     <li ng-repeat="item in data">
         <div>
-            <span ng-class={'selected':$index<3} ng-if="$index<3"ng-bind="$index+1"></span>
+            <span class="selected" ng-if="$index<3"ng-bind="$index+1"></span>
             <span>
                 <i ng-bind="item.username"></i><br/>
                 <i>{{item.investTime | formatDate:'-'}}</i>
