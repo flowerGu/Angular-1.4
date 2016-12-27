@@ -13,6 +13,7 @@ app.controller('fundCtrl',function($scope,$http,$timeout){
                     pagination:'.swiper-pagination',
                     paginationClickable :true
                 })
+                angular.element(document).find('div.swiper-pagination').addClass('yy')
             })
         })
 })

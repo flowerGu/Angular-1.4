@@ -1,8 +1,14 @@
-<audio width="420" src="1.mp3" id='audio'>
-</audio>
-<button onclick="audio.play();">播放</button>
-<button onclick="audio.pause();">暂停</button>
+<img ng-src="">
+
+<div class="insurance-list" ng-repeat="x in data">
+    <div class="insurance-title" ng-if="x.ctag" ng-bind="'保险'+x.ctag">
+
+    </div>
+    <div class="insurance-body">
+        <h4 ng-bind="x.header.des"></h4>
+    </div>
+</div>
 <style type="text/css">
-    @import './css/css.css';
+@import './css/insurance.css';
 </style>
 

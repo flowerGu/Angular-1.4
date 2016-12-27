@@ -1,0 +1,136 @@
+{
+  "data": [
+    {
+      "ctag": "年金理财",
+      "detailUrl": "re/annuity/detail?productId=100201002",
+      "duration": "10天即领",
+      "footer": "月交月领 100%返还本金",
+      "header": {
+        "icon": false,
+        "des": "月月薪·享终身"
+      },
+      "id": "100201002",
+      "minInvest": "450元/份",
+      "percentRate": {
+        "displayRate": "27-30",
+        "displayDes": "每月领取月交金额"
+      },
+      "status": "OPENED",
+      "tags": [
+        "理财期限短",
+        "终身领取"
+      ],
+      "title": "月月薪·享终身"
+    },
+    {
+      "ctag": "年金理财",
+      "detailUrl": "re/annuity/detail?productId=100201003",
+      "duration": "10天即领",
+      "footer": "月交月领 100%返还本金",
+      "header": {
+        "icon": false,
+        "des": "月月薪·享终身(升级版)"
+      },
+      "id": "100201003",
+      "minInvest": "450元/份",
+      "percentRate": {
+        "displayRate": "36-41",
+        "displayDes": "每月领取月交金额"
+      },
+      "status": "OPENED",
+      "tags": [
+        "月领金额高",
+        "终身领取"
+      ],
+      "title": "月月薪·享终身(升级版)"
+    },
+    {
+      "ctag": "灵活理财",
+      "detailUrl": "AppCurrentDetail/100201001",
+      "duration": "灵活领取",
+      "footer": "零手续费，灵活领取",
+      "header": {
+        "icon": false,
+        "des": "凤华日日盈"
+      },
+      "id": "100201001",
+      "minInvest": "1000元起",
+      "percentRate": {
+        "displayRate": "4.05",
+        "displayDes": "历史年化投资回报率"
+      },
+      "status": "OPENED",
+      "tags": [
+        "灵活收益高",
+        "每日限量抢"
+      ],
+      "title": "凤华日日盈"
+    },
+    {
+      "ctag": "灵活理财",
+      "detailUrl": "AppCurrentDetail/100101007",
+      "duration": "灵活领取",
+      "footer": "灵活领取，千元起投",
+      "header": {
+        "icon": false,
+        "des": "凤弘天天盈"
+      },
+      "id": "100101007",
+      "minInvest": "1000元起",
+      "percentRate": {
+        "displayRate": "4.03",
+        "displayDes": "历史年化投资回报率"
+      },
+      "status": "OPENED",
+      "tags": [
+        "天天复利",
+        "灵活领取"
+      ],
+      "title": "凤弘天天盈"
+    },
+    {
+      "ctag": "定期理财",
+      "detailUrl": "insuranceDetail/100101001",
+      "duration": "12个月",
+      "footer": "持有12个月后免领取手续费",
+      "header": {
+        "icon": false,
+        "des": "凤弘年年盈"
+      },
+      "id": "100101001",
+      "minInvest": "1000元起",
+      "percentRate": {
+        "displayRate": "5",
+        "displayDes": "历史年化投资回报率"
+      },
+      "status": "OPENED",
+      "tags": [
+        "保险理财",
+        "稳赚全年"
+      ],
+      "title": "凤弘年年盈"
+    },
+    {
+      "ctag": "定期理财",
+      "detailUrl": "insuranceDetail/100101006",
+      "duration": "24个月",
+      "footer": "持有24个月后免领取手续费",
+      "header": {
+        "icon": false,
+        "des": "凤弘两年盈"
+      },
+      "id": "100101006",
+      "minInvest": "1000元起",
+      "percentRate": {
+        "displayRate": "5.5",
+        "displayDes": "历史年化投资回报率"
+      },
+      "status": "OPENED",
+      "tags": [
+        "收益稳增",
+        "踏实无忧"
+      ],
+      "title": "凤弘两年盈"
+    }
+  ]
+}

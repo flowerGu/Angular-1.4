@@ -23,7 +23,7 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap"])
     .controller('tabchange', function ($scope,CalcService,$location) {//标签切换
         this.tab=1;
     })
-    .controller('CalcController',function($scope,CalcService,$location,$state,$rootScope){
+    .controller('CalcController',function($scope,CalcService,$location,$state,$rootScope,$location){
         // CalcService.square(17)
         // $scope.$on("$viewContentLoaded",function(){
         //     var showNavTag=["home","safeFinacial","tab"];
@@ -34,7 +34,7 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap"])
         //     }
         // });
         // console.log($scope.active)
-
+        // console.log($location.url())
     })
     .factory('MathService', function() {
         var factory = {};
@@ -66,7 +66,7 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
         .state('safeFinacial',{
             url:'/safeFinacial',
             templateUrl:'html/aboutAs.html',
-            // controller:'insuranceCtrl',
+            controller:'insuranceCtrl',
             title:'保险理财',
             resolve:{
                 deps:["$ocLazyLoad",function($ocLazyLoad){

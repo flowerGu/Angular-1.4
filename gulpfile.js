@@ -40,7 +40,12 @@ gulp.task('browserSync', function () {
         }
     };
   function serveApp() {
-    gulp.watch([paths+'css/*.less'],['styles']);
+    gulp.watch(
+        [paths+'css/*.less',
+         paths+'css/**/*.less'
+        ],
+
+        ['styles']);
     options.server = {
       baseDir:[
           paths,
@@ -50,24 +55,21 @@ gulp.task('browserSync', function () {
     };
     options.files = [
       './**/*',
-      paths + 'css/*.less'
+      '!'+paths + 'css/*.less'
+
     ];
     browserSync(options);
   }
   serveApp();
 });
 gulp.task('styles',function(){
-    return gulp.src([paths+'css/*.less'])
+    return gulp.src([paths+'css/*.less',paths+'css/**/*'])
         .pipe($.plumber({ errorHandler: swallowError }))
         .pipe($.less())
         .pipe($.autoprefixer())
         .pipe($.cssnano())
-        .pipe(gulp.dest(paths+'/dev/css'))
+        .pipe(gulp.dest(paths+'dev/css'))
 
 })
-function swallowError(error) {
-    // If you want details of the error in the console
-    console.error(error.toString());
-    this.emit('end');
-}
+
 
