@@ -1,12 +1,28 @@
-<img ng-src="">
-
 <div class="insurance-list" ng-repeat="x in data">
-    <div class="insurance-title" ng-if="x.ctag" ng-bind="'保险'+x.ctag">
-
+    <div class="insurance-title"ng-if="!x.isHideTag" ng-bind="'保险'+x.ctag">
     </div>
     <div class="insurance-body">
         <h4 ng-bind="x.header.des"></h4>
+        <div class="header-tag" ng-bind="x.ctag"></div>
+        <section>
+            <div class="section-Rate">
+                <span ng-bind="x.percentRate.displayRate"></span><b>%</b>
+            </div>
+            <div>
+                <span ng-bind="x.duration"></span> | <span ng-bind="x.minInvest"></span>
+            </div>
+        </section>
+        <section>
+            <div>
+                <span ng-bind="x.percentRate.displayDes"></span>
+            </div>
+            <div>
+                <span ng-repeat="tag in x.tags" ng-bind="tag" class="tags"></span>
+            </div>
+
+        </section>
     </div>
+    <p ng-bind="x.footer"></p>
 </div>
 <style type="text/css">
 @import './css/insurance.css';

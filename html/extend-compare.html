@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .clearfix{zoom:1}.clearfix:after{clear:both;content:',';height:0;display:block;visibility:hidden}body{max-width:640px;margin:0 auto;background-color:#efeff4}*,ol,p,ul{margin:0}dt{font-weight:400}dl{margin:0}label{font-weight:400}li{list-style:none}h1,h2,h3,h4,h5,h6{font-weight:400;margin:0;padding:0}button,input{outline:none;border:none}a{text-decoration:none}.flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:distribute;justify-content:space-around}.u_back_tag{zoom:1}.insurance-list{font-size:14px}.insurance-list .insurance-title{margin-left:4%;padding-left:.3rem;border-left:2px solid #ff6825;color:#ff4c4c}.insurance-list .insurance-body{background-color:#fff;border:1px solid #4d4d4d;padding:1rem;margin-bottom:1rem}
+    </style>
+</head>
+<body>
+<!--<div class="insurance-list">-->
+    <!--<div class="insurance-title">-->
+
+    <!--</div>-->
+    <!--<div class="insurance-body">-->
+
+    <!--</div>-->
+<!--</div>-->
+<script src="../js/jquery-1.9.0.min.js">
+</script>
+<script >
+    $.get('../json/insurance.json?md='+Math.random())
+            .then(function(response){
+                var res = response.data;
+                res[0].isHide = false;
+                for(var i = 0; i < res.length; i++) {
+                    for(var j = 0; j<res.length-i-1;j++){
+                        if(res[j].ctag == res[j+1].ctag){
+                            res[j+1].isHide = true;
+                        }else{
+                            res[j+1].isHide = false;
+                        }
+                    }
+                    $('body').append("<div class='insurance-list'><div class='insurance-title' data-hide='"+response.data[i].isHide+"'>"+response.data[i].ctag+"</div><div class='insurance-body'><p>"+response.data[i].percentRate.displayRate+"</p><span>"+response.data[i].ctag+"</span></div></div>")
+                }
+                $('.insurance-list').each(function(i,item){
+                    if($(this).find('.insurance-title').attr('data-hide')=='true'){
+                        $(this).find('.insurance-title').remove()
+                    }
+                })
+            })
+
+</script>
+</body>
+</html>

@@ -1,9 +1,62 @@
 @import 'css/base.less';
 .insurance-list{
+  font-size:12px;
+  color:#666;
   .insurance-title{
-    padding:.5rem 4%;
+    margin:.5rem 4%;
+    padding-left:.3rem;
     border-left:2px solid @base-color;
     color:#ff4c4c;
   }
-
+  .insurance-body{
+    position:relative;
+    background-color:#fff;
+    padding:0 0 0 4%;
+    .header-tag{
+      position:absolute;
+      right:4%;
+      top:0;
+      border-radius:0 0 5px 5px;
+      background-color:#ff4c4c;
+      padding:2px 5px;
+      color:#fff;
+    }
+    h4{
+      padding:1rem 0;
+      border-bottom:1px solid #eee;
+      font-size:12px;
+      margin-bottom:1rem;
+    }
+    section{
+      display:block;
+      .clearfix;
+      padding-bottom:1rem;
+      >div{
+        display:inline-block;
+        span{
+          &.tags{
+            color:#007aff;
+            border:1px solid #007aff;
+            border-radius:3px;
+            padding:1px 5px;
+            margin-right:5px;
+          }
+        }
+        &:nth-of-type(1){
+          width:40%;
+        }
+        &.section-Rate{
+          color:@base-color;
+          >span{
+            font-size:28px;
+          }
+        }
+      }
+    }
+  }
+  p{
+    background-color:#f9f9f9;
+    margin-bottom:1rem;
+    padding:.5rem 4%;
+  }
 }
