@@ -14,11 +14,11 @@
  	  A(属性)
 	  ```
 	  <div my-directive="expression"></div>
-	  ```<br>
+	  ```
 	  C(类名)
 	  ```
 	  <div class="my-directive"></div>
-	  ```
+	```
 	  <br>
  template:1>html元素<br>
   	  2>接收两个参数的函数<br>
