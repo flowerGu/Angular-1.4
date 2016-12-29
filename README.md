@@ -1,9 +1,9 @@
 #ng-bind
- ng-bind="·½·¨Ãû" °ó¶¨Ò»·½·¨µÄ·µ»ØÖµ
- ng-bind="arr[0]" °ó¶¨Êı×éÖĞµÄÄ³Ò»¸öÖµ
+ ng-bind="æ–¹æ³•å" ç»‘å®šä¸€æ–¹æ³•çš„è¿”å›å€¼<br>
+ ng-bind="arr[0]" ç»‘å®šæ•°ç»„ä¸­çš„æŸä¸€ä¸ªå€¼<br>
 
-#ng-repeat¡¢ng-options(select)
- ng-repeat Êı×éÑ­»·html´úÂë´´½¨ÏÂÀ­ÁĞ±í
- ng-options Õë¶ÔÒ»¸ö¶ÔÏó
- ng-repeat ×Ö·û´®
+#ng-repeatã€ng-options(select)
+ ng-repeat æ•°ç»„å¾ªç¯htmlä»£ç åˆ›å»ºä¸‹æ‹‰åˆ—è¡¨<br>
+ ng-options é’ˆå¯¹ä¸€ä¸ªå¯¹è±¡<br>
+ ng-repeat å­—ç¬¦ä¸²<br>
 	
