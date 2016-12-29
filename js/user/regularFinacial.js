@@ -7,7 +7,7 @@ app.controller('regularCtrl',function($scope,$http,$state){
                 console.log('error');
             })
         $scope.loanListMap= (item)=>{
-            $state.go("loanOneDetail",{title:item.corporationShortName,id:item.id})
+            $state.go("loanOneDetail",{id:item.id})
         }
     }
 )

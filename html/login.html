@@ -1,0 +1,30 @@
+<div class="common-title">
+    <a ui-sref="home" class="back "></a>
+    登录
+</div>
+<div class="m-form_wrap">
+    <form id="formCheck" novalidate="" name="form" role="form">
+        <input type="text"
+               placeholder="请输入手机号"
+               id="tel"
+               name="tel"
+               ng-maxlength="11"
+               ng-pattern="/^1[3-8][0-9]{9}$/"
+               ng-minlength="{{user.minlength}}"
+               required
+               class="ng-invalid"
+               ng-class="{'error':form.tel.$dirty && form.tel.$invalid}"
+               ng-model="user.tel"/>
+        <!--<div ng-if="form.tel.$dirty && form.tel.$valid">手机号正确</div>-->
+        <input type="password"
+               placeholder="请输入登录密码"
+               id="pwd"
+               name="user-pwd"
+               required
+               ng-model="user.pwd"/>
+        <input type="button" value="登录" id="submit" ng-click="checkValue()" ng-disabled="form.$invalid"/>
+    </form>
+</div>
+<style>
+    @import 'css/login.css';
+</style>

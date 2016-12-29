@@ -1,4 +1,4 @@
-angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap"])
+angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCookie"])
     .config(["$stateProvider","$urlRouterProvider",routeConfig])
     .run(['$rootScope',function($rootScope,$location) {
         $rootScope.$on("$stateChangeSuccess",function(ev, to, toParams, from, fromParams){//UI-route路由器发生变化1.$stateChangeError;2.$stateChangeStart;3.$stateChangeSuccess;4.$stateNotFound
@@ -23,7 +23,7 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap"])
     .controller('tabchange', function ($scope,CalcService,$location) {//标签切换
         this.tab=1;
     })
-    .controller('CalcController',function($scope,CalcService,$location,$state,$rootScope,$location){
+    .controller('CalcController',function($scope,CalcService,$location,$state,$rootScope){
         // CalcService.square(17)
         // $scope.$on("$viewContentLoaded",function(){
         //     var showNavTag=["home","safeFinacial","tab"];
@@ -59,7 +59,7 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
             title:'主页',
             resolve:{
                 deps:["$ocLazyLoad",function($ocLazyLoad){
-                    return $ocLazyLoad.load("js/app/regularFinacial.js");
+                    return $ocLazyLoad.load("js/user/regularFinacial.js");
                 }]
             }
         })
@@ -70,7 +70,7 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
             title:'保险理财',
             resolve:{
                 deps:["$ocLazyLoad",function($ocLazyLoad){
-                    return $ocLazyLoad.load("js/app/insuranceFin.js");
+                    return $ocLazyLoad.load("js/user/insuranceFin.js");
                 }]
             }
         })
@@ -81,7 +81,7 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
             title:'基金',
             resolve:{
                 deps:["$ocLazyLoad",function($ocLazyLoad){
-                    return $ocLazyLoad.load("js/app/fund.js");
+                    return $ocLazyLoad.load("js/user/fund.js");
                 }]
             }
         })
@@ -105,7 +105,7 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
             title:'理财详情',
             resolve:{
                 deps:["$ocLazyLoad",function($ocLazyLoad){
-                    return $ocLazyLoad.load("js/app/loanOneDetail.js");
+                    return $ocLazyLoad.load("js/user/loanOneDetail.js");
                 }]
             }
         })
@@ -116,9 +116,20 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
             title:'购买记录',
             resolve:{
                 deps:["$ocLazyLoad",function($ocLazyLoad){
-                    return $ocLazyLoad.load('js/app/loanDetailRecords.js');
+                    return $ocLazyLoad.load('js/user/loanDetailRecords.js');
                 }]
             }
+        })
+        .state('login',{
+            url:'/login',
+            templateUrl:'html/login.html',
+            controller:'loginCtrl',
+            title:'登录',
+            resolve:{
+                deps:["$ocLazyLoad",function($ocLazyLoad){
+                    return $ocLazyLoad.load('js/user/login.js');
+                }
+            ]}
         })
     // $state.transitionTo($state.current, $stateParams, {
     //     reload: true, inherit: false, notify: true
