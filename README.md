@@ -7,10 +7,20 @@
  ng-options 针对一个对象<br>
  ng-repeat 字符串<br>
 #directive
- restrict:E(元素)<my-directive></my-directive><br>
- 	  A(属性)<div my-directive="expression"></div><br>
-	  C(类名)<div class="my-directive"></div><br>
- template:1>html元素		<br>
+ restrict:E(元素)
+  ```
+  	<my-directive></my-directive>
+  ```
+ 	  A(属性)
+	  ```
+	  <div my-directive="expression"></div>
+	  ```<br>
+	  C(类名)
+	  ```
+	  <div class="my-directive"></div>
+	  ```
+	  <br>
+ template:1>html元素<br>
   	  2>接收两个参数的函数<br>
  templateUrl:1>外部html文件<br>
              2>同template<br>
