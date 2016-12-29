@@ -55,7 +55,8 @@ gulp.task('browserSync', function () {
     };
     options.files = [
       './**/*',
-      '!'+paths + 'css/*.less'
+      // '!'+paths + 'css/*.less'
+      //   './dev/css/*'
 
     ];
     browserSync(options);

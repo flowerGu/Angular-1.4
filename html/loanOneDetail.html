@@ -1,7 +1,4 @@
-<div class="common-title">
-    <a ui-sref="home" class="back "></a>
-    理财详情
-</div>
+<header></header>
 <div class="loanOne-head">
     <p class="loan-name" ng-bind="value.loan.name"></p>
     <div>
@@ -67,8 +64,8 @@
     <span ng-bind="x.title"></span>
     <a class="next-a"></a>
 </h3>
-<button ng-if="value.loan.status.toUpperCase()=='OPENED'"class="loan-btn btn-default">立即购买</button>
-<button ng-if="value.loan.status.toUpperCase()=='CLOSED'"class="loan-btn btn-disabled">收益中</button>
+<button ng-if="value.loan.status.toUpperCase()=='OPENED'"class="loan-btn btn-default" ng-click="buyNow()">立即购买</button>
+<button ng-if="value.loan.status.toUpperCase()!='OPENED'"class="loan-btn btn-disabled">收益中</button>
 <style>
     @import './css/loanOne.css'
 </style>

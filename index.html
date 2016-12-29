@@ -2,7 +2,7 @@
 <html lang="en" ng-app="apps">
 <head>
     <meta charset="UTF-8">
-    <title>金融-h5</title>
+    <title>Me推荐</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -10,15 +10,14 @@
     <link rel="stylesheet" type="text/css" href="../node_modules/angular-ui-grid/ui-grid.min.css">
     <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/css.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
     <style>
       *{margin:0;padding:0;}
       ul.nav-list-page li{float:left;text-align:center;width:100px;height:50px;line-height:50px;}
-        body{
-            font-family:'微软雅黑',Arial
-        }
     </style>
 </head>
 <body ng-controller = "CalcController">
+
  <ul class="nav-list-page" style="display:none" >
    <li ng-class="{active:active == 0}"><a href="#/home">定期理财</a></li>
    <li ng-class="{active:active == 1}"><a href="#/safeFinacial">保险理财</a></li>
@@ -56,7 +55,8 @@
     <script src="js/angular/angular-cookie.js"></script>
     <script src="../node_modules/angular-ui-grid/ui-grid.min.js"></script>
     <script src="app.js"></script>
-    <script src="js/angular/service.js"></script>
+    <script src="js/directive.js"></script>
+    <script src="js/service.js"></script>
     <script src="js/filter.js"></script>
 
     <!--<script>-->

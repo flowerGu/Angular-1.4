@@ -23,7 +23,7 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
     .controller('tabchange', function ($scope,CalcService,$location) {//标签切换
         this.tab=1;
     })
-    .controller('CalcController',function($scope,CalcService,$location,$state,$rootScope){
+    .controller('CalcController',function($scope,CalcService,$location,$state){
         // CalcService.square(17)
         // $scope.$on("$viewContentLoaded",function(){
         //     var showNavTag=["home","safeFinacial","tab"];

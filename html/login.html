@@ -1,7 +1,4 @@
-<div class="common-title">
-    <a ui-sref="home" class="back "></a>
-    登录
-</div>
+<header></header>
 <div class="m-form_wrap">
     <form id="formCheck" novalidate="" name="form" role="form">
         <input type="text"
@@ -15,7 +12,6 @@
                class="ng-invalid"
                ng-class="{'error':form.tel.$dirty && form.tel.$invalid}"
                ng-model="user.tel"/>
-        <!--<div ng-if="form.tel.$dirty && form.tel.$valid">手机号正确</div>-->
         <input type="password"
                placeholder="请输入登录密码"
                id="pwd"
@@ -25,6 +21,7 @@
         <input type="button" value="登录" id="submit" ng-click="checkValue()" ng-disabled="form.$invalid"/>
     </form>
 </div>
+
 <style>
     @import 'css/login.css';
 </style>

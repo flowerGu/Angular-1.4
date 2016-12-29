@@ -2,7 +2,7 @@
  * Created by gupeiling on 2016/12/19.
  */
 var app=angular.module('apps');
-app.controller('loanOne',function($scope,$state,$stateParams,$http,analyticsInfo){
+app.controller('loanOne',function($scope,$state,$stateParams,$http,ipCookie,analyticsInfo){
     $http.get('./json/loanOne.json?id='+Math.random())
         .then(function(response){
             if(response.data.success){
@@ -27,4 +27,9 @@ app.controller('loanOne',function($scope,$state,$stateParams,$http,analyticsInfo
             }
     })
     $scope.analyticsInfo = analyticsInfo;
+    $scope.buyNow = function(){
+        if(!ipCookie('TOKENID')){
+            analyticsInfo.locationNext({url:'login'})
+        }
+    }
 })
