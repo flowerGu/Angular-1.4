@@ -20,10 +20,10 @@
 	<div class="my-directive"></div>
 ```
 	  <br>
- ###template:1>html元素<br>
+ ##template:1>html元素
   	    2>接收两个参数的函数<br>
- ###templateUrl:
+ ##templateUrl:
  	     1>外部html文件<br>
              2>同template<br>
- ###replace:false（默认）<br>
+ ##replace:false（默认）<br>
     将template/templateUrl的内容当作子元素插入到指令元素内部
