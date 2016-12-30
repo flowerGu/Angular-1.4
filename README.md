@@ -7,7 +7,7 @@
  ng-options 针对一个对象<br>
  ng-repeat 字符串<br>
 #directive
- restrict:E(元素)
+ ##restrict:E(元素)
   ```
   	<my-directive></my-directive>
   ```
@@ -20,8 +20,10 @@
 	<div class="my-directive"></div>
 ```
 	  <br>
- template:1>html元素<br>
-  	  2>接收两个参数的函数<br>
- templateUrl:1>外部html文件<br>
+ ###template:1>html元素<br>
+  	    2>接收两个参数的函数<br>
+ ###templateUrl:
+ 	     1>外部html文件<br>
              2>同template<br>
- replace:false（默认）将template/templateUrl的内容当作子元素插入到指令元素内部
+ ###replace:false（默认）<br>
+    将template/templateUrl的内容当作子元素插入到指令元素内部
