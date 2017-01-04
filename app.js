@@ -99,7 +99,7 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
         })
         .state('loanOneDetail',{
             // params:{'title':null},
-            url:'/loanOneDetail/?:title:id',
+            url:'/loanOneDetail?:title:id',
             templateUrl:'html/loanOneDetail.html',
             controller:'loanOne',
             title:'理财详情',
@@ -132,16 +132,28 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
             ]}
         })
         .state('annuity',{
-            url:'/annuity/?:productId',
+            url:'/annuity?:productId',
             templateUrl:'html/annuityDetail.html',
             controller:'annuity',
-            title:'',
+            title:'保险详情',
             resolve:{
                 deps:["$ocLazyLoad",function($ocLazyLoad){
                     return $ocLazyLoad.load('js/user/annuity.js');
                 }]
             }
         })
+        .state('notice',{
+            url:'/notice?:type',
+            templateUrl:'html/notice.html',
+            controller:'noticeController',
+            title:'产品须知',
+            resolve:{
+                deps:["$ocLazyLoad",function($ocLazyLoad){
+                    return $ocLazyLoad.load('js/user/notice.js');
+                }]
+            }
+        })
+
     // $state.transitionTo($state.current, $stateParams, {
     //     reload: true, inherit: false, notify: true
     // });

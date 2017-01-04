@@ -1,0 +1,19 @@
+<ul class="secNav">
+    <li ng-class="{active:hl=='intro'}" ng-click="changeType('intro')">产品介绍</li>
+    <li ng-class="{active:hl=='notice'}" ng-click="changeType('notice')">购买须知</li>
+    <li ng-class="{active:hl=='pro'}" ng-click="changeType('pro')">常见问题</li>
+</ul>
+<div ng-show="hl=='intro'">
+    <img ng-src="images/annuity-img/F-1.jpg"/>
+    <img ng-src="images/annuity-img/F-2.jpg"/>
+</div>
+<div ng-show="hl=='notice'">
+    <img ng-src="images/annuity-img/F-3.jpg"/>
+    <img ng-src="images/annuity-img/F-4.jpg"/>
+</div>
+<div ng-show="hl=='pro'">
+
+</div>
+<style>
+    @import 'css/notice.css'
+</style>

@@ -27,10 +27,15 @@
     <dl>
         <dt>产品说明</dt>
         <dd class="readme">
-
         </dd>
     </dl>
 </div>
+<h3 ng-repeat="nos in noticeLocation"  ng-click="analyticsInfo.locationNext({url:'notice',params:{type:nos.types}})">
+    <span ng-bind="nos.name"></span>
+    <a class="next-a"></a>
+</h3>
+
+<div class="loan-btn btn-default">立即购买</div>
 <style>
     @import './css/annuityDetail.css';
 </style>

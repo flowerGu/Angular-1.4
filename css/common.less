@@ -13,3 +13,47 @@
     .setArrow(left,12px,#000,1px)
   }
 }
+h3{//list comm
+  >a{
+    float:right;
+    color:#656565;
+  }
+  >.next-a{
+    float:right;
+    .setArrow(right,10px,#656565,1px);
+    margin-top:4px;
+  }
+  >span{
+    display:inline-block;
+    width:70%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  padding:10px 4%;
+  font-size:14px;
+  background-color:#fff;
+  border-bottom:1px solid #ddd;
+  &:last-of-type{
+    margin-bottom:50px;
+
+  }
+}
+.loan-btn{
+  position:fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:40px;
+  line-height:40px;
+  color:#fff;
+  text-align:center;
+  &.btn-default{
+    background-color:@base-color;
+    color:#fff;
+  }
+  &.btn-diabled{
+    background-color:#ddd;
+    color:#fff;
+  }
+}

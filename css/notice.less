@@ -1,0 +1,24 @@
+@import 'common.less';
+.secNav{
+  .flex;
+  width:100%;
+  background-color:#fff;
+  font-size:14px;
+  color:#333;
+  >li{
+    float:left;
+    display:inline-block;
+    height:3rem;
+    line-height:3rem;
+    &.active{
+      color:@base-color;
+      border-bottom:2px solid @base-color;
+    }
+  }
+}
+div{
+  width:100%;
+  >img{
+    width:100%;
+  }
+}

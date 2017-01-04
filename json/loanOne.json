@@ -26,7 +26,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/0AF11425-8119-4772-A169-BCE80D3A8A54",
+                "url": "#/h5/loan/moreDetail/0AF11425-8119-4772-A169-BCE80D3A8A54",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -64,7 +64,7 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+                "url": "#/h5/static/loan/safeguratee-fengyy"
             },
             "corporation": {
                 "title": "海航实业提供100%本金收益保障",
@@ -87,12 +87,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/0AF11425-8119-4772-A169-BCE80D3A8A54"
+                    "appUrl": "#/financing/investors/0AF11425-8119-4772-A169-BCE80D3A8A54"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -128,7 +128,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/26673B0E-B205-4C6F-913B-0715CB2F777E",
+                "url": "#/h5/loan/moreDetail/26673B0E-B205-4C6F-913B-0715CB2F777E",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -166,7 +166,7 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+                "url": "#/h5/static/loan/safeguratee-fengyy"
             },
             "corporation": {
                 "title": "银达担保提供100%本金收益保障",
@@ -189,12 +189,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/26673B0E-B205-4C6F-913B-0715CB2F777E"
+                    "appUrl": "#/financing/investors/26673B0E-B205-4C6F-913B-0715CB2F777E"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -230,7 +230,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/6A8CF5C5-77F3-4D33-AC4F-5AC155256175",
+                "url": "#/h5/loan/moreDetail/6A8CF5C5-77F3-4D33-AC4F-5AC155256175",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -268,7 +268,7 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+                "url": "#/h5/static/loan/safeguratee-fengyy"
             },
             "corporation": {
                 "title": "中信保理承诺按约定年化利率到期溢价回购",
@@ -291,12 +291,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/6A8CF5C5-77F3-4D33-AC4F-5AC155256175"
+                    "appUrl": "#/financing/investors/6A8CF5C5-77F3-4D33-AC4F-5AC155256175"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -338,12 +338,12 @@
             "isCanBuyInfo": {
                 "isCanBuy": true,
                 "vipInfo": "",
-                "memberSysH5Url": "https://m.fengjr.com/re/special/cms/201610-h5-VIP"
+                "memberSysH5Url": "#/re/special/cms/201610-h5-VIP"
             },
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/88838B43-09EE-48AE-9334-09511AD5C3DD",
+                "url": "#/h5/loan/moreDetail/88838B43-09EE-48AE-9334-09511AD5C3DD",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -381,7 +381,7 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+                "url": "#/h5/static/loan/safeguratee-fengyy"
             },
             "corporation": {
                 "title": "广西担保提供100%本金收益保障",
@@ -404,12 +404,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/88838B43-09EE-48AE-9334-09511AD5C3DD"
+                    "appUrl": "#/financing/investors/88838B43-09EE-48AE-9334-09511AD5C3DD"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -445,7 +445,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/566CC86E-1336-489D-9D4D-2483D1C07090",
+                "url": "#/h5/loan/moreDetail/566CC86E-1336-489D-9D4D-2483D1C07090",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -483,7 +483,7 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+                "url": "#/h5/static/loan/safeguratee-fengyy"
             },
             "corporation": {
                 "title": "华信保理承诺按约定年化利率到期溢价回购",
@@ -506,12 +506,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/566CC86E-1336-489D-9D4D-2483D1C07090"
+                    "appUrl": "#/financing/investors/566CC86E-1336-489D-9D4D-2483D1C07090"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -547,7 +547,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/9A5CB899-1ADA-4C22-9738-6CDADFEFB35B",
+                "url": "#/h5/loan/moreDetail/9A5CB899-1ADA-4C22-9738-6CDADFEFB35B",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -585,7 +585,7 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+                "url": "#/h5/static/loan/safeguratee-fengyy"
             },
             "corporation": {
                 "title": "阳光城提供100%本金收益保障",
@@ -608,12 +608,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/9A5CB899-1ADA-4C22-9738-6CDADFEFB35B"
+                    "appUrl": "#/financing/investors/9A5CB899-1ADA-4C22-9738-6CDADFEFB35B"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -649,7 +649,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/FDFEA634-84BF-42EC-93E8-C47EA330FCDD",
+                "url": "#/h5/loan/moreDetail/FDFEA634-84BF-42EC-93E8-C47EA330FCDD",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -687,12 +687,12 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+                "url": "#/h5/static/loan/safeguratee-fengyy"
             },
             "corporation": {
                 "title": "浦航租赁提供100%本金收益保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/re/special/cms/201612-h5-phzl",
+                "url": "#/re/special/cms/201612-h5-phzl",
                 "appUrl": null,
                 "companyLogo": "http://img.fengjr.com/upload/image/2016/12/16/FENGJR-AD01733FCE7642F78F95734B718CFBB3.jpg",
                 "introduction": [
@@ -710,12 +710,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/FDFEA634-84BF-42EC-93E8-C47EA330FCDD"
+                    "appUrl": "#/financing/investors/FDFEA634-84BF-42EC-93E8-C47EA330FCDD"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -751,7 +751,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/78A436B0-3948-4802-B4C4-9D65133208C2",
+                "url": "#/h5/loan/moreDetail/78A436B0-3948-4802-B4C4-9D65133208C2",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -789,7 +789,7 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+                "url": "#/h5/static/loan/safeguratee-fengyy"
             },
             "corporation": {
                 "title": "金控租赁承诺按约定年化利率到期溢价回购",
@@ -812,12 +812,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/78A436B0-3948-4802-B4C4-9D65133208C2"
+                    "appUrl": "#/financing/investors/78A436B0-3948-4802-B4C4-9D65133208C2"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -853,7 +853,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/61F16789-7CDC-4565-A5EB-2432E0931DBB",
+                "url": "#/h5/loan/moreDetail/61F16789-7CDC-4565-A5EB-2432E0931DBB",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -891,12 +891,12 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengbb"
+                "url": "#/h5/static/loan/safeguratee-fengbb"
             },
             "corporation": {
                 "title": "天安财险提供100%本息保证保险",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/re/special/cms/201612-h5-tacx",
+                "url": "#/re/special/cms/201612-h5-tacx",
                 "appUrl": null,
                 "companyLogo": "http://img.fengjr.com/upload/image/2016/12/6/FENGJR-718506ED7C994EB4B3145478D636E727.jpg",
                 "introduction": [
@@ -914,12 +914,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/61F16789-7CDC-4565-A5EB-2432E0931DBB"
+                    "appUrl": "#/financing/investors/61F16789-7CDC-4565-A5EB-2432E0931DBB"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -955,7 +955,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/4D286E5B-A0EB-4BD9-ABAF-1A692AC8D70B",
+                "url": "#/h5/loan/moreDetail/4D286E5B-A0EB-4BD9-ABAF-1A692AC8D70B",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -993,7 +993,7 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+                "url": "#/h5/static/loan/safeguratee-fengyy"
             },
             "corporation": {
                 "title": "华融天泽承诺按约定年化利率到期溢价回购",
@@ -1016,12 +1016,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/4D286E5B-A0EB-4BD9-ABAF-1A692AC8D70B"
+                    "appUrl": "#/financing/investors/4D286E5B-A0EB-4BD9-ABAF-1A692AC8D70B"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -1057,7 +1057,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/083A4790-AE87-422C-9A21-7323B00754BA",
+                "url": "#/h5/loan/moreDetail/083A4790-AE87-422C-9A21-7323B00754BA",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -1095,7 +1095,7 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+                "url": "#/h5/static/loan/safeguratee-fengyy"
             },
             "corporation": {
                 "title": "安家世行提供100%本金收益保障",
@@ -1118,12 +1118,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/083A4790-AE87-422C-9A21-7323B00754BA"
+                    "appUrl": "#/financing/investors/083A4790-AE87-422C-9A21-7323B00754BA"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -1159,7 +1159,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/D2CF649D-E120-4EBF-ACB1-75683BB3F60C",
+                "url": "#/h5/loan/moreDetail/D2CF649D-E120-4EBF-ACB1-75683BB3F60C",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -1197,7 +1197,7 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+                "url": "#/h5/static/loan/safeguratee-fengyy"
             },
             "corporation": {
                 "title": "中金投承诺按约定年化利率到期溢价回购",
@@ -1220,12 +1220,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/D2CF649D-E120-4EBF-ACB1-75683BB3F60C"
+                    "appUrl": "#/financing/investors/D2CF649D-E120-4EBF-ACB1-75683BB3F60C"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -1267,7 +1267,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/F8CD9FA7-9DE8-4C25-89E8-151947EE47C1",
+                "url": "#/h5/loan/moreDetail/F8CD9FA7-9DE8-4C25-89E8-151947EE47C1",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -1305,12 +1305,12 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengbb"
+                "url": "#/h5/static/loan/safeguratee-fengbb"
             },
             "corporation": {
                 "title": "天安财险提供100%本息保证保险",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/re/special/cms/201612-h5-tacx",
+                "url": "#/re/special/cms/201612-h5-tacx",
                 "appUrl": null,
                 "companyLogo": "http://img.fengjr.com/upload/image/2016/12/6/FENGJR-718506ED7C994EB4B3145478D636E727.jpg",
                 "introduction": [
@@ -1328,12 +1328,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/F8CD9FA7-9DE8-4C25-89E8-151947EE47C1"
+                    "appUrl": "#/financing/investors/F8CD9FA7-9DE8-4C25-89E8-151947EE47C1"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -1369,7 +1369,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/D1A5EBE3-349F-435E-B611-962668DCAEC2",
+                "url": "#/h5/loan/moreDetail/D1A5EBE3-349F-435E-B611-962668DCAEC2",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -1407,7 +1407,7 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+                "url": "#/h5/static/loan/safeguratee-fengyy"
             },
             "corporation": {
                 "title": "瀚华担保承诺按约定年化利率到期溢价回购",
@@ -1430,12 +1430,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/D1A5EBE3-349F-435E-B611-962668DCAEC2"
+                    "appUrl": "#/financing/investors/D1A5EBE3-349F-435E-B611-962668DCAEC2"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
@@ -1471,7 +1471,7 @@
             "productDetail": {
                 "title": "产品详情",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/loan/moreDetail/989B6884-1BC1-4FF6-8A78-32B2F0A88334",
+                "url": "#/h5/loan/moreDetail/989B6884-1BC1-4FF6-8A78-32B2F0A88334",
                 "appUrl": "",
                 "productInfo": [
                     {
@@ -1509,7 +1509,7 @@
             "safetyProtection": {
                 "title": "安全保障",
                 "subTitle": "更多",
-                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+                "url": "#/h5/static/loan/safeguratee-fengyy"
             },
             "corporation": {
                 "title": "瀚华担保承诺按约定年化利率到期溢价回购",
@@ -1532,12 +1532,12 @@
                     "title": "购买记录",
                     "type": "",
                     "url": "",
-                    "appUrl": "https://m.fengjr.com/financing/investors/989B6884-1BC1-4FF6-8A78-32B2F0A88334"
+                    "appUrl": "#/financing/investors/989B6884-1BC1-4FF6-8A78-32B2F0A88334"
                 },
                 {
                     "title": "常见问题",
                     "type": "",
-                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "url": "#/h5/static/loan/regularIssues",
                     "appUrl": ""
                 },
                 {
