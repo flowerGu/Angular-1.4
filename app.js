@@ -131,6 +131,17 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
                 }
             ]}
         })
+        .state('annuity',{
+            url:'/annuity/?:productId',
+            templateUrl:'html/annuityDetail.html',
+            controller:'annuity',
+            title:'',
+            resolve:{
+                deps:["$ocLazyLoad",function($ocLazyLoad){
+                    return $ocLazyLoad.load('js/user/annuity.js');
+                }]
+            }
+        })
     // $state.transitionTo($state.current, $stateParams, {
     //     reload: true, inherit: false, notify: true
     // });

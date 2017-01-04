@@ -1,6 +1,6 @@
 <header></header>
-<div class="loanOne-head">
-    <p class="loan-name" ng-bind="value.loan.name"></p>
+<div class="loanOne-head" ng-show="data.success">
+    <p class="loan-name"><span  ng-bind="value.loan.name"></span><tag ng-show="value.loan.tag" ng-bind="value.loan.tag"></tag></p>
     <div>
         <dl>
             <dt ><span ng-bind="value.loan.rate"></span>%</dt>

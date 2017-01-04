@@ -41,10 +41,7 @@ gulp.task('browserSync', function () {
     };
   function serveApp() {
     gulp.watch(
-        [paths+'css/*.less',
-         paths+'css/**/*.less'
-        ],
-
+        [ 'css/**/*.less'],
         ['styles']);
     options.server = {
       baseDir:[
@@ -54,22 +51,23 @@ gulp.task('browserSync', function () {
       ]
     };
     options.files = [
-      './**/*',
-      // '!'+paths + 'css/*.less'
-      //   './dev/css/*'
-
+       '!'+ './css/**/*.less',
+        './**/*',
+      './dev/css/*'
     ];
     browserSync(options);
   }
   serveApp();
 });
 gulp.task('styles',function(){
-    return gulp.src([paths+'css/*.less',paths+'css/**/*'])
+    return gulp.src(['css/*.less'],{base:'css/'})
         .pipe($.plumber({ errorHandler: swallowError }))
-        .pipe($.less())
+        .pipe($.less({
+            paths: [path.join(__dirname, 'css')]
+        }))
         .pipe($.autoprefixer())
         .pipe($.cssnano())
-        .pipe(gulp.dest(paths+'dev/css'))
+        .pipe(gulp.dest('dev/css'))
 
 })
 

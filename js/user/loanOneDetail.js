@@ -6,6 +6,7 @@ app.controller('loanOne',function($scope,$state,$stateParams,$http,ipCookie,anal
     $http.get('./json/loanOne.json?id='+Math.random())
         .then(function(response){
             if(response.data.success){
+                $scope.data = response.data;
                 var dataItem = response.data.data;
                 for(var i=0;i<dataItem.length;i++){
                     if($stateParams.id == dataItem[i].loan.id){

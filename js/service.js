@@ -4,9 +4,10 @@
 var app=angular.module('apps');
 app.service('analyticsInfo',function($state){
    this.locationNext = function(opts){
-       if(opts.url){
+       if(opts.params){
+           $state.go(opts.url,opts.params)
+       }else{
            $state.go(opts.url);
        }
    };
-
 })

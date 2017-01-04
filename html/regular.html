@@ -1,5 +1,5 @@
 <ul>
-    <li class="product-item-box" ng-repeat="item in list" ng-click="loanListMap(item)">
+    <li class="product-item-box" ng-repeat="item in list" ng-click="loanListMap({'url':'loanOneDetail','params':{id:item.id}})">
         <h4 class="product-item-title">
             <span ng-bind="item.corporationShortName+'100%本息保障'"></span>
             <span>可投{{item.balance | separator}}元</span>

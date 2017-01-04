@@ -1,0 +1,870 @@
+{
+  "success": true,
+  "data": {
+    "id": "100201002",
+    "fengInsName": "月月薪·享终身",
+    "insProductUnit": "450.00",
+    "soldOutStatus": "0",
+    "appProImgForDPage": null,
+    "appProDescForDPage": null,
+    "appComLogoForDPage": null,
+    "appProInfoList": [
+      {
+        "appProInfo": "http://img.fengjr.com/upload/file/2016/12/21/FENGJR-851FC6F55B554075B36BD18DD9283D6C.jpg"
+      },
+      {
+        "appProInfo": "http://img.fengjr.com/upload/file/2016/12/22/FENGJR-C3165093914E4E3EB45A6B542C1744F3.jpg"
+      }
+    ],
+    "appPurNotesList": [
+      {
+        "appPurNotes": "http://img.fengjr.com/upload/file/2016/12/21/FENGJR-BFCFFCCC25354A0FA6A3138830648938.jpg"
+      },
+      {
+        "appPurNotes": "http://img.fengjr.com/upload/file/2016/12/21/FENGJR-C8ED16D89DB7411B8B7C0E52361A4DFA.jpg"
+      }
+    ],
+    "insAreaList": [
+      {
+        "code": "110000",
+        "name": "北京市",
+        "level": "1"
+      },
+      {
+        "code": "120000",
+        "name": "天津市",
+        "level": "1"
+      },
+      {
+        "code": "130000",
+        "name": "河北省",
+        "level": "1"
+      },
+      {
+        "code": "140000",
+        "name": "山西省",
+        "level": "1"
+      },
+      {
+        "code": "210000",
+        "name": "辽宁省",
+        "level": "1"
+      },
+      {
+        "code": "310000",
+        "name": "上海市",
+        "level": "1"
+      },
+      {
+        "code": "320000",
+        "name": "江苏省",
+        "level": "1"
+      },
+      {
+        "code": "330000",
+        "name": "浙江省",
+        "level": "1"
+      },
+      {
+        "code": "340000",
+        "name": "安徽省",
+        "level": "1"
+      },
+      {
+        "code": "370000",
+        "name": "山东省",
+        "level": "1"
+      },
+      {
+        "code": "410000",
+        "name": "河南省",
+        "level": "1"
+      },
+      {
+        "code": "420000",
+        "name": "湖北省",
+        "level": "1"
+      },
+      {
+        "code": "430000",
+        "name": "湖南省",
+        "level": "1"
+      },
+      {
+        "code": "440000",
+        "name": "广东省",
+        "level": "1"
+      },
+      {
+        "code": "500000",
+        "name": "重庆市",
+        "level": "1"
+      },
+      {
+        "code": "510000",
+        "name": "四川省",
+        "level": "1"
+      }
+    ],
+    "insPlanList": [],
+    "skuList": [
+      {
+        "skuId": "1612150070019295013",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019287166",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019304573",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019324066",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019278126",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019269680",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019334064",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019314184",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019295020",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019287173",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019304580",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019324073",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019278133",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019269687",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019334071",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019314191",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019295027",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019287180",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019304587",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019324080",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019278140",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019269694",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019334078",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019314198",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019295034",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019287187",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019304594",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019324087",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019278147",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019269701",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019334085",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019314205",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019295041",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019287194",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019304601",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019324094",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019278154",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      },
+      {
+        "skuId": "1612150070019278155",
+        "productName": "月月薪·享终身",
+        "areaLevel": null,
+        "areaLevelName": null,
+        "insPlanId": null,
+        "insPlanName": null,
+        "insPlanValue": null,
+        "insAmount": 450,
+        "propertyOrder": null,
+        "dutyList": [],
+        "insContent": [
+          {
+            "guaranteeProKey": "年金",
+            "guaranteeProValue": "1",
+            "guaranteeProKeyTips": ""
+          }
+        ]
+      }
+    ],
+    "defaultSkuId": "1612150070019269680",
+    "insuranceInformationList": [
+      {
+        "insuranceInformation": "http://img.fengjr.com/upload/file/2016/12/15/FENGJR-AD2B66350AC54656BF81C2686B691ACC.pdf",
+        "insuranceInformationDesc": "产品条款"
+      },
+      {
+        "insuranceInformation": "http://img.fengjr.com/upload/file/2016/12/15/FENGJR-9BE707D3458D416695C6FC70E4B630EC.pdf",
+        "insuranceInformationDesc": "投保提示书"
+      },
+      {
+        "insuranceInformation": "http://img.fengjr.com/upload/file/2016/12/15/FENGJR-9A5446C8D0D048B29788838C50B9F30E.pdf",
+        "insuranceInformationDesc": "健康告知"
+      },
+      {
+        "insuranceInformation": "http://img.fengjr.com/upload/file/2016/12/15/FENGJR-8E29D6C020EF413D800450BFC62E17D4.pdf",
+        "insuranceInformationDesc": "重要告知与声明"
+      }
+    ],
+    "insPeriod": null,
+    "periodUnit": null,
+    "holdingAge": null,
+    "templateType": "",
+    "addtionalDutyList": [],
+    "ext": {
+      "activityId": "",
+      "groupId": ""
+    },
+    "izMBDetailPageDisplay": "N",
+    "dockingMode": "",
+    "feeYear": "10年交",
+    "period": "终身",
+    "insFeature": "月交月领，交10年，领<font style=\"color:#ff6200\">终身</font>*购买<font style=\"color:#ff6200\">10天</font>后获得第一笔收入*每月领取月交金额的<font style=\"color:#ff6200\">27%-30%</font>*身故后，<font style=\"color:#ff6200\">100%</font>返还全部已交金额",
+    "productType": "05",
+    "insHistoryROI": "27-30"
+  }
+}

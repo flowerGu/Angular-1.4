@@ -1,0 +1,49 @@
+@import 'common.less';
+.annuity-header{
+  padding:2rem 4% 1rem;
+  background-color:@base-color;
+  color:#fff;
+  text-align:center;
+  >p{
+    font-size:12px;
+    >span{
+      font-size:30px;
+    }
+    &:nth-of-type(2){
+      margin-bottom:2rem;
+    }
+  }
+  >ul{
+    .flex;
+    >li{
+      float:left;
+      width:33.33%;
+      position:relative;
+      >span{
+        position:absolute;
+        right:0;
+        top:20%;
+      }
+    }
+  }
+  margin-bottom:1rem;
+}
+.annuity-part1{
+  background-color:#fff;
+  >dl{
+    .clearfix;
+    padding:5px 4%;
+    &:nth-of-type(1){
+      border-bottom:1px solid #ddd;
+    }
+    >dt{
+      float:left;
+      width:30%;
+      color:#999;
+    }
+    >dd{
+      color:#333;
+    }
+
+  }
+}

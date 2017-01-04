@@ -1,6 +1,108 @@
 {
-    "success": true,
+    "success":true,
     "data": [
+        {
+            "loan": {
+                "name": "凤溢盈-HHSY-201610-0187",
+                "id": "0AF11425-8119-4772-A169-BCE80D3A8A54",
+                "type": "1",
+                "loanRequestId": "DE1B0218-8D1D-44EF-AFEF-7298BC371747",
+                "rate": 7.3,
+                "extraRate": null,
+                "rateString": "7.3%",
+                "status": "OPENED",
+                "durationNumber": 12,
+                "durationType": "M",
+                "tag": "返现",
+                "privileges": [],
+                "remains": 795000,
+                "beginAt": 1483060123650
+            },
+            "isCanBuyInfo": {
+                "isCanBuy": true,
+                "vipInfo": "",
+                "memberSysH5Url": ""
+            },
+            "productDetail": {
+                "title": "产品详情",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/loan/moreDetail/0AF11425-8119-4772-A169-BCE80D3A8A54",
+                "appUrl": "",
+                "productInfo": [
+                    {
+                        "title": "认购规模",
+                        "key": null,
+                        "content": "1,000,000.00元"
+                    },
+                    {
+                        "title": "剩余可投",
+                        "key": null,
+                        "content": "795,000.00元"
+                    },
+                    {
+                        "title": "起投金额",
+                        "key": null,
+                        "content": "5,000.00元"
+                    },
+                    {
+                        "title": "递增金额",
+                        "key": null,
+                        "content": "1,000.00元"
+                    },
+                    {
+                        "title": "收益方式",
+                        "key": "是指产品按月支付利息，在产品到期日一次性归还本金",
+                        "content": "按月付息到期还本"
+                    },
+                    {
+                        "title": "转让规则",
+                        "key": null,
+                        "content": "起息后一个月可转让"
+                    }
+                ]
+            },
+            "safetyProtection": {
+                "title": "安全保障",
+                "subTitle": "更多",
+                "url": "https://m.fengjr.com/h5/static/loan/safeguratee-fengyy"
+            },
+            "corporation": {
+                "title": "海航实业提供100%本金收益保障",
+                "subTitle": "更多",
+                "url": "http://www.fengjr.com/mobile/dbjg/hhjc",
+                "appUrl": null,
+                "companyLogo": "http://img.fengjr.com/upload/image/2016/4/12/FENGJR-542BF59160D24EA6A1C49EA547F6F022.png",
+                "introduction": [
+                    "世界500强海航集团旗下核心产业集团",
+                    "总资产达2200亿元",
+                    "旗下6家上市公司"
+                ]
+            },
+            "supplementDesc": {
+                "title": null,
+                "content": null
+            },
+            "bottomList": [
+                {
+                    "title": "购买记录",
+                    "type": "",
+                    "url": "",
+                    "appUrl": "https://m.fengjr.com/financing/investors/0AF11425-8119-4772-A169-BCE80D3A8A54"
+                },
+                {
+                    "title": "常见问题",
+                    "type": "",
+                    "url": "https://m.fengjr.com/h5/static/loan/regularIssues",
+                    "appUrl": ""
+                },
+                {
+                    "title": "产品合同",
+                    "type": "pdf",
+                    "url": "",
+                    "appUrl": "http://www.fengjr.com/api/v2/loan/loanRequest/DE1B0218-8D1D-44EF-AFEF-7298BC371747/contract/template"
+                }
+            ]
+        },
         {
             "loan": {
                 "name": "凤溢盈-YDDB-20161208-012",
@@ -13,7 +115,7 @@
                 "status": "CLOSED",
                 "durationNumber": 12,
                 "durationType": "M",
-                "tag": null,
+                "tag": "白金专享",
                 "privileges": [],
                 "remains": 0,
                 "beginAt": 1482285600000
