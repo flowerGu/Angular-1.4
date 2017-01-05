@@ -9,23 +9,23 @@
 <section class="row" >
     <section ng-controller="modalDemo" class="col-md-6" style="margin:40px auto; float:none; background:#fff; padding:30px;">
         <script type="text/ng-template" id="myModelContent.html">
-        <div class="modal-header">
-            <h3 class="modal-title">html5jq模态框</h3>
-        </div>
-        <div class="modal-body">
-            <ul>
-                <li ng-repeat="item in items">
-                    <a ng-click="selected.item = item">{{item}}</a>
-                </li>
-                当前选择： <b>{{selected.item}}</b>
-            </ul>
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-primary" ng-click="ok()">
-                确认
-            </button>
-            <button class="btn btn-warning" ng-click="cancel()">退出</button>
-        </div>
+            <div class="modal-header">
+                <h3 class="modal-title">html5jq模态框</h3>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li ng-repeat="item in items">
+                        <a ng-click="selected.item = item">{{item}}</a>
+                    </li>
+                    当前选择： <b>{{selected.item}}</b>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" ng-click="ok()">
+                    确认
+                </button>
+                <button class="btn btn-warning" ng-click="cancel()">退出</button>
+            </div>
         </script>
         <button class="btn btn-info" ng-click="open()">点我！</button>
         <button class="btn btn-default" ng-click = "open('lg')">大模态</button>  //lg 大模态，sm小模态
@@ -34,8 +34,8 @@
         <div ng-show="selected">当前选择：{{selected}}</div>
     </section>
 </section>
-<script src="js/angular.js"></script>
-<script src="js/ui-bootstrap-tpls-0.12.1.min.js"></script>
+<script src="../js/angular/angular.js"></script>
+<script src="../js/angular/ui-bootstrap-tpls-0.12.1.min.js"></script>
 <script>
     angular.module('myApp',['ui.bootstrap']).controller('modalDemo',function($scope,$modal,$log){
         $scope.items = ['html5','jq','FE-演示平台'];

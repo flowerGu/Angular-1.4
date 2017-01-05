@@ -11,8 +11,11 @@
     <img ng-src="images/annuity-img/F-3.jpg"/>
     <img ng-src="images/annuity-img/F-4.jpg"/>
 </div>
-<div ng-show="hl=='pro'">
-
+<div ng-show="hl=='pro'" >
+<dl ng-repeat="faq in results">
+    <dt><span>Q</span><label ng-bind="faq.content"></label></dt>
+    <dd><span>A</span><p ng-bind="faq.repayContent"></p></dd>
+</dl>
 </div>
 <style>
     @import 'css/notice.css'

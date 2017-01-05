@@ -16,4 +16,7 @@ app.controller('annuity',function($scope,$http,analyticsInfo){
             }
         })
     $scope.analyticsInfo = analyticsInfo;
+    $scope.als=function(){
+        console.log('成功向指令中传递方法')
+    }
 })

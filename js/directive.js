@@ -6,23 +6,20 @@ app.directive('header', function() {
     return {
         replace:false,
         template: function(element,attrs) {
-            if(attrs.name){
                 return '<div class="common-title">' +
                     '<a ng-click="goBack()" class="back"></a>'+
-                    '<span style="margin-left:-30px;">'+attrs.name +'</span>' +
+                    '<span style="margin-left:-30px;" ng-click="fn()">{{name}}</span>' +
                     '</div>'
-            }else{
-                return '<div class="common-title">' +
-                    '<a ng-click="goBack()" class="back"></a>'+
-                    '<span style="margin-left:-30px;">'+document.title +'</span>' +
-                    '</div>'
-            }
-
         },
-        controller:function($scope){
-            $scope.goBack = function(){
+        scope:{
+            fn:"=fn",
+            name:'@'
+        },
+        link:function(scope,element,attrs){
+            scope.goBack = function(){
                 window.history.go(-1)
             }
+            scope.name = scope.name || document.title
         }
     };
 });
