@@ -1,0 +1,70 @@
+{
+  "totalNumberOfBorrowing": 4651,
+  "balance": 65998.57,
+  "maxSingleBalance": {
+    "value": 600.00,
+    "percent": 1.04
+  },
+  "maxTenBalance": {
+    "value": 5158.00,
+    "percent": 8.98
+  },
+  "lendDataStatistics": {
+    "list": [
+      {
+        "name": "50后",
+        "value": 17.93,
+        "color": "#62cfff"
+      },
+      {
+        "name": "60后",
+        "value": 16.31,
+        "color": "#3dcbc9"
+      },
+      {
+        "name": "70后",
+        "value": 18.08,
+        "color": "#fd6d65"
+      },
+      {
+        "name": "80后",
+        "value": 28.49,
+        "color": "#bb97ff"
+      },
+      {
+        "name": "90后",
+        "value": 11.41,
+        "color": "#d39d82"
+      },
+      {
+        "name": "其它",
+        "value": 7.78,
+        "color": "#feb955"
+      }
+    ],
+    "numberOfBorrowing":8165,
+    "sexDistribution":[
+      {
+        "name":"男",
+        "value":35.62
+      },
+      {
+        "name":"女",
+        "value":64.38
+      }
+    ]
+  },
+  "top10":[
+    "河北",
+    "上海",
+    "山东",
+    "北京",
+    "福建",
+    "江苏",
+    "辽宁",
+    "浙江",
+    "吉林",
+    "天津"
+  ],
+  "upDataTime":"线上数据截止：2016.12.01"
+}

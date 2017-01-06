@@ -1,15 +1,15 @@
 {
   "imageList": [
     {
-      "image": "http://app.fengjr.com/public/dist/apk/res/img/homeimg-1480497278217.jpg",
+      "image": "../images/fund/homeimg-1.jpg",
       "openurl": "#re/special/guess/market/home"
     },
     {
-      "image": "http://app.fengjr.com/public/dist/apk/res/img/homeimg-1480497227340.jpg",
+      "image": "../images/fund/homeimg-2.png",
       "openurl": "#re/special/cms/201611-h5-jjjl"
     },
     {
-      "image": "http://app.fengjr.com/public/dist/apk/res/img/homeimg-1481856905161.png",
+      "image": "../images/fund/homeimg-3.jpg",
       "openurl": "#re/special/cms/201612-h5-12fundhb"
     }
   ],

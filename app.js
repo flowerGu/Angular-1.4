@@ -2,7 +2,7 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
     .config(["$stateProvider","$urlRouterProvider",routeConfig])
     .run(['$rootScope',function($rootScope,$location) {
         $rootScope.$on("$stateChangeSuccess",function(ev, to, toParams, from, fromParams){//UI-route路由器发生变化1.$stateChangeError;2.$stateChangeStart;3.$stateChangeSuccess;4.$stateNotFound
-            var showNavTag=["home","safeFinacial","fund","tab"];
+            var showNavTag=["home","safeFinacial","fund","platformData"];
            if(showNavTag.indexOf(to.name)>-1){//加载时，判断顶部nav显示
                document.getElementsByClassName('nav-list-page')[0].style.display='';
                var url = to.url//页面重新加载时，给指定的导航选项添加高亮
@@ -20,9 +20,6 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
         });
 
     }])
-    .controller('tabchange', function ($scope,CalcService,$location) {//标签切换
-        this.tab=1;
-    })
     .controller('CalcController',function($scope,CalcService,$location,$state){
         // CalcService.square(17)
         // $scope.$on("$viewContentLoaded",function(){
@@ -85,15 +82,15 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
                 }]
             }
         })
-        .state('tab',{
-            url:'/tab',
-            templateUrl:'html/tab.html',
-            controller:'tabchange',
-            controllerAs:'vm',
+        .state('platformData',{
+            url:'/platformData',
+            templateUrl:'html/platformData.html',
+            controller:'platformDataCtrl',
+            // controllerAs:'vm',
             title:'保险',
             resolve:{
                 deps:["$ocLazyLoad",function($ocLazyLoad){
-                    // console.log('保险')
+                    return $ocLazyLoad.load('js/user/platformData.js');
                 }]
             }
         })

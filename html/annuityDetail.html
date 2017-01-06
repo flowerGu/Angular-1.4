@@ -4,17 +4,17 @@
  <p>每月领取月交金额</p>
     <ul>
         <li>
-            <p>450.00元/份</p>
+            <p ng-bind="data.insProductUnit+' 元/份'"></p>
             <p>月交金额</p>
             <span>|</span>
         </li>
         <li>
-            <p>10年交</p>
+            <p ng-bind="data.feeYear"></p>
             <p>交费期限</p>
             <span>|</span>
         </li>
         <li>
-            <p>终身</p>
+            <p ng-bind="data.period"></p>
             <p>保障期限</p>
         </li>
     </ul>
@@ -26,19 +26,16 @@
     </dl>
     <dl>
         <dt>产品说明</dt>
-        <dd class="readme">
-        </dd>
+        <dd class="readme"></dd>
     </dl>
 </div>
 <h3 ng-repeat="nos in noticeLocation"  ng-click="analyticsInfo.locationNext({url:'notice',params:{type:nos.types}})">
     <span ng-bind="nos.name"></span>
     <a class="next-a"></a>
 </h3>
-
+<p>
+</p>
 <div class="loan-btn btn-default">立即购买</div>
 <style>
     @import './css/annuityDetail.css';
 </style>
-<script>
-
-</script>
