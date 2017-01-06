@@ -29,3 +29,17 @@
  ##replace
  	false（默认）<br>
    	将template/templateUrl的内容当作子元素插入到指令元素内部
+#ng实现load
+	1> angular.element(window).bind('load', function() {  
+            alert('1');  
+	});  
+	2> $scope.$on('$viewContentLoaded', function() {  
+                alert('1'); 
+            });  
+	3> $scope.$watch('$viewContentLoaded', function() {  
+                alert('1');  
+            });
+	4> <div data-ng-init="load()" ></div> 
+		$scope.load = function() {  
+                 alert('code here');  
+            }  
