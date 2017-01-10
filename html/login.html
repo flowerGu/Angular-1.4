@@ -7,7 +7,6 @@
                name="tel"
                ng-maxlength="11"
                ng-pattern="/^1[3-8][0-9]{9}$/"
-               ng-minlength="{{user.minlength}}"
                required
                class="ng-invalid"
                ng-class="{'error':form.tel.$dirty && form.tel.$invalid}"
@@ -17,11 +16,13 @@
                id="pwd"
                name="user-pwd"
                required
+               ng-minlength="{{user.minlength}}"
+               ng-maxlength="{{user.maxlength}}"
+               ng-pattern="/(?!^[0-9]+$)(?!^[A-z]+$)(?!^[^A-z0-9]+$)^.{6,16}$/"
                ng-model="user.pwd"/>
         <input type="button" value="登录" id="submit" ng-click="checkValue()" ng-disabled="form.$invalid"/>
     </form>
 </div>
-
 <style>
     @import 'css/login.css';
 </style>

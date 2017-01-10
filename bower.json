@@ -17,6 +17,9 @@
   ],
   "dependencies": {
     "angular-cookie": "^4.1.0",
-    "angular-echarts": "^0.3.5"
+    "angular-echarts": "^0.3.5",
+    "angular-strap": "^2.3.10",
+    "angular-motion": "^0.4.4",
+    "ngAnimate": "*"
   }
 }

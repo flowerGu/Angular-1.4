@@ -1,4 +1,4 @@
-<div class="insurance-list" ng-repeat="x in data" ng-click="analyticsInfo.locationNext({'url':'annuity','params':{productId:x.id}})">
+<div class="insurance-list" ng-repeat="x in data" ng-click="analyticsInfo(x)">
     <div class="insurance-title"ng-if="!x.isHideTag" ng-bind="'保险'+x.ctag">
     </div>
     <div class="insurance-body">

@@ -14,5 +14,7 @@ app.controller('insuranceCtrl',function($scope,$http,analyticsInfo){
         },function(response){
 
         })
-    $scope.analyticsInfo = analyticsInfo;
+    $scope.analyticsInfo =function(x){
+        analyticsInfo.locationNext({'url':'annuity','params':{productId:x.id}})
+    };
 })

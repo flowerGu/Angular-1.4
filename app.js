@@ -1,4 +1,4 @@
-angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCookie"])
+angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCookie","mgcrea.ngStrap.modal"])
     .config(["$stateProvider","$urlRouterProvider",routeConfig])
     .run(['$rootScope',function($rootScope,$location) {
         $rootScope.$on("$stateChangeSuccess",function(ev, to, toParams, from, fromParams){//UI-route路由器发生变化1.$stateChangeError;2.$stateChangeStart;3.$stateChangeSuccess;4.$stateNotFound
@@ -20,7 +20,7 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
         });
 
     }])
-    .controller('CalcController',function($scope,CalcService,$location,$state){
+    .controller('CalcController',function($scope,CalcService,$location,$state,$modal){
         // CalcService.square(17)
         // $scope.$on("$viewContentLoaded",function(){
         //     var showNavTag=["home","safeFinacial","tab"];
@@ -32,6 +32,7 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
         // });
         // console.log($scope.active)
         // console.log($location.url())
+
     })
     .factory('MathService', function() {
         var factory = {};
