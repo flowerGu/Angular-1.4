@@ -1,4 +1,4 @@
-angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCookie","mgcrea.ngStrap.modal"])
+angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCookie","mgcrea.ngStrap.modal","mgcrea.ngStrap.alert"])
     .config(["$stateProvider","$urlRouterProvider",routeConfig])
     .run(['$rootScope',function($rootScope,$location) {
         $rootScope.$on("$stateChangeSuccess",function(ev, to, toParams, from, fromParams){//UI-route路由器发生变化1.$stateChangeError;2.$stateChangeStart;3.$stateChangeSuccess;4.$stateNotFound
@@ -46,11 +46,10 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
             return MathService.multiply(a, a);
         }
     })
-
-
-function routeConfig($stateProvider,$urlRouterProvider){//路由配置
-    $urlRouterProvider.otherwise("/home");//$urlRouterProvider负责监听 $location。
-    $stateProvider.state('home',{
+var stateArr = [
+    {
+        stateName:'home',
+        stateConfig:{
             url:'/home',
             templateUrl: 'html/regular.html',
             controller:'regularCtrl',
@@ -60,8 +59,11 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
                     return $ocLazyLoad.load("js/user/regularFinacial.js");
                 }]
             }
-        })
-        .state('safeFinacial',{
+        }
+    },
+    {
+        stateName:'safeFinacial',
+        stateConfig:{
             url:'/safeFinacial',
             templateUrl:'html/aboutAs.html',
             controller:'insuranceCtrl',
@@ -71,8 +73,11 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
                     return $ocLazyLoad.load("js/user/insuranceFin.js");
                 }]
             }
-        })
-        .state('fund',{
+        }
+    },
+    {
+        stateName:'fund',
+        stateConfig:{
             url:'/fund',
             templateUrl:'html/fund.html',
             controller:'fundCtrl',
@@ -82,8 +87,11 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
                     return $ocLazyLoad.load("js/user/fund.js");
                 }]
             }
-        })
-        .state('platformData',{
+        }
+    },
+    {
+        stateName:'platformData',
+        stateConfig:{
             url:'/platformData',
             templateUrl:'html/platformData.html',
             controller:'platformDataCtrl',
@@ -94,8 +102,11 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
                     return $ocLazyLoad.load('js/user/platformData.js');
                 }]
             }
-        })
-        .state('loanOneDetail',{
+        }
+    },
+    {
+        stateName:'loanOneDetail',
+        stateConfig:{
             // params:{'title':null},
             url:'/loanOneDetail?:title:id',
             templateUrl:'html/loanOneDetail.html',
@@ -106,8 +117,11 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
                     return $ocLazyLoad.load("js/user/loanOneDetail.js");
                 }]
             }
-        })
-        .state('loanRecord',{
+        }
+    },
+    {
+        stateName:'loanRecord',
+        stateConfig:{
             url:'/loanRecord',
             templateUrl:'html/loanDetailRecords.html',
             controller:'loanRecords',
@@ -117,8 +131,11 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
                     return $ocLazyLoad.load('js/user/loanDetailRecords.js');
                 }]
             }
-        })
-        .state('login',{
+        }
+    },
+    {
+        stateName:'login',
+        stateConfig:{
             url:'/login',
             templateUrl:'html/login.html',
             controller:'loginCtrl',
@@ -127,9 +144,12 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
                 deps:["$ocLazyLoad",function($ocLazyLoad){
                     return $ocLazyLoad.load('js/user/login.js');
                 }
-            ]}
-        })
-        .state('annuity',{
+                ]}
+        }
+    },
+    {
+        stateName:'annuity',
+        stateConfig:{
             url:'/annuity?:productId',
             templateUrl:'html/annuityDetail.html',
             controller:'annuity',
@@ -139,8 +159,11 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
                     return $ocLazyLoad.load('js/user/annuity.js');
                 }]
             }
-        })
-        .state('notice',{
+        }
+    },
+    {
+        stateName:'notice',
+        stateConfig:{
             url:'/notice?:type',
             templateUrl:'html/notice.html',
             controller:'noticeController',
@@ -150,7 +173,15 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
                     return $ocLazyLoad.load('js/user/notice.js');
                 }]
             }
-        })
+        }
+    },
+]
+
+function routeConfig($stateProvider,$urlRouterProvider){//路由配置
+    $urlRouterProvider.otherwise("/home");//$urlRouterProvider负责监听 $location。
+    angular.forEach(stateArr,function(data){
+        $stateProvider.state(data.stateName,data.stateConfig)
+    })
 
     // $state.transitionTo($state.current, $stateParams, {
     //     reload: true, inherit: false, notify: true
