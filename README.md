@@ -53,3 +53,7 @@
 	$scope.load = function() {  
             alert('code here');  
          }  
+
+#双向绑定
+
+	* ng-form里面的验证，只有当表达式满足验证，才会实时进行双向绑定。
