@@ -23,4 +23,44 @@ app.directive('header', function() {
         }
     };
 });
+app.directive('uiinput',function(){
+    return {
+        replace:true,
+        restrict: 'E',
+        template:'<div class="form-item"> \
+                    <input type="{{nature.type}}" \
+                    placeholder={{nature.placeholder}} \
+                    name="tel" \
+                    id ="{{nature.id}}" \
+                    ng-maxlength="{{nature.ngmaxlength}}" \
+                    ng-pattern="{{nature.ngpattern}}" \
+                    required \
+                    ng-keyup="isShow()" \
+                    autocomplete="off" \
+                    ng-model="ngModel"/> \
+                    <img src="images/close.png" style="display:none" ng-click = delDir()/>\
+                </div>',
+        link:function(scope,element,attrs){
+            scope.userDir={
+                isShow : function(e){
+                    var e = e || window.event
+                    var target = e.target || e.srcElement;
+                    if(target.value.length>0){
+                        console.log(target.id)
+                        angular.element(document.getElementById(target.id)).next().css({'display':'block'})
+                    }else{
+                        angular.element(document.getElementById(target.id)).next().css({'display':'none'})
+                    }
+                },
+                delDir : function(e){
+
+                }
+            }
+        },
+        scope:{
+            nature:'=',
+            ngModel:'='
+        }
+    }
+})
 

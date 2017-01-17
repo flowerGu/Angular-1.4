@@ -57,7 +57,7 @@
 </h3>
 <ul class="loan-props">
     <img ng-if="value.corporation.src>-1" ng-src="./images/comLogo/FENGJR-{{value.corporation.src}}.jpg" class="comLogo"/>
-    <li ng-repeat="item in value.corporation.introduction">{{$index+1+'.'+item}}</li>
+    <li ng-repeat="item in value.corporation.introduction">{{$index+1+'.'+item}} {{value.corporation.introduction.length}}</li>
 </ul>
 <!--<select ng-options="i.ID as i.Title for i in items" ng-model="someModel"></select>-->
 <h3 ng-repeat="x in value.bottomList" ng-click="analyticsInfo.locationNext({url:'loanRecord'})">

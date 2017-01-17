@@ -1,26 +1,37 @@
 <header></header>
 <div class="m-form_wrap">
+
     <form id="formCheck" novalidate="" name="form" role="form">
-        <input type="text"
-               placeholder="请输入手机号"
-               id="tel"
-               name="tel"
-               ng-maxlength="11"
-               ng-pattern="/^1[3-8][0-9]{9}$/"
-               required
-               ng-class="{'error':form.tel.$dirty && form.tel.$invalid}"
-               ng-model="user.tel"/>
-        <input type="password"
-               placeholder="请输入登录密码"
-               id="pwd"
-               name="pwd"
-               required
-               ng-minlength="{{user.minlength}}"
-               ng-pattern="/(?!^[0-9]+$)(?!^[A-z]+$)(?!^[^A-z0-9]+$)^.{6,16}$/"
-               ng-model="user.pwd"/>
+        <div class = "form-item">
+            <!--<input type="text"-->
+                   <!--placeholder="请输入手机号"-->
+                   <!--id="tel"-->
+                   <!--name="tel"-->
+                   <!--ng-maxlength="11"-->
+                   <!--ng-minlength="3"-->
+                   <!--max-length = "11"-->
+                   <!--required-->
+                   <!--ng-class="{'error':form.tel.$dirty && form.tel.$invalid}"-->
+                   <!--ng-keyup="user.isShow()"-->
+                   <!--autocomplete="off"-->
+                   <!--ng-model="user.tel"/>-->
+            <!--<img src="images/close.png" style="display:none"/>-->
+        </div>
+        <uiinput ng-model="user.tel" nature="telCom"></uiinput>
+        <div>
+            <input type="password"
+                   placeholder="请输入登录密码"
+                   id="pwd"
+                   name="pwd"
+                   required
+                   ng-minlength="{{user.minlength}}"
+                   ng-pattern="/(?!^[0-9]+$)(?!^[A-z]+$)(?!^[^A-z0-9]+$)^.{6,16}$/"
+                   ng-model="user.pwd"/>
+        </div>
         <input type="submit" value="登录" id="submit" ng-click="checkValue()"/>
         <!--<input type="submit" value="登录" id="submit" ng-click="checkValue()" ng-disabled="form.$invalid"/>//手机号及密码全都为true时才能点击-->
     </form>
+    <p class=""> <a href="#/findPwd">忘记密码</a> | 立即注册</p>
 </div>
 <style>
     @import 'css/login.css';

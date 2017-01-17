@@ -3,7 +3,7 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
     .run(['$rootScope',function($rootScope,$location) {
         $rootScope.$on("$stateChangeSuccess",function(ev, to, toParams, from, fromParams){//UI-route路由器发生变化1.$stateChangeError;2.$stateChangeStart;3.$stateChangeSuccess;4.$stateNotFound
             var showNavTag=["home","safeFinacial","fund","platformData"];
-           if(showNavTag.indexOf(to.name)>-1){//加载时，判断顶部nav显示
+               if(showNavTag.indexOf(to.name)>-1){//加载时，判断顶部nav显示
                document.getElementsByClassName('nav-list-page')[0].style.display='';
                var url = to.url//页面重新加载时，给指定的导航选项添加高亮
                var oUL = document.getElementsByClassName('nav-list-page')[0].querySelectorAll('li');
@@ -20,7 +20,7 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
         });
 
     }])
-    .controller('CalcController',function($scope,CalcService,$location,$state,$modal){
+    .controller('CalcController',function($scope,CalcService,$location,$state,$modal,$rootScope){
         // CalcService.square(17)
         // $scope.$on("$viewContentLoaded",function(){
         //     var showNavTag=["home","safeFinacial","tab"];
@@ -32,7 +32,6 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
         // });
         // console.log($scope.active)
         // console.log($location.url())
-
     })
     .factory('MathService', function() {
         var factory = {};
@@ -171,6 +170,20 @@ var stateArr = [
             resolve:{
                 deps:["$ocLazyLoad",function($ocLazyLoad){
                     return $ocLazyLoad.load('js/user/notice.js');
+                }]
+            }
+        }
+    },
+    {
+        stateName:'findPwd',
+        stateConfig:{
+            url:'/findPwd',
+            templateUrl:'html/findPwd.html',
+            // controller:'noticeController',
+            title:'忘记密码',
+            resolve:{
+                deps:["$ocLazyLoad",function($ocLazyLoad){
+                    // return $ocLazyLoad.load('js/user/notice.js');
                 }]
             }
         }
