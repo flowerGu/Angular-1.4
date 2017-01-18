@@ -5,16 +5,6 @@ var app = angular.module('apps');
 app.controller('loginCtrl',function($scope,ipCookie,analyticsInfo,$modal,$alert){
         $scope.user={
             tel:"",
-            isShow:function(e){
-                var e = e || window.event
-                var target = e.target || e.srcElement;
-                if(target.value.length>0){
-                    console.log(target.id)
-                    angular.element(document.getElementById(target.id)).next().css({'display':'block'})
-                }else{
-
-                }
-            }
         }
     $scope.telCom={
         type:'text',
@@ -26,7 +16,6 @@ app.controller('loginCtrl',function($scope,ipCookie,analyticsInfo,$modal,$alert)
         required:true,
         dirty:'form.tel.$dirty',
         invalid:'form.tel.$invalid',
-        ngmodel:$scope.user.tel
     }
     $scope.telArr=['15726684112','15726684111'];
     $scope.checkValue = function(){
