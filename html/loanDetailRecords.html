@@ -5,7 +5,7 @@
             <span class="selected" ng-if="$index<3"ng-bind="$index+1"></span>
             <span>
                 <i ng-bind="item.username"></i><br/>
-                <i>{{item.investTime | formatDate:'-'}}</i>
+                <i>{{item.investTime | date:'yyyy-MM-dd h:m:s'}}</i>
             </span>
         </div>
         <label>￥{{item.investAmount | separator }}</label>

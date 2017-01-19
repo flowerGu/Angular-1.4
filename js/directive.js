@@ -40,12 +40,12 @@ app.directive('uiinput',function(){
                     <img src="images/close.png" ng-if="ngModel" ng-click = "userDir.delDir()"/>\
                 </div>',
         link:function(scope,element,attrs){
-            scope.userDir={
-                isShow : function() {
-                }
-                delDir : function(){
-                    scope.ngModel = '';
+            console.log(scope.ngModel)
 
+            scope.userDir={
+                delDir : function(){
+                    // scope.ngModel = '';
+                    console.log(scope.ngModel.$valid,scope.ngModel)
                 }
             }
         },
