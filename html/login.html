@@ -16,10 +16,10 @@
         <!--</div>-->
         <input type="submit" value="登录" id="submit" ng-click="checkValue()"/>
         <!--<input type="submit" value="登录" id="submit" ng-click="checkValue()" ng-disabled="form.$invalid"/>//手机号及密码全都为true时才能点击-->
-        <div ng-repeat = "x in arr | filter:1">
-            <span>{{x.name+','+x.age}}</span>
-        </div>
-        {{ 1484799233528 | date:"yyyy-MM-dd"}}
+        <!--<div ng-repeat = "x in arr | filter:1">-->
+            <!--<span>{{x.name+','+x.age}}</span>-->
+        <!--</div>                                      filter :字符串 / 对象-->
+        <!--{{ 1484799233528 | date:"yyyy-MM-dd"}}            filter:date -->
     </form>
     <p><a href="#/findPwd">忘记密码</a> | 立即注册</p>
 </div>

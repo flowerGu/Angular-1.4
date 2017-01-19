@@ -44,8 +44,8 @@ app.directive('uiinput',function(){
 
             scope.userDir={
                 delDir : function(){
-                    // scope.ngModel = '';
-                    console.log(scope.ngModel.$valid,scope.ngModel)
+                    scope.ngModel = '';
+                   // console.log(scope.ngModel.$valid,scope.ngModel)
                 }
             }
         },
