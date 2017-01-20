@@ -1,21 +1,10 @@
 <header></header>
 <div class="m-form_wrap">
-
     <form id="formCheck" novalidate="" name="form" role="form">
         <uiinput ng-model = "user.tel" nature = "user.telCom"></uiinput>
         <uiinput ng-model = "user.pwd" nature = "user.pwdCom"></uiinput>
-        <!--<div>-->
-            <!--<input type="password"-->
-                   <!--placeholder="请输入登录密码"-->
-                   <!--id="pwd"-->
-                   <!--name="pwd"-->
-                   <!--required-->
-                   <!--ng-minlength="{{user.minlength}}"-->
-                   <!--ng-pattern="/(?!^[0-9]+$)(?!^[A-z]+$)(?!^[^A-z0-9]+$)^.{6,16}$/"-->
-                   <!--ng-model="user.pwd"/>-->
-        <!--</div>-->
-        <input type="submit" value="登录" id="submit" ng-click="checkValue()"/>
-        <!--<input type="submit" value="登录" id="submit" ng-click="checkValue()" ng-disabled="form.$invalid"/>//手机号及密码全都为true时才能点击-->
+        <input type="submit" value="登录" id="submit" ng-click="checkValue()" ng-disabled="form.$invalid"/>
+        <!--手机号及密码全都为true时才能点击-->
         <!--<div ng-repeat = "x in arr | filter:1">-->
             <!--<span>{{x.name+','+x.age}}</span>-->
         <!--</div>                                      filter :字符串 / 对象-->

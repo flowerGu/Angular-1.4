@@ -10,9 +10,8 @@ app.controller('loginCtrl',function($scope,$http,ipCookie,analyticsInfo,$modal,$
                 type:'text',
                 placeholder:'请输入手机号',
                 name:'tel',
-                id:'tel',
                 ngmaxlength:'11',
-                // ngpattern:'/^1[3-8][0-9]{9}$/',
+                // ngpattern:/^1[3-8][0-9]{9}$/,
                 required:true,
                 dirty:'form.tel.$dirty',
                 invalid:'form.tel.$invalid',
@@ -21,9 +20,7 @@ app.controller('loginCtrl',function($scope,$http,ipCookie,analyticsInfo,$modal,$
                 type:'password',
                 placeholder:'请输入登录密码',
                 name:'pwd',
-                id:'tel',
                 ngmaxlength:'11',
-                // ngpattern:'/^1[3-8][0-9]{9}$/',
                 required:true,
                 dirty:'form.pwd.$dirty',
                 invalid:'form.pwd.$invalid',
@@ -32,8 +29,8 @@ app.controller('loginCtrl',function($scope,$http,ipCookie,analyticsInfo,$modal,$
     $scope.telArr=['15726684112','15726684111'];
     // $scope.arr = [{name:'1laly',age:30,sex:'girl'}, {name:'Tom Sanior', age:150},{name:'Tom', age:20}, {name:'May',age:160}]
     $scope.checkValue = function(){
+        console.log(form.tel.value)
         if($scope.telArr.indexOf(form.tel.value)==-1){
-            console.log(form.tel.value)
             $modal({title:'提示',content:'没有对应数据', show: true})
             return false;
         }

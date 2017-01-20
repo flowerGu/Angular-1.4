@@ -30,17 +30,26 @@ app.directive('uiinput',function(){
         template:'<div class="form-item"> \
                     <input type="{{nature.type}}" \
                     placeholder={{nature.placeholder}} \
-                    name="tel" \
+                    name="{{nature.name}}" \
                     id ="{{nature.id}}" \
-                    ng-maxlength="{{nature.ngmaxlength}}" \
-                    ng-pattern="{{nature.ngpattern}}" \
+                    ng-keyup="show()"\
                     required \
                     autocomplete="off" \
                     ng-model="ngModel"/> \
                     <img src="images/close.png" ng-if="ngModel" ng-click = "userDir.delDir()"/>\
                 </div>',
         link:function(scope,element,attrs){
-            console.log(scope.ngModel)
+            var attr = scope.nature;
+            scope.show = function(){
+                if(attr.ngpattern){
+                    if(!attr.ngpattern.test(scope.ngModel)){
+                        angular.element(document.getElementById(attr.id)).addClass('error');
+                    }else{
+                        angular.element(document.getElementById(attr.id)).removeClass('error');
+                    }
+                }
+                // console.log(scope.ngModel,scope.nature.ngpattern)
+            }
 
             scope.userDir={
                 delDir : function(){
