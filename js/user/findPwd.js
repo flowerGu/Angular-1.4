@@ -3,13 +3,13 @@
  */
 var app = angular.module('apps');
 app.controller('findPwdCtrl',function($scope){
-    $scope.user1 = {
+    $scope.user = {
         tels:"",
         fTel:{
             type:'text',
             placeholder:'请输入手机号',
-            name:'tels',
-            id:'tels',
+            name:'tel',
+            id:'tel',
             ngmaxlength:'11',
             ngpattern:/^1[3-8][0-9]{9}$/,
             required:true,

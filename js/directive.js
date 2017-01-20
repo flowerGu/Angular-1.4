@@ -32,6 +32,7 @@ app.directive('uiinput',function(){
                     placeholder={{nature.placeholder}} \
                     name="{{nature.name}}" \
                     id ="{{nature.id}}" \
+                    ng-pattern = "nature.ngpattern"\
                     ng-keyup="show()"\
                     required \
                     autocomplete="off" \

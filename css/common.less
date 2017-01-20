@@ -65,20 +65,6 @@ h3{//list comm
   top:50%;
   transform: translate(-50%,-50%);
 }
-form{
-  margin-bottom:1rem;
-  >.form-item{
-    position:relative;
-    >img{
-      width:15px;
-      height:15px;
-      position:absolute;
-      right:4%;
-      top:50%;
-      transform:translateY(-50%);
-    }
-  }
-}
 .m-form_wrap{
   padding:.5rem 6%;
   input[type='text'],input[type='password']{
@@ -110,11 +96,24 @@ form{
     margin:0 auto;
     text-align:center;
     color:#fff;
-    background-color:@base-color;
     &[disabled]{
       cursor:not-allowed;
       filter:alpha(opacity=65);
       opacity:.65;
+    }
+  }
+}
+form{
+  margin-bottom:1rem;
+  >.form-item{
+    position:relative;
+    >img{
+      width:15px;
+      height:15px;
+      position:absolute;
+      right:4%;
+      top:50%;
+      transform:translateY(-50%);
     }
   }
 }
