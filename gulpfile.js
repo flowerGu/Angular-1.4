@@ -24,7 +24,7 @@ gulp.task('default', function () {
 });
 gulp.task('browserSync', function () {
     var options={
-        port:1320,
+        port:3000,
         injectChanges: true,
         logFileChanges: true,
         logLevel: 'info',
@@ -47,7 +47,7 @@ gulp.task('browserSync', function () {
       baseDir:[
           paths,
           paths+'dev',
-          paths+'ui-grid-master/misc'
+          // paths+'ui-grid-master/misc'
       ]
     };
     options.files = [

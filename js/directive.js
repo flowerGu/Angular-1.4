@@ -5,20 +5,24 @@ var app = angular.module('apps');
 app.directive('header', function() {
     return {
         replace:false,
-        template: function(element,attrs) {
-                return '<div class="common-title">' +
-                    '<a ng-click="goBack()" class="back"></a>'+
-                    '<span style="margin-left:-30px;" ng-click="fn()">{{name}}</span>' +
-                    '</div>'
-        },
+        restrict: "EA",
+        template: '<div class="common-title"> \
+                    <a ng-click="goBack()" class="back"></a> \
+                    <span style="margin-left:-30px;" ng-click="fnExecute()">{{name}}</span> \
+                    <span style="float:right">{{subName}}</span>\
+                    </div>'
+        ,
         scope:{
-            fn:"=fn",
-            name:'@'
+            fnExecute:"&",
+            name:'@',
+            subName:'@'
         },
-        link:function(scope,element){
+        link:function(scope,element,attrs){
+            console.log(typeof scope.fnExecute)
             scope.goBack = function(){
                 window.history.go(-1)
             }
+
             scope.name = scope.name || document.title;
         }
     };

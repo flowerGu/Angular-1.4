@@ -4,6 +4,7 @@
 var app = angular.module('apps');
 app.controller('loginCtrl',function($scope,$http,ipCookie,analyticsInfo,$modal,$alert,$q,$stateParams){
         $scope.user={
+            name:'登录',
             tel:"",
             pwd:"",
             telCom:{
@@ -11,7 +12,7 @@ app.controller('loginCtrl',function($scope,$http,ipCookie,analyticsInfo,$modal,$
                 placeholder:'请输入手机号',
                 name:'tel',
                 ngmaxlength:'11',
-                // ngpattern:/^1[3-8][0-9]{9}$/,
+                ngpattern:/^1[3-8][0-9]{9}$/,
                 required:true,
                 dirty:'form.tel.$dirty',
                 invalid:'form.tel.$invalid',
@@ -22,6 +23,7 @@ app.controller('loginCtrl',function($scope,$http,ipCookie,analyticsInfo,$modal,$
                 name:'pwd',
                 ngmaxlength:'11',
                 required:true,
+                ngpattern:/(?!^[0-9]+$)(?!^[A-z]+$)(?!^[^A-z0-9]+$)^.{6,16}$/,
                 dirty:'form.pwd.$dirty',
                 invalid:'form.pwd.$invalid',
             }
@@ -71,5 +73,4 @@ app.controller('loginCtrl',function($scope,$http,ipCookie,analyticsInfo,$modal,$
     //             return $scope.data.insAreaList.length
     //         }
     //     }))//解决异步问题
-
 })

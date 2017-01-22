@@ -46,81 +46,75 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
         }
     })
 var stateArr = [
-    {
-        stateName:'home',
-        stateConfig:{
-            url:'/home',
-            templateUrl: 'html/regular.html',
-            controller:'regularCtrl',
-            title:'主页',
-            resolve:{
-                deps:["$ocLazyLoad",function($ocLazyLoad){
-                    return $ocLazyLoad.load("js/user/regularFinacial.js");
-                }]
+
+]
+
+function routeConfig($stateProvider,$urlRouterProvider){//路由配置
+    $urlRouterProvider.otherwise("/home");//$urlRouterProvider负责监听 $location。
+    angular.forEach(stateArr,function(data){
+        $stateProvider.state(data.stateName,data.stateConfig)
+    })
+    $stateProvider.state('home',{
+                url:'/home',
+                templateUrl: 'html/regular.html',
+                controller:'regularCtrl',
+                title:'主页',
+                resolve:{
+                    deps:["$ocLazyLoad",function($ocLazyLoad){
+                        return $ocLazyLoad.load("js/user/regularFinacial.js");
+                    }]
+                }
+            })
+        .state('safeFinacial',{
+                url:'/safeFinacial',
+                templateUrl:'html/aboutAs.html',
+                controller:'insuranceCtrl',
+                title:'保险理财',
+                resolve:{
+                    deps:["$ocLazyLoad",function($ocLazyLoad){
+                        return $ocLazyLoad.load("js/user/insuranceFin.js");
+                    }]
+                }
+            })
+        .state('fund',{
+                url:'/fund',
+                templateUrl:'html/fund.html',
+                controller:'fundCtrl',
+                title:'基金',
+                resolve:{
+                    deps:["$ocLazyLoad",function($ocLazyLoad){
+                        return $ocLazyLoad.load("js/user/fund.js");
+                    }]
+                }
             }
-        }
-    },
-    {
-        stateName:'safeFinacial',
-        stateConfig:{
-            url:'/safeFinacial',
-            templateUrl:'html/aboutAs.html',
-            controller:'insuranceCtrl',
-            title:'保险理财',
-            resolve:{
-                deps:["$ocLazyLoad",function($ocLazyLoad){
-                    return $ocLazyLoad.load("js/user/insuranceFin.js");
-                }]
+        )
+        .state('platformData',{
+                url:'/platformData',
+                templateUrl:'html/platformData.html',
+                controller:'platformDataCtrl',
+                // controllerAs:'vm',
+                title:'保险',
+                resolve:{
+                    deps:["$ocLazyLoad",function($ocLazyLoad){
+                        return $ocLazyLoad.load('js/user/platformData.js');
+                    }]
+                }
             }
-        }
-    },
-    {
-        stateName:'fund',
-        stateConfig:{
-            url:'/fund',
-            templateUrl:'html/fund.html',
-            controller:'fundCtrl',
-            title:'基金',
-            resolve:{
-                deps:["$ocLazyLoad",function($ocLazyLoad){
-                    return $ocLazyLoad.load("js/user/fund.js");
-                }]
+        )
+        .state('loanOneDetail',{
+                // params:{'title':null},
+                url:'/loanOneDetail?:title:id',
+                templateUrl:'html/loanOneDetail.html',
+                controller:'loanOne',
+                title:'理财详情',
+                resolve:{
+                    deps:["$ocLazyLoad",function($ocLazyLoad){
+                        return $ocLazyLoad.load("js/user/loanOneDetail.js");
+                    }]
+                }
             }
-        }
-    },
-    {
-        stateName:'platformData',
-        stateConfig:{
-            url:'/platformData',
-            templateUrl:'html/platformData.html',
-            controller:'platformDataCtrl',
-            // controllerAs:'vm',
-            title:'保险',
-            resolve:{
-                deps:["$ocLazyLoad",function($ocLazyLoad){
-                    return $ocLazyLoad.load('js/user/platformData.js');
-                }]
-            }
-        }
-    },
-    {
-        stateName:'loanOneDetail',
-        stateConfig:{
-            // params:{'title':null},
-            url:'/loanOneDetail?:title:id',
-            templateUrl:'html/loanOneDetail.html',
-            controller:'loanOne',
-            title:'理财详情',
-            resolve:{
-                deps:["$ocLazyLoad",function($ocLazyLoad){
-                    return $ocLazyLoad.load("js/user/loanOneDetail.js");
-                }]
-            }
-        }
-    },
-    {
-        stateName:'loanRecord',
-        stateConfig:{
+        )
+        .state('loanRecord',{
             url:'/loanRecord',
             templateUrl:'html/loanDetailRecords.html',
             controller:'loanRecords',
@@ -131,71 +125,67 @@ var stateArr = [
                 }]
             }
         }
-    },
-    {
-        stateName:'login',
-        stateConfig:{
-            url:'/login',
-            templateUrl:'html/login.html',
-            controller:'loginCtrl',
-            title:'登录',
-            resolve:{
-                deps:["$ocLazyLoad",function($ocLazyLoad){
-                    return $ocLazyLoad.load('js/user/login.js');
+        )
+        .state('login',{
+                url:'/login',
+                templateUrl:'html/login.html',
+                controller:'loginCtrl',
+                title:'登录',
+                resolve:{
+                    deps:["$ocLazyLoad",function($ocLazyLoad){
+                        return $ocLazyLoad.load('js/user/login.js');
+                    }
+                    ]}
+            }
+        )
+        .state('annuity',{
+                url:'/annuity?:productId',
+                templateUrl:'html/annuityDetail.html',
+                controller:'annuity',
+                title:'保险详情',
+                resolve:{
+                    deps:["$ocLazyLoad",function($ocLazyLoad){
+                        return $ocLazyLoad.load('js/user/annuity.js');
+                    }]
                 }
-                ]}
-        }
-    },
-    {
-        stateName:'annuity',
-        stateConfig:{
-            url:'/annuity?:productId',
-            templateUrl:'html/annuityDetail.html',
-            controller:'annuity',
-            title:'保险详情',
-            resolve:{
-                deps:["$ocLazyLoad",function($ocLazyLoad){
-                    return $ocLazyLoad.load('js/user/annuity.js');
-                }]
             }
-        }
-    },
-    {
-        stateName:'notice',
-        stateConfig:{
-            url:'/notice?:type',
-            templateUrl:'html/notice.html',
-            controller:'noticeController',
-            title:'产品须知',
-            resolve:{
-                deps:["$ocLazyLoad",function($ocLazyLoad){
-                    return $ocLazyLoad.load('js/user/notice.js');
-                }]
+        )
+        .state('notice',{
+                url:'/notice?:type',
+                templateUrl:'html/notice.html',
+                controller:'noticeController',
+                title:'产品须知',
+                resolve:{
+                    deps:["$ocLazyLoad",function($ocLazyLoad){
+                        return $ocLazyLoad.load('js/user/notice.js');
+                    }]
+                }
             }
-        }
-    },
-    {
-        stateName:'findPwd',
-        stateConfig:{
-            url:'/findPwd',
-            templateUrl:'html/findPwd.html',
-            // controller:'noticeController',
-            title:'忘记密码',
-            resolve:{
-                deps:["$ocLazyLoad",function($ocLazyLoad){
-                    // return $ocLazyLoad.load('js/user/notice.js');
-                }]
+        )
+        .state('findPwd',{
+                url:'/findPwd',
+                templateUrl:'html/findPwd.html',
+                controller:'findPwdCtrl',
+                title:'忘记密码',
+                resolve:{
+                    deps:["$ocLazyLoad",function($ocLazyLoad){
+                        return $ocLazyLoad.load('js/user/findPwd.js');
+                    }]
+                }
             }
-        }
-    },
-]
-
-function routeConfig($stateProvider,$urlRouterProvider){//路由配置
-    $urlRouterProvider.otherwise("/home");//$urlRouterProvider负责监听 $location。
-    angular.forEach(stateArr,function(data){
-        $stateProvider.state(data.stateName,data.stateConfig)
-    })
-
+        )
+        .state('register',{
+                url:'/register',
+                templateUrl:'html/register.html',
+                // controller:'findPwdCtrl',
+                // title:'注册',
+                resolve:{
+                    deps:["$ocLazyLoad",function($ocLazyLoad){
+                        // return $ocLazyLoad.load('js/user/findPwd.js');
+                    }]
+                }
+            }
+        )
     // $state.transitionTo($state.current, $stateParams, {
     //     reload: true, inherit: false, notify: true
     // });
