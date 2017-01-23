@@ -4,27 +4,25 @@
 var app = angular.module('apps');
 app.directive('header', function() {
     return {
-        replace:false,
-        restrict: "EA",
+        restrict: "EA",        
+        scope:{
+            fnexecute:"&",
+            name:'@',
+            subname:'@'
+        },
         template: '<div class="common-title"> \
                     <a ng-click="goBack()" class="back"></a> \
-                    <span style="margin-left:-30px;" ng-click="fnExecute()">{{name}}</span> \
-                    <span style="float:right">{{subName}}</span>\
+                    <span style="margin-left:-20px;" ng-click="fnexecute()">{{name}}</span> \
+                    <span style="float:right;margin-right:1rem;">{{subname}}</span>\
                     </div>'
         ,
-        scope:{
-            fnExecute:"&",
-            name:'@',
-            subName:'@'
-        },
         link:function(scope,element,attrs){
-            console.log(typeof scope.fnExecute)
             scope.goBack = function(){
                 window.history.go(-1)
             }
-
             scope.name = scope.name || document.title;
-        }
+        },
+        
     };
 });
 app.directive('uiinput',function(){

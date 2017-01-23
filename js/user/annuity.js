@@ -13,10 +13,15 @@ app.controller('annuity',function($scope,$http,analyticsInfo){
             if(response.data.data){
                 $scope.data = response.data.data;
                 angular.element(document.getElementsByClassName('readme')[0]).html('<span>'+$scope.data.insFeature+'</span>')
+                $scope.user = {
+                    name:$scope.data.fengInsName,
+                    subName:'注册'
+                }
             }
         })
     $scope.analyticsInfo = analyticsInfo;
     $scope.als=function(){
         console.log('成功向指令中传递方法')
     }
+    
 })
