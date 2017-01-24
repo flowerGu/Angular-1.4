@@ -1,7 +1,7 @@
-<!--<header name="找回密码"></header>-->
+<header name="找回密码"></header>
 <div class="m-form_wrap">
     <form id="formCheck" novalidate="" name="form" role="form">
-        <uiinput ng-model = "user.tel" nature = "user.fTel" style="margin-bottom:1rem;"></uiinput>
+        <ui-input ng-model = "user.tel" nature = "user.fTel" style="margin-bottom:1rem;"></ui-input>
         <input type="button" value="显示" ng-class="{'gray':form.$invalid && form.$dirty,'btn-default':form.$valid}"ng-click="user.show()" ng-disabled="form.$invalid"/>
     </form>
 </div>

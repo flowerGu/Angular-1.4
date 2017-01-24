@@ -6,14 +6,14 @@ app.directive('header', function() {
     return {
         restrict: "EA",        
         scope:{
-            fnexecute:"&",
+            fnExecute:"&",
             name:'@',
-            subname:'@'
+            subName:'@'
         },
         template: '<div class="common-title"> \
                     <a ng-click="goBack()" class="back"></a> \
-                    <span style="margin-left:-20px;" ng-click="fnexecute()">{{name}}</span> \
-                    <span style="float:right;margin-right:1rem;">{{subname}}</span>\
+                    <span style="margin-left:-10px;" >{{name}}</span> \
+                    <span style="float:right;margin-right:2rem;" ng-click="fnExecute()">{{subName}}</span>\
                     </div>'
         ,
         link:function(scope,element,attrs){
@@ -25,7 +25,7 @@ app.directive('header', function() {
         
     };
 });
-app.directive('uiinput',function(){
+app.directive('uiInput',function(){
     return {
         replace:true,
         restrict: 'E',
@@ -40,11 +40,17 @@ app.directive('uiinput',function(){
                     autocomplete="off" \
                     ng-model="ngModel"/> \
                     <img src="images/close.png" ng-if="ngModel" ng-click = "userDir.delDir()"/>\
+                    <img src= "images/eye.png" class="changeType" ng-if="nature.pwdChange" ng-click = "userDir.changeType()" style="width:21px;right:8%;">\
                 </div>',
         link:function(scope,element,attrs){
+            scope.nature.type = scope.nature.type || 'text'
             var attr = scope.nature;
-            scope.show = function(){
-                if(attr.ngpattern){
+
+            if(scope.nature.ngmaxlength){
+                    element.find('input').attr('maxlength',attr.ngmaxlength)
+                }
+            scope.show = function(){                
+                if(attr.ngpattern && attr.id){
                     if(!attr.ngpattern.test(scope.ngModel)){
                         angular.element(document.getElementById(attr.id)).addClass('error');
                     }else{
@@ -58,6 +64,17 @@ app.directive('uiinput',function(){
                 delDir : function(){
                     scope.ngModel = '';
                    // console.log(scope.ngModel.$valid,scope.ngModel)
+                },
+                changeType :function(){
+                    var ele =  element.find('input');
+                    if(ele.attr('type') =='password'){
+                        ele.attr({'type':'text'})
+                        angular.element(document.getElementsByClassName('changeType')).attr({'src':'images/eyelight.png'})
+                    }else{
+                        ele.attr({'type':'password'})
+                        angular.element(document.getElementsByClassName('changeType')).attr({'src':'images/eye.png'})
+                    }
+                    
                 }
             }
         },

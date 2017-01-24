@@ -55,6 +55,7 @@ app.controller('loginCtrl',function($scope,$http,ipCookie,analyticsInfo,$modal,$
             });
 
     };
+    $scope.goRegister = analyticsInfo.locationNext
     // var defer = $q.defer();
     // var promise = defer.promise;
     // promise.then(function(value){//成功回调

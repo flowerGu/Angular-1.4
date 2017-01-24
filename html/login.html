@@ -1,8 +1,8 @@
-<header name="登录" subname="注册"></header>
+<header name="登录" subname="注册" fn-execute="goRegister({url:'register'})"></header>
 <div class="m-form_wrap">
     <form id="formCheck" novalidate="" name="form" role="form">
-        <uiinput ng-model = "user.tel" nature = "user.telCom"></uiinput>
-        <uiinput ng-model = "user.pwd" nature = "user.pwdCom"></uiinput>
+        <ui-input ng-model = "user.tel" nature = "user.telCom"></ui-input>
+        <ui-input ng-model = "user.pwd" nature = "user.pwdCom"></ui-input>
         <input type="submit" value="登录" id="submit" ng-click="checkValue()" ng-disabled="form.$invalid"/>
         <!--手机号及密码全都为true时才能点击-->
         <!--<div ng-repeat = "x in arr | filter:1">-->
