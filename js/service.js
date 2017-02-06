@@ -11,3 +11,4 @@ app.service('analyticsInfo',function($state){
        }
    };
 })
+app.value('e',1)

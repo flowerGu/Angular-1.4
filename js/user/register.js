@@ -1,5 +1,5 @@
 var app = angular.module('apps');
-app.controller('registerCtrl',function($scope,analyticsInfo){
+app.controller('registerCtrl',function($scope,analyticsInfo,e){
     $scope.gologin = analyticsInfo.locationNext
     $scope.user = {
         tel:'',
@@ -22,6 +22,7 @@ app.controller('registerCtrl',function($scope,analyticsInfo){
             ngpattern:/^\d{6}$/,
             ngmaxlength:6,
             placeholder:'请输入短信验证码',
+            optbtn:'发送验证码'
         },
         pwdCom:{
             type:'password',
@@ -32,4 +33,5 @@ app.controller('registerCtrl',function($scope,analyticsInfo){
             pwdChange:true,
         }
     }
+    console.log(e)
 })

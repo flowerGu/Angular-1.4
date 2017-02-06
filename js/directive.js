@@ -39,6 +39,7 @@ app.directive('uiInput',function(){
                     required \
                     autocomplete="off" \
                     ng-model="ngModel"/> \
+                    <span ng-if="nature.optbtn" class="opt-btn">{{nature.optbtn}}</span>\
                     <img src="images/close.png" ng-if="ngModel" ng-click = "userDir.delDir()"/>\
                     <img src= "images/eye.png" class="changeType" ng-if="nature.pwdChange" ng-click = "userDir.changeType()" style="width:21px;right:8%;">\
                 </div>',
