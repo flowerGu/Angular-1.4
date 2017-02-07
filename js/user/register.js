@@ -1,5 +1,5 @@
 var app = angular.module('apps');
-app.controller('registerCtrl',function($scope,analyticsInfo,e){
+app.controller('registerCtrl',function($scope,analyticsInfo,e,$interval){
     $scope.gologin = analyticsInfo.locationNext
     $scope.user = {
         tel:'',
@@ -33,5 +33,4 @@ app.controller('registerCtrl',function($scope,analyticsInfo,e){
             pwdChange:true,
         }
     }
-    console.log(e)
 })
