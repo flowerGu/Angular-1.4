@@ -14,17 +14,12 @@ app.service('analyticsInfo',function($state,$interval,$q){
        console.log(1)
        var deferred = $q.defer();
        var promise = deferred.promise;
-       promise.then(function(){
-            angular.element(document.getElementsByClassName(opts.attr)[0]).html('重新发送')
-       })
-      deferred.resolve(function(){
-            var timer = $interval(function(){
-                angular.element(document.getElementsByClassName(opts.attr)[0]).html(--opts.time+'秒后重新发送')
-            },1000,60)
-      })
-       
-       
-       
+       var timer = $interval(function(){
+           angular.element(document.getElementsByClassName(opts.attr)[0]).html(--opts.time+'秒后重新发送').attr('disabled',true)
+        },1000,5)
+        timer.then(function(){
+            angular.element(document.getElementsByClassName(opts.attr)[0]).html('重新发送').attr('disabled',false)
+        })
    }
 })
 app.value('e',1)

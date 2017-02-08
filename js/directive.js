@@ -75,7 +75,10 @@ app.directive('uiInput', function (analyticsInfo) {
                 },
                 changText: function () {
                     if (scope.nature.ngpattern.test(scope.ngModel)) {
-                        analyticsInfo.countDown({ time: 60, attr: 'opt-btn' })
+                        if(!angular.element(document.getElementsByClassName('opt-btn')[0]).attr('disabled')){
+                            analyticsInfo.countDown({ time: 5, attr: 'opt-btn' })
+                        }
+                        
                     }
                 }
             }
