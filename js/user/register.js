@@ -1,5 +1,5 @@
 var app = angular.module('apps');
-app.controller('registerCtrl',function($scope,analyticsInfo,e,$interval){
+app.controller('registerCtrl',function($scope,analyticsInfo,e,$interval,$alert){
     $scope.gologin = analyticsInfo.locationNext
     $scope.user = {
         tel:'',
@@ -22,7 +22,7 @@ app.controller('registerCtrl',function($scope,analyticsInfo,e,$interval){
             ngpattern:/^\d{6}$/,
             ngmaxlength:6,
             placeholder:'请输入短信验证码',
-            optbtn:'发送验证码'
+            optbtn:'发送验证码',
         },
         pwdCom:{
             type:'password',
@@ -32,5 +32,17 @@ app.controller('registerCtrl',function($scope,analyticsInfo,e,$interval){
             placeholder:'请输入6-20位字母数字组合',
             pwdChange:true,
         }
-    }
+    }    
+    $scope.changeText = function() {
+        if(form.tel.value == ''){
+            $alert({content:'请输入手机号',"duration":100,dismissable:false})
+        }
+        if($scope.user.telCom.ngpattern.test(form.tel.value) && $scope.user.codeCom.ngpattern.test(form.code.value)){
+            if(!angular.element(document.getElementsByClassName('opt-btn')[0]).attr('disabled')){
+                analyticsInfo.countDown({ time: 5, attr: 'opt-btn' })
+            }
+                angular.element(document.getElementsByClassName('opt-btn')[0]).attr('disabled',true)
+        }
+    }          
+        
 })

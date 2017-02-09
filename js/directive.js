@@ -28,7 +28,7 @@ app.directive('header', function () {
 app.directive('uiInput', function (analyticsInfo) {
     return {
         replace: true,
-        restrict: 'E',
+        restrict: 'EA',
         template: '<div class="form-item"> \
                     <input type="{{nature.type}}" \
                     placeholder={{nature.placeholder}} \
@@ -39,10 +39,15 @@ app.directive('uiInput', function (analyticsInfo) {
                     required \
                     autocomplete="off" \
                     ng-model="ngModel"/> \
-                    <span ng-if="nature.optbtn" class="opt-btn" ng-click="userDir.changText()">{{nature.optbtn}}</span>\
+                    <span ng-if="nature.optbtn" class="opt-btn" ng-click="fnBtn()">{{nature.optbtn}}</span>\
                     <img src="images/close.png" ng-if="ngModel" ng-click = "userDir.delDir()"/>\
                     <img src= "images/eye.png" class="changeType" ng-if="nature.pwdChange" ng-click = "userDir.changeType()" style="width:21px;right:8%;">\
                 </div>',
+        scope: {
+            nature: '=',
+            ngModel: '=',
+            fnBtn: '&'
+        },
         link: function (scope, element, attrs) {
             scope.nature.type = scope.nature.type || 'text'
             var attr = scope.nature;
@@ -73,20 +78,9 @@ app.directive('uiInput', function (analyticsInfo) {
                         angular.element(document.getElementsByClassName('changeType')).attr({ 'src': 'images/eye.png' })
                     }
                 },
-                changText: function () {
-                    if (scope.nature.ngpattern.test(scope.ngModel)) {
-                        if(!angular.element(document.getElementsByClassName('opt-btn')[0]).attr('disabled')){
-                            analyticsInfo.countDown({ time: 5, attr: 'opt-btn' })
-                        }
-                        
-                    }
-                }
             }
         },
-        scope: {
-            nature: '=',
-            ngModel: '='
-        }
+       
     }
 })
 

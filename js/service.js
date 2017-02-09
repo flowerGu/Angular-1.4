@@ -15,8 +15,8 @@ app.service('analyticsInfo',function($state,$interval,$q){
        var deferred = $q.defer();
        var promise = deferred.promise;
        var timer = $interval(function(){
-           angular.element(document.getElementsByClassName(opts.attr)[0]).html(--opts.time+'秒后重新发送').attr('disabled',true)
-        },1000,5)
+           angular.element(document.getElementsByClassName(opts.attr)[0]).html(opts.time-- +'秒后重新发送').attr('disabled',true)
+        },1000,opts.time+1)
         timer.then(function(){
             angular.element(document.getElementsByClassName(opts.attr)[0]).html('重新发送').attr('disabled',false)
         })
