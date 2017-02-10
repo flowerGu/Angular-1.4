@@ -5,6 +5,8 @@
         <ui-input ng-model="user.code" nature = "user.codeCom"></ui-input>
         <ui-input ng-model="user.msgCode" nature = "user.msgCodeCom" fn-btn="changeText()"></ui-input>
         <ui-input ng-model="user.pwd" nature = "user.pwdCom"></ui-input>
+        <input type="button" value="注册" ng-disabled="form.$invalid"/>
+        <input type="checkbox"  required ng-model="user.check"/>我已阅读并同意《凤凰金融用户注册协议》
     </form>
 </div>
 <style>

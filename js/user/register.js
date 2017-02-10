@@ -6,6 +6,7 @@ app.controller('registerCtrl',function($scope,analyticsInfo,e,$interval,$alert){
         code:'',
         msgCode:'',
         pwd:'',
+        check:'',
         telCom:{//手机号
             name:'tel',
             ngpattern:/^1[3-8][0-9]{9}$/,
