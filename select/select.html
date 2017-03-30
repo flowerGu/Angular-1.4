@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="apps">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Me推荐</title>
+    <link href="https://teststatic.mejinrong.com:4430/MeAssest/MeJS2.0/me.css" rel="stylesheet" />
+    <link href="css/animation.css" rel="stylesheet" />
+    <link href="css/select.css" rel="stylesheet" />
+</head>
+
+<body>
+    <span class="me-cascade-picker-wrap" id="cascade-picker-wrap">
+        <span class="me-cascade-picker-content"></span>
+        <input type="text" placeholder="Please select" class="me-cascade-picker-input box-sizing" autocomplete="off" readonly/>
+        <span class="me-cascade-picker-span"></span>
+    <i class="me-cascade-arrow me-ion-o-arrow-down box-sizing me-ion-icon"></i>
+    <i class="me-cascade-cross me-ion-a-cancel me-ion-icon me-hide"></i>
+    </span>
+    <div class="me-cascade-list-wrap fadeInDown" id="wrap">
+        <ul class="me-cascade-list">
+        </ul>
+    </div>
+    <script src="https://teststatic.mejinrong.com:4430/MeAssest/MeJS2.0/me.js"></script>
+    <script>
+        var key = [];
+        /*控制箭头方向*/
+        $('.me-cascade-picker-input').click(function () {
+            $('.me-cascade-list-wrap').toggleClass('me-show');
+                $(this).siblings('i.me-cascade-arrow').toggleClass('rotate');
+            var wrap = $('.me-cascade-list-wrap');
+            var input = $(this).eq(0);
+            var wrap_offsetTop = wrap.offset().top,
+                input_offsetLeft = input.offset().left,
+                input_offsetTop = input.offset().top,
+                wrap_height = wrap.height(),
+                out_height = $('.me-cascade-picker-wrap').height();
+                domClientHeight = $(window).height(),
+                wrap_offsetBottom = domClientHeight - wrap_offsetTop;
+            if (wrap_offsetBottom < wrap_height) {
+                wrap.css({ 'top': input_offsetTop-wrap_height + 'px','left':input_offsetLeft+'px'});
+            } else {
+                wrap.css({ 'top': input_offsetTop + out_height+5 + 'px','left': input_offsetLeft+'px'});
+            }
+        })
+        $('.me-cascade-picker-wrap').hover(function () {
+            if ($(this).find('.me-cascade-picker-content').text().length > 0) {
+                $(this).find('i.me-cascade-arrow').removeClass('me-show').addClass('me-hide').end().find('i.me-cascade-cross').removeClass("me-hide").addClass('me-show');
+            } else {
+                $(this).find('i.me-cascade-arrow').removeClass("me-hide").addClass('me-show').end().find('i.me-cascade-cross').removeClass('me-show').addClass('me-hide');
+            }
+        },function(){
+                $(this).find('i.me-cascade-arrow').removeClass("me-hide").addClass('me-show').end().find('i.me-cascade-cross').removeClass('me-show').addClass('me-hide');
+        })
+        /*叉*/
+        $('i.me-cascade-cross').click(function () {
+            $(this).siblings('.me-cascade-picker-content').text('').siblings('.me-cascade-picker-input').attr('placeholder','please select');;
+            $(this).addClass('me-hide').removeClass('me-show').siblings('i.me-cascade-arrow').removeClass('me-hide').addClass('me-show');
+        })
+        $.get('city.json', function (result) {
+            var data = result.data;
+            for(var i = 0; i<data.length;i++){
+                $('.me-cascade-list-wrap>ul:eq(0)').append('<li class="me-cascader-menu-item me-ion-o-arrow-right" title="' + data[i].label + '">' + data[i].value + '</li>')
+            }
+            $('.me-cascade-list-wrap>ul:eq(0)').find('li').eq(0).attr('disabled',true);
+        })
+        $('.me-cascade-list-wrap>ul:eq(0)').on('click', ">li", function () {
+            if($(this).attr('disabled')=='disabled'){
+                return false;
+            }
+            if($('.me-cascade-list-wrap>ul').size()<2){
+                $('.me-cascade-list-wrap').append('<ul class="me-cascade-list"></ul>');
+            }else{
+                $('.me-cascade-list-wrap>ul:not(:eq(0))').empty();
+            }
+            var index = $(this).index();
+            $.get('city.json', function (result) {
+                var data = result.data[index];
+                for (var j = 0; j < data.children.length; j++) {
+                    $('.me-cascade-list-wrap>ul:eq(1)').append('<li class="me-cascader-menu-item me-ion-o-arrow-right" title="' + data.children[j].label + '">' + data.children[j].value + '</li>')
+                }
+                $('.me-cascade-list-wrap>ul:eq(1)').off('click.repeat').on('click.repeat', ">li", function () {
+                    var index1 = $(this).index();
+                    if($('.me-cascade-list-wrap>ul').size()>2){
+                        $('.me-cascade-list-wrap>ul').eq(2).empty();
+                    }else{
+                        $('.me-cascade-list-wrap').append('<ul class="me-cascade-list"></ul>');
+                    }
+                    $.get('city.json', function (data) {
+                        var data = result.data[index].children[index1];
+                        for (var z = 0; z < data.children.length; z++) {
+                                $('.me-cascade-list-wrap>ul:eq(2)').append('<li class="me-cascader-menu-item" title="' + data.children[z].label + '">' + data.children[z].value + '</li>')
+                        }
+                    })
+                })
+            })
+        })
+        $('.me-cascade-list-wrap').on('click',"li",function(){
+            $(this).addClass('me-cascader-menu-item-active').siblings().removeClass('me-cascader-menu-item-active');
+            var indexParent = $(this).parent('ul').index();
+            if(indexParent == 0){
+                key=[];
+            }
+            if(indexParent == 1 && key.length>1 || indexParent == 2 && key.length>2){
+                key.pop();
+            }
+            key.push($(this).text());
+            if(key.length>2 && key[1]!=key[2]){
+                $(this).parent().parent().removeClass('me-show').addClass('me-hide');
+                $('.me-cascade-picker-content').text(key.join('/')).trigger('input');
+                $('.me-cascade-picker-input').attr('placeholder','');
+                $('.me-cascade-arrow').removeClass('rotate');
+            }
+        }) 
+        $(document).on('click',function(e){
+            if(!$(e.target).hasClass('me-cascade-picker-input') && !$(e.target).hasClass('me-cascader-menu-item') && !$(e.target).hasClass('me-cascade-list')){
+                $('.me-cascade-list-wrap').removeClass('me-show').addClass('me-hide');
+                $('.me-cascade-arrow').removeClass('rotate');
+            }
+        })
+    </script>
+</body>
+
+</html>

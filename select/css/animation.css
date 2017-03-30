@@ -1,0 +1,44 @@
+/*向下展开*/
+.fadeInDown{
+    -webkit-animation:fadeInDown .5s .2s ease both;
+    -moz-animation:fadeInDown .5s .2s ease both    
+}
+@-webkit-keyframes fadeInDown{
+    0%{opacity:0;
+    -webkit-transform:translateY(-10px)}
+    100%{opacity:1;
+    -webkit-transform:translateY(0)}
+}
+@-moz-keyframes fadeInDown{
+    0%{opacity:0;
+    -moz-transform:translateY(-10px)}
+    100%{opacity:1;
+    -moz-transform:translateY(0)}
+}
+
+
+/*向上展开*/
+.fadeINUp{
+    -webkit-animation:fadeInUp .5s .2s ease both;
+    -moz-animation:fadeInUp .5s .2s ease both;
+}
+@-webkit-keyframes fadeInUp{
+    0%{
+        opacity:0;
+        -webkit-transform:translateY(10px)
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:translateY(0)
+    }
+}
+@-moz-keyframes fadeInUp{
+    0%{
+        opacity:0;
+        -moz-transform:translateY(10px)
+    }
+    100%{
+        opacity:1;
+        -moz-transform:translateY(0)
+    }
+}
