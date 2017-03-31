@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="apps">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -8,116 +8,140 @@
     <link href="css/animation.css" rel="stylesheet" />
     <link href="css/select.css" rel="stylesheet" />
 </head>
-
+<style>
+    #container{
+        margin:300px;
+    }
+</style>
 <body>
-    <span class="me-cascade-picker-wrap" id="cascade-picker-wrap">
-        <span class="me-cascade-picker-content"></span>
-        <input type="text" placeholder="Please select" class="me-cascade-picker-input box-sizing" autocomplete="off" readonly/>
-        <span class="me-cascade-picker-span"></span>
-    <i class="me-cascade-arrow me-ion-o-arrow-down box-sizing me-ion-icon"></i>
-    <i class="me-cascade-cross me-ion-a-cancel me-ion-icon me-hide"></i>
-    </span>
-    <div class="me-cascade-list-wrap fadeInDown" id="wrap">
-        <ul class="me-cascade-list">
-        </ul>
-    </div>
+    <div id="container"></div>
     <script src="https://teststatic.mejinrong.com:4430/MeAssest/MeJS2.0/me.js"></script>
     <script>
-        var key = [];
-        /*控制箭头方向*/
-        $('.me-cascade-picker-input').click(function () {
-            $('.me-cascade-list-wrap').toggleClass('me-show');
-                $(this).siblings('i.me-cascade-arrow').toggleClass('rotate');
-            var wrap = $('.me-cascade-list-wrap');
-            var input = $(this).eq(0);
-            var wrap_offsetTop = wrap.offset().top,
-                input_offsetLeft = input.offset().left,
-                input_offsetTop = input.offset().top,
-                wrap_height = wrap.height(),
-                out_height = $('.me-cascade-picker-wrap').height();
-                domClientHeight = $(window).height(),
-                wrap_offsetBottom = domClientHeight - wrap_offsetTop;
-            if (wrap_offsetBottom < wrap_height) {
-                wrap.css({ 'top': input_offsetTop-wrap_height + 'px','left':input_offsetLeft+'px'});
-            } else {
-                wrap.css({ 'top': input_offsetTop + out_height+5 + 'px','left': input_offsetLeft+'px'});
-            }
-        })
-        $('.me-cascade-picker-wrap').hover(function () {
-            if ($(this).find('.me-cascade-picker-content').text().length > 0) {
-                $(this).find('i.me-cascade-arrow').removeClass('me-show').addClass('me-hide').end().find('i.me-cascade-cross').removeClass("me-hide").addClass('me-show');
-            } else {
-                $(this).find('i.me-cascade-arrow').removeClass("me-hide").addClass('me-show').end().find('i.me-cascade-cross').removeClass('me-show').addClass('me-hide');
-            }
-        },function(){
-                $(this).find('i.me-cascade-arrow').removeClass("me-hide").addClass('me-show').end().find('i.me-cascade-cross').removeClass('me-show').addClass('me-hide');
-        })
-        /*叉*/
-        $('i.me-cascade-cross').click(function () {
-            $(this).siblings('.me-cascade-picker-content').text('').siblings('.me-cascade-picker-input').attr('placeholder','please select');;
-            $(this).addClass('me-hide').removeClass('me-show').siblings('i.me-cascade-arrow').removeClass('me-hide').addClass('me-show');
-        })
-        $.get('city.json', function (result) {
-            var data = result.data;
-            for(var i = 0; i<data.length;i++){
-                $('.me-cascade-list-wrap>ul:eq(0)').append('<li class="me-cascader-menu-item me-ion-o-arrow-right" title="' + data[i].label + '">' + data[i].value + '</li>')
-            }
-            $('.me-cascade-list-wrap>ul:eq(0)').find('li').eq(0).attr('disabled',true);
-        })
-        $('.me-cascade-list-wrap>ul:eq(0)').on('click', ">li", function () {
-            if($(this).attr('disabled')=='disabled'){
-                return false;
-            }
-            if($('.me-cascade-list-wrap>ul').size()<2){
-                $('.me-cascade-list-wrap').append('<ul class="me-cascade-list"></ul>');
-            }else{
-                $('.me-cascade-list-wrap>ul:not(:eq(0))').empty();
-            }
-            var index = $(this).index();
-            $.get('city.json', function (result) {
-                var data = result.data[index];
-                for (var j = 0; j < data.children.length; j++) {
-                    $('.me-cascade-list-wrap>ul:eq(1)').append('<li class="me-cascader-menu-item me-ion-o-arrow-right" title="' + data.children[j].label + '">' + data.children[j].value + '</li>')
-                }
-                $('.me-cascade-list-wrap>ul:eq(1)').off('click.repeat').on('click.repeat', ">li", function () {
-                    var index1 = $(this).index();
-                    if($('.me-cascade-list-wrap>ul').size()>2){
-                        $('.me-cascade-list-wrap>ul').eq(2).empty();
-                    }else{
-                        $('.me-cascade-list-wrap').append('<ul class="me-cascade-list"></ul>');
-                    }
-                    $.get('city.json', function (data) {
-                        var data = result.data[index].children[index1];
-                        for (var z = 0; z < data.children.length; z++) {
-                                $('.me-cascade-list-wrap>ul:eq(2)').append('<li class="me-cascader-menu-item" title="' + data.children[z].label + '">' + data.children[z].value + '</li>')
+            var Cascader={
+                init:function(o){
+                    return (function(){
+                        o.placeholder = o.placeholder || 'please select'
+                        ele_property = o.ele.replace(/\./g,'').replace(/#/g,'');
+                        Cascader.fillHtml(o,ele_property);
+                        Cascader.bindEvent(o,ele_property);
+                        o.cb && o.cb(0);
+                    })()
+                },
+                fillHtml:function(o,ele_property){
+                    var html = '<span class="me-cascade-picker-wrap">\
+                                    <span class="me-cascade-picker-content"></span>\
+                                    <input type="text" placeholder="'+o.placeholder+'" class="me-cascade-picker-input box-sizing" autocomplete="off" readonly/>\
+                                    <span class="me-cascade-picker-span"></span>\
+                                    <i class="me-cascade-arrow me-ion-o-arrow-down box-sizing me-ion-icon"></i>\
+                                    <i class="me-cascade-cross me-ion-a-cancel me-ion-icon me-hide"></i>\
+                                </span>',
+                        list_menu = '<div class="me-cascade-list-wrap fadeInDown me-hide" id="wrap">\
+                                    </div>',
+                        ele=o.ele,
+                        width=o.width || '220px',
+                        num = o.num || 3,
+                        key = [],
+                        $html=$(html);
+                        $list_menu = $(list_menu);
+                        $html.attr('id','me-cascade-picker-wrap-'+ele_property);
+                        $html.find('.me-cascade-picker-input').attr('id','me-cascade-picker-input-'+ele_property);
+                        $list_menu.attr('id','me-cascade-list-wrap-'+ele_property)
+                        $html.css({'width':width});
+                        for(var i=0;i<num;i++){
+                            $list_menu.append('<ul class="me-cascade-list"></ul>');
+                        }
+                        
+                        $(ele).append($html);
+                        $('body').append($list_menu)
+                },
+                bindEvent:function(o,ele_property){
+                    var key = [];
+                    /*控制箭头方向*/
+                    var input = $(o.ele).find('.me-cascade-picker-input'),
+                        input_parent = $(o.ele).find('.me-cascade-picker-wrap'),
+                        list = $('body').find('#me-cascade-list-wrap-'+ele_property),
+                        wrap_offsetTop = list.offset().top,
+                        input_offsetLeft = input.offset().left,
+                        input_offsetTop = input.offset().top,
+                        wrap_height = list.height(),
+                        out_height = input_parent.height(),
+                        domClientHeight = $(window).height(),
+                        wrap_offsetBottom = domClientHeight - wrap_offsetTop;
+                    /*点击还原初始状态*/
+                    $(document).on('click', function (e) {
+                        if ($(e.target).attr('id')!=('me-cascade-list-wrap-'+ele_property) && !$(e.target).hasClass('me-cascader-menu-item') && $(e.target).attr('id')!='me-cascade-picker-input-'+ele_property) {
+                            $('.me-cascade-list-wrap').removeClass('me-show').addClass('me-hide');
+                            $('.me-cascade-arrow').removeClass('rotate');
                         }
                     })
+                    /* 控制下拉框展示方向*/
+                    input.on('click',function () {
+                        list.toggleClass('me-hide');
+                        $(this).siblings('i.me-cascade-arrow').toggleClass('rotate');                       
+                        if (wrap_offsetBottom < wrap_height) {
+                            list.css({ 'top': input_offsetTop - wrap_height + 'px', 'left': input_offsetLeft + 'px' });
+                        } else {
+                            list.css({ 'top': input_offsetTop + out_height + 5 + 'px', 'left': input_offsetLeft + 'px' });
+                        }
+                    })
+                    /*icon-arrow show/hide*/
+                    input_parent.hover(function () {
+                        if ($(this).find('.me-cascade-picker-content').text().length > 0) {
+                            $(this).find('i.me-cascade-arrow').removeClass('me-show').addClass('me-hide').end().find('i.me-cascade-cross').removeClass("me-hide").addClass('me-show');
+                        } else {
+                            $(this).find('i.me-cascade-arrow').removeClass("me-hide").addClass('me-show').end().find('i.me-cascade-cross').removeClass('me-show').addClass('me-hide');
+                        }
+                    }, function () {
+                        $(this).find('i.me-cascade-arrow').removeClass("me-hide").addClass('me-show').end().find('i.me-cascade-cross').removeClass('me-show').addClass('me-hide');
+                    })
+                    /*叉*/
+                    input_parent.find('i.me-cascade-cross').click(function () {
+                        $(this).siblings('.me-cascade-picker-content').text('').siblings('.me-cascade-picker-input').attr('placeholder',o.placeholder);
+                        $(this).addClass('me-hide').removeClass('me-show').siblings('i.me-cascade-arrow').removeClass('me-hide').addClass('me-show');
+                    })
+                    /*级联*/
+                    list.on('click', "li", function () {
+                        if($(this).attr('disabled')=='disabled'){
+                            return false;
+                        }
+                        $(this).addClass('me-cascader-menu-item-active').siblings().removeClass('me-cascader-menu-item-active');
+                        var indexParent = $(this).parent('ul').index();
+                        if(indexParent == 0){
+                            key = [];
+                        }
+                        if(indexParent<o.num && key.length==o.num){
+                            key.pop();
+                        }
+                        if(indexParent<o.num-1){
+                            $(this).parent('ul').next().empty();
+                            o.cb && o.cb(indexParent+1)
+                        }
+                        key[indexParent] = $(this).text();   
+                       if(key.length == o.num){
+                            $(this).parents('.me-cascade-list-wrap').removeClass('me-show').addClass('me-hide');
+                            input.siblings('.me-cascade-picker-content').text(key.join('/'));
+                            input.attr('placeholder', '');
+                            input.siblings('.me-cascade-arrow').removeClass('rotate');
+                       }
+                    })
+                }
+        }
+  
+        Cascader.init({
+            ele:'#container',
+            num:3,
+            placeholder:'请选择省市区',
+            cb:function (ulIndex){
+                $.get('city.json', function (result) {
+                    var data = result.data;
+                    for (var i = 0; i < data.length; i++) {
+                        var str = '<li class="me-cascader-menu-item me-ion-o-arrow-right" title="' + data[i].label + '">' + data[i].value + '</li>';
+                        $('.me-cascade-list-wrap ul').eq(ulIndex).append(str)
+                    }
                 })
-            })
+            } 
         })
-        $('.me-cascade-list-wrap').on('click',"li",function(){
-            $(this).addClass('me-cascader-menu-item-active').siblings().removeClass('me-cascader-menu-item-active');
-            var indexParent = $(this).parent('ul').index();
-            if(indexParent == 0){
-                key=[];
-            }
-            if(indexParent == 1 && key.length>1 || indexParent == 2 && key.length>2){
-                key.pop();
-            }
-            key.push($(this).text());
-            if(key.length>2 && key[1]!=key[2]){
-                $(this).parent().parent().removeClass('me-show').addClass('me-hide');
-                $('.me-cascade-picker-content').text(key.join('/')).trigger('input');
-                $('.me-cascade-picker-input').attr('placeholder','');
-                $('.me-cascade-arrow').removeClass('rotate');
-            }
-        }) 
-        $(document).on('click',function(e){
-            if(!$(e.target).hasClass('me-cascade-picker-input') && !$(e.target).hasClass('me-cascader-menu-item') && !$(e.target).hasClass('me-cascade-list')){
-                $('.me-cascade-list-wrap').removeClass('me-show').addClass('me-hide');
-                $('.me-cascade-arrow').removeClass('rotate');
-            }
-        })
+        
     </script>
 </body>
 
