@@ -3,9 +3,9 @@ var path = require('path');
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 //var del = require('del');
-var $ = require('gulp-load-plugins')({ lazy: true });
+var $ = require('gulp-load-plugins')({ lazy: true });//按需加载package.json里面的插件
 var runSequence = require('run-sequence');
-
+var stripDebug = require('gulp-strip-debug');//构建时删除js中的console.log
 
 var reload = browserSync.reload;
 var paths='./'
@@ -66,9 +66,21 @@ gulp.task('styles',function(){
             paths: [path.join(__dirname, 'css')]
         }))
         .pipe($.autoprefixer())
-        .pipe($.cssnano())
+        .pipe($.cssnano({zindex:false}))//禁止重写z-index
         .pipe(gulp.dest('dev/css'))
 
+})
+gulp.task('js',function(){
+    return gulp.src([
+        '!./src/js/plugins/**',
+        '!./src/js/config/**',
+        './src/js/**'
+    ])
+    .pipe($.rev())
+    .pipe($.uglify())
+    .pipe(stripDebug())//删除console.log信息
+    .pipe($.rename({suffix:'.min'})
+    .pipe(gulp.dest('./dist/js');
 })
 
 
