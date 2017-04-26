@@ -6,9 +6,15 @@ var browserSync = require('browser-sync');
 var $ = require('gulp-load-plugins')({ lazy: true });//按需加载package.json里面的插件
 var runSequence = require('run-sequence');
 var stripDebug = require('gulp-strip-debug');//构建时删除js中的console.log
+var proxy = require('http-proxy-middleware');//解决跨域问题
 
 var reload = browserSync.reload;
-var paths='./'
+var paths='./';
+var jsonPlaceholderProxy = proxy('/me-front',{//路径匹配
+                                target:'http://10.18.82.91:8080/',//url
+                                changeOrigin:true,
+                                logLevel:'warn'
+                          })
 function swallowError(error) {
     // If you want details of the error in the console
     console.log(error.toString());
@@ -26,6 +32,7 @@ gulp.task('browserSync', function () {
     var options={
         port:3000,
         injectChanges: true,
+        middleware:[jsonPlaceholderProxy],
         logFileChanges: true,
         logLevel: 'info',
         logPrefix: 'gulp',
