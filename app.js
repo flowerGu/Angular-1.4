@@ -2,16 +2,19 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
     .config(["$stateProvider","$urlRouterProvider",routeConfig])
     .run(['$rootScope',function($rootScope,$location) {
         $rootScope.$on("$stateChangeSuccess",function(ev, to, toParams, from, fromParams){//UI-route路由器发生变化1.$stateChangeError;2.$stateChangeStart;3.$stateChangeSuccess;4.$stateNotFound
-            var showNavTag=["home","safeFinacial","fund","platformData"];
+            var showNavTag=["home","safeFinacial","myWealth"];
                if(showNavTag.indexOf(to.name)>-1){//加载时，判断顶部nav显示
                document.getElementsByClassName('nav-list-page')[0].style.display='';
                var url = to.url//页面重新加载时，给指定的导航选项添加高亮
                var oUL = document.getElementsByClassName('nav-list-page')[0].querySelectorAll('li');
                for(var i = 0;i<oUL.length;i++){
-                   var itemUrl = oUL[i].childNodes[0].getAttribute('href').replace(/#/,'');
+                   var itemUrl = oUL[i].childNodes[0].getAttribute('href') && oUL[i].childNodes[0].getAttribute('href').replace(/#/,'');
                    if(itemUrl == url){
                        $rootScope.active = i
                    }
+               }
+               if(to.name=='myWealth'){//主页
+                   $rootScope.active = 2;
                }
            }else{
                document.getElementsByClassName('nav-list-page')[0].style.display='none';
@@ -20,7 +23,7 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
         });
 
     }])
-    .controller('CalcController',function($scope,CalcService,$location,$state,$modal,$rootScope){
+    .controller('CalcController',function($scope,CalcService,$location,$state,$modal,$rootScope,ipCookie,analyticsInfo){
         // CalcService.square(17)
         // $scope.$on("$viewContentLoaded",function(){
         //     var showNavTag=["home","safeFinacial","tab"];
@@ -32,6 +35,13 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
         // });
         // console.log($scope.active)
         // console.log($location.url())
+        $rootScope.isLogin = function(){
+            if(!ipCookie('TOKENID')){
+                analyticsInfo.locationNext({url:'login'})
+            }else{
+                analyticsInfo.locationNext({url:'myWealth'})
+            }
+        }
     })
     .factory('MathService', function() {
         var factory = {};
@@ -45,15 +55,11 @@ angular.module('apps',["ui.router", "oc.lazyLoad","ui.grid","ui.bootstrap","ipCo
             return MathService.multiply(a, a);
         }
     })
-var stateArr = [
-
-]
-
 function routeConfig($stateProvider,$urlRouterProvider){//路由配置
     $urlRouterProvider.otherwise("/home");//$urlRouterProvider负责监听 $location。
-    angular.forEach(stateArr,function(data){
-        $stateProvider.state(data.stateName,data.stateConfig)
-    })
+    // angular.forEach(stateArr,function(data){
+    //     $stateProvider.state(data.stateName,data.stateConfig)
+    // })
     $stateProvider.state('home',{
                 url:'/home',
                 templateUrl: 'html/regular.html',
@@ -138,6 +144,18 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
                     ]}
             }
         )
+         .state('myWealth',{
+                url:'/myWealth',
+                templateUrl:'html/my.html',
+                controller:'myWealthCtrl',
+                title:'我的',
+                resolve:{
+                    deps:["$ocLazyLoad",function($ocLazyLoad){
+                        return $ocLazyLoad.load('js/user/my.js');
+                    }
+                    ]}
+            }
+        )
         .state('annuity',{
                 url:'/annuity?:productId',
                 templateUrl:'html/annuityDetail.html',
@@ -177,11 +195,11 @@ function routeConfig($stateProvider,$urlRouterProvider){//路由配置
         .state('register',{
                 url:'/register',
                 templateUrl:'html/register.html',
-                // controller:'findPwdCtrl',
-                // title:'注册',
+                controller:'registerCtrl',
+                title:'注册',
                 resolve:{
                     deps:["$ocLazyLoad",function($ocLazyLoad){
-                        // return $ocLazyLoad.load('js/user/findPwd.js');
+                        return $ocLazyLoad.load('js/user/register.js');
                     }]
                 }
             }
